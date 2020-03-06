@@ -49,14 +49,14 @@
 ## Project Hierarchy 
 XtreamChaser is the root directory and the name of the project repository.  
 XtreamChaser contains 3 sub-directories, some html files, and this README file.  
-
+***
 'images' subdirectory contains another 2 sub-directories that differentiates between images that are self made
 and images that are obtained from external sources.  
-***
+
 'scripts' subdirectory contains another 2 subdirectories that differentiates between scripts that are made by the team
 and scripts that are obtained from the internet as a library. Inside the 'custom', self-made script directory, there is 
 another subdirectory named 'essentials' that is reserved for another scripts that can be shared among pages.  
-***
+
 'stylesheets' subdirectory contains another 2 subdirectories that differentiates between stylesheets that are made 
 by the team and stylesheets that are obtained from the internet as a library. Inside the 'custom', self-made stylesheet 
 directory, there is another subdirectory named 'essentials' that is reserved for another scripts that can be shared 
