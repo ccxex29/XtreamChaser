@@ -33,9 +33,9 @@
   - Use **CSS box positioning**, instead of **table** for the **layout**.
   - Choose only **one language**, either **Indonesian** or **English**. 
   - Must be compatible with **Mozilla Firefox 22 and above** (latest stable version is 73).
-  - Make it available for desktop, tablet, and mobile phone.
-  - Organize the files
-  - Include references (e.g. from website or book).
+  - Make it **available for desktop, tablet, and mobile phone**.
+  - **Organize** the files
+  - Include **references** (e.g. from website or book).
 
 - Files that must be submitted:
   - Logo (\*.psd).
@@ -49,7 +49,8 @@
 ## Project Hierarchy 
 XtreamChaser is the root directory and the name of the project repository.  
 XtreamChaser contains 3 sub-directories, some html files, and this README file.  
-***
+  
+
 'images' subdirectory contains another 2 sub-directories that differentiates between images that are self made
 and images that are obtained from external sources.  
 
