@@ -1,5 +1,7 @@
 # XtreamChaser Project Repository
 
+
+
 ## Requirements Summary
 - A logo that represents a **game with *fighting* genre**.  
   The logo is created using **Adobe Photoshop CS3**, **ENSURE NO LAYER IS MERGED**
@@ -65,7 +67,57 @@ among pages. The 'essentials' subdirectory is *@use*d using Sass to the parent s
 files.
 
 
-## Project Team
-- Devin Djappy (2201747893)
-- Louis Raymond (2201849535)
+## Project Milestones
+### First Stage
+- [x] Create a repo and hierarchy for website files
+- [ ] Create the \.psd web template for the homepage
+- [ ] Design the \.psd and \.jpg website logo and obtain images for character images, stat icons, banner, and others
+### Second Stage
+- [ ] Build up the skeleton (class, mixin, variable, function presets in JS and Sass)
+- [ ] Build up the header (menu contents, outline feature), footer (other links and website name)
+### Third Stage
+- [ ] Build up the contents (incl. images) on each page (home, gallery, characters, lore, pre-registration)
+- [ ] Build up the specific styling and scripts for each element without animation
+- [ ] Add additional CSS3 and Javascript animations
+### Final Stage
+- [ ] Fix bugs and work on optional plans
+- [ ] Work on the \.DOC documentation
+- [ ] Code cleanup
 
+
+## Other Documentations
+- [About Stylesheet Directory Hierarchy](stylesheets/README.md)
+
+
+## Relevant Links
+  ### References
+  - [Bootstrap](https://getbootstrap.com/)
+  - [SassLang](https://sass-lang.com/)
+  ### Website Resources
+  (Currently No Resource)
+
+
+## Project Team
+
+<table>
+	<tr>
+		<td align="center">
+			<a href="https://github.com/learnDD">
+				<img src="https://avatars2.githubusercontent.com/u/42337500?s=460&v=4" alt="" width="100px">
+				<br/>
+				<p style="font-weight: 600; line-height: 1.2;">Devin Djappy</p>
+				<br/>
+				<p style="font-weight: 600; line-height: 1.2;">2201747893</p>
+			</a>
+		</td>
+		<td align="center">
+			<a href="https://github.com/ccxex29">
+				<img src="https://avatars2.githubusercontent.com/u/7277103?s=460&v=4" alt="" width="100px">
+				<br/>
+				<p style="font-weight: 600; line-height: 1.2;">Louis Raymond</p>
+				<br/>
+				<p style="font-weight: 600; line-height: 1.2;">2201849535</p>
+			</a>
+		</td>
+	</tr>
+</table>

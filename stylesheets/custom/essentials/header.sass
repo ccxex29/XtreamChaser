@@ -1,0 +1,31 @@
+// Inheritances
+@use "variables"
+
+// Variables
+$mobile-width: 400px
+
+// Configurations
+header
+	background-color: variables.$red-teal
+	color: white
+	height: 8vh
+	width: inherit
+	position: absolute
+	overflow: visible
+	// z-index: -1
+	h1
+		display: flex
+		align-items: center !important
+
+// .header-desktop
+	
+
+// .header-mobile
+
+
+@media screen and (min-width: $mobile-width+1)
+	.header-mobile
+		display: none
+@media screen and (max-width: $mobile-width)
+	.header-desktop
+		display: none

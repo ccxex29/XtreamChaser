@@ -1,3 +1,8 @@
+@use "variables"
+// Variables
+$grey-bg: #444444
+
+// Configurations
 html, body
 	width: 100%
 	height: 100%
@@ -6,25 +11,37 @@ html, body
 .container-lv0
 	position: absolute
 
-.page-test
-	background-color: green !important
-	width: 100vw !important
-	height: 100vh !important
-	position: relative 
+.container-lv-1
+	position: fixed
+
+.container-lv1
+	position: relative
+
+.container-lv-2
+	position: sticky
+
+.page-full
+	background-color: $grey-bg !important
+	width: inherit
+	height: inherit
 
 .flex-container
 	display: -moz-box
 	display: flex
-	justify-content: center !important
+
+.flex-vert-center
 	align-items: center !important
-	flex-direction: column
-	align-content: center 
-	height: inherit !important
+	
+.flex-horiz-center
+	justify-content: center !important
 
 .flex-page	
-	
+	display: inherit
+	width: inherit
 
 .flex-text
-	font-size: 48pt
+	@include variables.bs-text-display-1
 	color: white !important
-	text-shadow: 0.08em 4px 3px black
+	text-shadow: 0.08em 0.08em 0.05em black
+
+
