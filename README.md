@@ -1,5 +1,7 @@
 # XtreamChaser Project Repository
 
+
+
 ## Requirements Summary
 - A logo that represents a **game with *fighting* genre**.  
   The logo is created using **Adobe Photoshop CS3**, **ENSURE NO LAYER IS MERGED**
@@ -65,7 +67,31 @@ among pages. The 'essentials' subdirectory is *@use*d using Sass to the parent s
 files.
 
 
-## Project Team
-- Devin Djappy (2201747893)
-- Louis Raymond (2201849535)
+## Project Milestones
 
+## Project Team
+
+<table>
+	<tr>
+		<td align="center">
+			<a href="https://github.com/learnDD">
+				<img href="https://avatars2.githubusercontent.com/u/42337500?s=460&v=4" alt=""
+				     style="width: 100px; height: auto;"
+				>
+				<p style="font-weight: 600; line-height: 1.2;">Devin Djappy</p>
+				<br/>
+				<p style="font-weight: 600; line-height: 1.2;">2201747893</p>
+			</a>
+		</td>
+		<td align="center">
+			<a href="https://github.com/ccxex29">
+				<img href="https://avatars2.githubusercontent.com/u/42337500?s=460&v=4" alt=""
+				     style="width: 100px; height: auto;"
+				>
+				<p style="font-weight: 600; line-height: 1.2;">Louis Raymond</p>
+				<br/>
+				<p style="font-weight: 600; line-height: 1.2;">2201849535</p>
+			</a>
+		</td>
+	</tr>
+</table>
