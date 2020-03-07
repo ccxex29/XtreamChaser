@@ -75,9 +75,8 @@ files.
 	<tr>
 		<td align="center">
 			<a href="https://github.com/learnDD">
-				<img src="https://avatars2.githubusercontent.com/u/42337500?s=460&v=4" alt=""
-				     style="width: 100px; height: auto;"
-				>
+				<img src="https://avatars2.githubusercontent.com/u/42337500?s=460&v=4" alt=""style="width: 100px; height: auto;">
+				<br/>
 				<p style="font-weight: 600; line-height: 1.2;">Devin Djappy</p>
 				<br/>
 				<p style="font-weight: 600; line-height: 1.2;">2201747893</p>
@@ -85,9 +84,8 @@ files.
 		</td>
 		<td align="center">
 			<a href="https://github.com/ccxex29">
-				<img src="https://avatars2.githubusercontent.com/u/7277103?s=460&v=4" alt=""
-				     style="width: 100px; height: auto;"
-				>
+				<img src="https://avatars2.githubusercontent.com/u/7277103?s=460&v=4" alt="" style="width: 100px; height: auto;">
+				<br/>
 				<p style="font-weight: 600; line-height: 1.2;">Louis Raymond</p>
 				<br/>
 				<p style="font-weight: 600; line-height: 1.2;">2201849535</p>
