@@ -75,7 +75,7 @@ files.
 	<tr>
 		<td align="center">
 			<a href="https://github.com/learnDD">
-				<img href="https://avatars2.githubusercontent.com/u/42337500?s=460&v=4" alt=""
+				<img src="https://avatars2.githubusercontent.com/u/42337500?s=460&v=4" alt=""
 				     style="width: 100px; height: auto;"
 				>
 				<p style="font-weight: 600; line-height: 1.2;">Devin Djappy</p>
@@ -85,7 +85,7 @@ files.
 		</td>
 		<td align="center">
 			<a href="https://github.com/ccxex29">
-				<img href="https://avatars2.githubusercontent.com/u/42337500?s=460&v=4" alt=""
+				<img src="https://avatars2.githubusercontent.com/u/7277103?s=460&v=4" alt=""
 				     style="width: 100px; height: auto;"
 				>
 				<p style="font-weight: 600; line-height: 1.2;">Louis Raymond</p>
