@@ -70,19 +70,19 @@ files.
 ## Project Milestones
 ### First Stage
 - [x] Create a repo and hierarchy for website files
-- [] Create the \.psd web template for the homepage
-- [] Design the \.psd and \.jpg website logo and obtain images for character images, stat icons, banner, and others
+- [ ] Create the \.psd web template for the homepage
+- [ ] Design the \.psd and \.jpg website logo and obtain images for character images, stat icons, banner, and others
 ### Second Stage
-- [] Build up the skeleton (class, mixin, variable, function presets in JS and Sass)
-- [] Build up the header (menu contents, outline feature), footer (other links and website name)
+- [ ] Build up the skeleton (class, mixin, variable, function presets in JS and Sass)
+- [ ] Build up the header (menu contents, outline feature), footer (other links and website name)
 ### Third Stage
-- [] Build up the contents (incl. images) on each page (home, gallery, characters, lore, pre-registration)
-- [] Build up the specific styling and scripts for each element without animation
-- [] Add additional CSS3 and Javascript animations
+- [ ] Build up the contents (incl. images) on each page (home, gallery, characters, lore, pre-registration)
+- [ ] Build up the specific styling and scripts for each element without animation
+- [ ] Add additional CSS3 and Javascript animations
 ### Final Stage
-- [] Fix bugs and work on optional plans
-- [] Work on the \.DOC documentation
-- [] Code cleanup
+- [ ] Fix bugs and work on optional plans
+- [ ] Work on the \.DOC documentation
+- [ ] Code cleanup
 
 
 ## Other Documentations
@@ -99,7 +99,7 @@ files.
 
 ## Project Team
 
-<table style="margin: 0px auto;">
+<table style="margin: 0px auto; text-align: center">
 	<tr>
 		<td align="center">
 			<a href="https://github.com/learnDD">
