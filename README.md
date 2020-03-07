@@ -90,16 +90,16 @@ files.
 
 
 ## Relevant Links
-### References
-- [Bootstrap](https://getbootstrap.com/)
-- [SassLang](https://sass-lang.com/)
-### Website Resources
-(Currently No Resource)
+  ### References
+  - [Bootstrap](https://getbootstrap.com/)
+  - [SassLang](https://sass-lang.com/)
+  ### Website Resources
+  (Currently No Resource)
 
 
 ## Project Team
 
-<table style="margin: 0px auto; text-align: center">
+<table>
 	<tr>
 		<td align="center">
 			<a href="https://github.com/learnDD">
