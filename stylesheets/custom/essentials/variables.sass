@@ -2,27 +2,197 @@
 $red-teal: #950C0C
 
 // Mixin variables
+
+// List of Mixins
+// * --------------
+// * Lead
+// * Display
+// * Headings
+//   * Customizing Headings
+// * Inline Elements
+// * Text Alignments
+// * Blockquotes
+// * Lists
+// * Images
+// * --------------
+// */
+
+////////////////////////
+//        LEAD        //
+////////////////////////
+
 @mixin bs-text-lead
 	font-size: 1.25rem
 	font-weight: 300
 
+///////////////////////
+//      DISPLAY      //
+///////////////////////
+
 @mixin bs-text-display-1
+	@include bs-text-lead
 	font-size: 6rem
 	font-weight: 300
 	line-height: 1.2
 
-@mixin bs-text-display-2 
+@mixin bs-text-display-2
+	@include bs-text-lead
 	font-size: 5.5rem
 	font-weight: 300
 	line-height: 1.2
 
-
 @mixin bs-text-display-3 
+	@include bs-text-lead
 	font-size: 4.5rem
 	font-weight: 300
 	line-height: 1.2
 
 @mixin bs-text-display-4 
+	@include bs-text-lead
 	font-size: 3.5rem
 	font-weight: 300
 	line-height: 1.2
+
+
+//////////////////////////
+//       HEADINGS       //
+//////////////////////////
+
+@mixin bs-text-allheaders  
+	margin-bottom: 0.5rem
+	font-weight: 500
+	line-height: 1.2
+
+@mixin bs-text-h1
+	@include bs-text-allheaders
+	font-size: 2.5rem
+
+@mixin bs-text-h2
+	@include bs-text-allheaders
+	font-size: 2rem
+
+@mixin bs-text-h3
+	@include bs-text-allheaders
+	font-size: 1.75rem
+
+@mixin bs-text-h4
+	@include bs-text-allheaders
+	font-size: 1.5rem
+
+@mixin bs-text-h5
+	@include bs-text-allheaders
+	font-size: 1.25rem
+
+@mixin bs-text-h6
+	@include bs-text-allheaders
+	font-size: 1rem
+
+//   CUSTOMIZING HEADINGS   //
+
+@mixin bs-text-small
+	font-size: 80%
+	font-weight: 400
+
+@mixin bs-text-muted
+	color: #6c757d !important
+
+
+///////////////////////////
+//    INLINE ELEMENTS    //
+///////////////////////////
+
+@mixin bs-text-mark
+	padding: 0.2em
+	background-color: #fcf8e3
+
+@mixin bs-text-bold
+	font-weight: bolder
+
+@mixin bs-abbr
+	text-decoration: underline
+	-webkit-text-decoration: underline dotted
+	text-decoration: underline dotted
+	cursor: help
+	border-bottom: 0
+	-webkit-text-decoration-skip-ink: none
+	text-decoration-skip-ink: none
+
+@mixin bs-abbr_after // Treat '_' as CSS '::'
+	content: " (" attr(title) ")"
+
+///////////////////////////
+//    TEXT ALIGNMENTS    //
+///////////////////////////
+ 
+@mixin bs-text-left
+	text-align: left !important
+
+@mixin bs-text-center
+	text-align: center !important
+
+@mixin bs-text-right
+	text-align: right !important
+
+
+///////////////////////////
+//      BLOCKQUOTES      //
+///////////////////////////
+
+@mixin bs-blockquote
+	border: 1px solid #adb5bd
+	page-break-inside: avoid
+	margin: 0 0 1rem
+	margin-bottom: 1rem
+	font-size: 1.25rem
+
+@mixin bs-blockquote-footer
+	display: block
+	font-size: 80%
+	color: #6c757d
+
+@mixin bs-blockquote-footer_before // Treat '_' as CSS '::'
+  content: "\2014\00A0"
+
+
+///////////////////////
+//       LISTS       //
+///////////////////////
+
+@mixin bs-ol_ul
+	margin-bottom: 0
+
+@mixin bs-ol_ul_dl
+	@include bs-ol_ul
+	margin-top: 0
+	margin-bottom: 1rem
+
+@mixin bs-dt
+	font-weight: 700
+
+@mixin bs-dd
+	margin-bottom: .5rem
+	margin-left: 0
+
+
+//////////////////////
+//      IMAGES      //
+//////////////////////
+
+@mixin bs-img
+	page-break-inside: avoid
+	vertical-align: middle
+	border-style: none
+
+@mixin bs-img-fluid
+	max-width: 100%
+	height: auto
+
+@mixin bs-img-thumbnail
+	padding: 0.25rem
+	background-color: #fff
+	border: 1px solid #dee2e6
+	border-radius: 0.25rem
+	max-width: 100%
+	height: auto
+
+
