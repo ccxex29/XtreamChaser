@@ -90,11 +90,14 @@ files.
 
 
 ## Relevant Links
-  ### References
-  - [Bootstrap](https://getbootstrap.com/)
-  - [SassLang](https://sass-lang.com/)
-  ### Website Resources
-  (Currently No Resource)
+### Website Deployment
+- `master` branch : [Github Pages](https://ccxex29.github.io/XtreamChaser/)
+### References
+- [Bootstrap](https://getbootstrap.com/docs/)
+- [SassLang](https://sass-lang.com/documentation)
+- [jQuery](https://api.jquery.com/)
+### Website Resources
+(Currently No Resource)
 
 
 ## Project Team
@@ -105,8 +108,7 @@ files.
 			<a href="https://github.com/learnDD">
 				<img src="https://avatars2.githubusercontent.com/u/42337500?s=460&v=4" alt="" width="100px">
 				<br/>
-				<p style="font-weight: 600; line-height: 1.2;">Devin Djappy</p>
-				<br/>
+				<p style="font-weight: 600; line-height: 1.2;"><b>Devin Djappy</b></p>
 				<p style="font-weight: 600; line-height: 1.2;">2201747893</p>
 			</a>
 		</td>
@@ -114,8 +116,7 @@ files.
 			<a href="https://github.com/ccxex29">
 				<img src="https://avatars2.githubusercontent.com/u/7277103?s=460&v=4" alt="" width="100px">
 				<br/>
-				<p style="font-weight: 600; line-height: 1.2;">Louis Raymond</p>
-				<br/>
+				<p style="font-weight: 600; line-height: 1.2;"><b>Louis Raymond</b></p>
 				<p style="font-weight: 600; line-height: 1.2;">2201849535</p>
 			</a>
 		</td>
