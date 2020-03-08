@@ -1,6 +1,11 @@
 # XtreamChaser Project Repository
 
 
+## About XtreamChaser
+XtreamChaser is a project given by Binus SLC for Human and Computer Interaction subject. This project has the maximum
+of four team members. In the project, XtreamChaser is the name of a fighting game. Our task is to create a website for it
+with several requirements.
+
 
 ## Requirements Summary
 - A logo that represents a **game with *fighting* genre**.  
@@ -96,6 +101,7 @@ files.
 - [Bootstrap](https://getbootstrap.com/docs/)
 - [SassLang](https://sass-lang.com/documentation)
 - [jQuery](https://api.jquery.com/)
+- [Modernizr](https://modernizr.com/docs)
 ### Website Resources
 (Currently No Resource)
 
