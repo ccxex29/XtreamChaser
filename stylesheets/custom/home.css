@@ -1,0 +1,99 @@
+.header-top {
+  position: fixed;
+  background-color: #950C0C;
+  height: 72px;
+  width: 100%;
+  color: white;
+}
+
+.logo-wrapper > .logo-xchaser {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2.5rem;
+  -webkit-transition: color 0.15s ease-out;
+  -moz-transition: color 0.15s ease-out;
+  -ms-transition: color 0.15s ease-out;
+  -o-transition: color 0.15s ease-out;
+  transition: color 0.15s ease-out;
+}
+.logo-wrapper > .logo-margin {
+  display: inline-block;
+  margin: 10px 0 10px 80px;
+}
+.logo-wrapper :hover {
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  color: red;
+}
+
+@media screen and (min-width: 401px) {
+  .header-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header-desktop {
+    display: none;
+  }
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.container-lv0 {
+  position: absolute;
+}
+
+.container-lv-1 {
+  position: fixed;
+}
+
+.container-lv1 {
+  position: relative;
+}
+
+.container-lv-2 {
+  position: sticky;
+}
+
+.page-full {
+  background-color: #444444 !important;
+  width: inherit;
+  height: inherit;
+}
+
+.flex-container {
+  display: -moz-box;
+  display: flex;
+}
+
+.flex-vert-center {
+  align-items: center !important;
+}
+
+.flex-horiz-center {
+  justify-content: center !important;
+}
+
+.flex-page {
+  display: inherit;
+  width: inherit;
+}
+
+.flex-text {
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: white !important;
+  text-shadow: 0.08em 0.08em 0.05em black;
+}
+
+/*# sourceMappingURL=home.css.map */

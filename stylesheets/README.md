@@ -13,7 +13,7 @@ including variables, mixins, and classes. This directory is targeted by using `@
 1. Install the latest version of Dart SASS (dart-sass) **This is the most updated official version of Sass**
 2. Open the terminal and cd into this directory's child `custom/`
 3. Execute `sass index.sass:index.css gallery.sass:gallery.css characters.sass:characters.css lore.sass:lore.css 
-preregister.sass:preregister.css --watch` or `sass index.sass:index.css gallery.sass:gallery.css characters.sass:characters.css lore.sass:lore.css 
-preregister.sass:preregister.css --watch --sourcemap` for browser live editing capability
+preregister.sass:preregister.css home.sass:home.css --watch` or `sass index.sass:index.css gallery.sass:gallery.css characters.sass:characters.css lore.sass:lore.css 
+preregister.sass:preregister.css home.sass:home.css --watch --sourcemap` for browser live editing capability
 
 

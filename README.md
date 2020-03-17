@@ -1,6 +1,10 @@
 # XtreamChaser Project Repository
 
 
+### Project Outline
+
+
+
 ## About XtreamChaser
 XtreamChaser is a project given by Binus SLC for Human and Computer Interaction subject. This project has the maximum
 of four team members. In the project, XtreamChaser is the name of a fighting game. Our task is to create a website for it
@@ -39,7 +43,7 @@ with several requirements.
   - Use only **external CSS**. Inline CSS will not be scored.
   - Use **CSS box positioning**, instead of **table** for the **layout**.
   - Choose only **one language**, either **Indonesian** or **English**. 
-  - Must be compatible with **Mozilla Firefox 22 and above** (latest stable version is 73).
+  - Must be compatible with **Mozilla Firefox 22 and above** (latest stable version is 74).
   - Make it **available for desktop, tablet, and mobile phone**.
   - **Organize** the files
   - Include **references** (e.g. from website or book).
@@ -108,23 +112,29 @@ files.
 
 ## Project Team
 
-<table>
-	<tr>
-		<td align="center">
-			<a href="https://github.com/learnDD">
-				<img src="https://avatars2.githubusercontent.com/u/42337500?s=460&v=4" alt="" width="100px">
-				<br/>
-				<p style="font-weight: 600; line-height: 1.2;"><b>Devin Djappy</b></p>
-				<p style="font-weight: 600; line-height: 1.2;">2201747893</p>
-			</a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/ccxex29">
-				<img src="https://avatars2.githubusercontent.com/u/7277103?s=460&v=4" alt="" width="100px">
-				<br/>
-				<p style="font-weight: 600; line-height: 1.2;"><b>Louis Raymond</b></p>
-				<p style="font-weight: 600; line-height: 1.2;">2201849535</p>
-			</a>
-		</td>
-	</tr>
-</table>
+<div align="center">
+	<table>
+		<tr>
+			<td align="center">
+				<a href="https://github.com/learnDD">
+					<img src="https://avatars2.githubusercontent.com/u/42337500?s=460&v=4" alt="" width="100px">
+					<br/>
+					<p style="font-weight: 600; line-height: 1.2;"><b>Devin Djappy</b></p>
+					<p style="font-weight: 600; line-height: 1.2;">2201747893</p>
+				</a>
+			</td>
+			<td align="center">
+				<a href="https://github.com/ccxex29">
+					<img src="https://avatars2.githubusercontent.com/u/7277103?s=460&v=4" alt="" width="100px">
+					<br/>
+					<p style="font-weight: 600; line-height: 1.2;"><b>Louis Raymond</b></p>
+					<p style="font-weight: 600; line-height: 1.2;">2201849535</p>
+				</a>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+__Note: What's written on this may not be up to date. Please check the last commit date to take the versions into account__
+

@@ -1,5 +1,6 @@
 // Inheritances
-@use "variables"
+@use "presets"
+@use "templates"
 
 // Variables
 $mobile-width: 400px
@@ -18,18 +19,26 @@ $mobile-width: 400px
 // h6
 // 	@include variables.bs-text-h6
 
-header
-	background-color: variables.$red-teal
+.header-top
+	position: fixed
+	background-color: presets.$red-teal
+	height: 72px
+	width: 100%
 	color: white
-	height: 8vh
-	width: inherit
-	position: absolute
-	overflow: visible
-	// z-index: -1
-	h1
-		@include variables.bs-text-h1
-		display: flex
-		align-items: center !important
+
+.hamburger-menu
+	
+
+.logo-wrapper 
+	> .logo-xchaser
+		@include presets.bs-text-h1
+		@include templates.css3-prefix(transition, color .15s ease-out)
+	> .logo-margin
+		display: inline-block
+		margin: 10px 0 10px 80px
+	:hover
+		@include templates.css3-prefix(transition, color .3s ease-in-out)
+		color: red
 
 // .header-desktop
 	

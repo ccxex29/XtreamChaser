@@ -1,5 +1,22 @@
-@use "essentials/header"
-@use "essentials/footer"
-@use "essentials/content"
-@use "essentials/navigation"
+@use "essentials/presets"
 
+html, body
+	margin: 0
+	width: 100%
+	height: 100%
+
+.incase-stuck_div
+	position: relative
+	margin: 0
+	top: 40%
+	overflow: hidden
+
+.incase-stuck
+	@include presets.bs-text-h1
+	@include presets.bs-text-center
+
+.incase-stuck-dialog
+	@include presets.bs-text-display-4
+	font-size: 1.5rem
+	@include presets.bs-text-center
+	

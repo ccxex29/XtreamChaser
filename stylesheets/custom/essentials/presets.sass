@@ -147,14 +147,13 @@ $muted-text: #6C757D
 	margin-bottom: 1rem
 	font-size: 1.25rem
 
-@mixin bs-blockquote-footer  // To be used as a class inside <footer> tag that is inside a <blockquote> tag. 
-                             // May need to include bs-blockquote-footer_before on the ::before to show dash before the blockquote footer.
-	display: block
+@mixin bs-blockquote-footer  // To be used as a class inside <footer> tag that is inside a <blockquote> tag.
+	display: block 			 // May need to include bs-blockquote-footer_before on the ::before to show dash before the blockquote footer.
 	font-size: 80%
 	color: $muted-text
 
 @mixin bs-blockquote-footer_before // Treat '_' as CSS '::'
-  content: "\2014\00A0"
+	content: "\2014\00A0"
 
 
 ///////////////////////
@@ -166,14 +165,14 @@ $muted-text: #6C757D
 	list-style: none
 
 @mixin bs-list-inline  // To be used as a class inside any parent list tag. 
-  @include bs-list-unstyled
+	@include bs-list-unstyled
 
 @mixin bs-list-inline-item  // To be used as a class inside any child list tag that is using the mixin 'bs-list-inline'. Creates inline list.
-                            // May need to include bs-list-inline-item_not_last-child to add spacing for each list element.
-  display: inline-block
+	display: inline-block   // May need to include bs-list-inline-item_not_last-child to add spacing for each list element.
+	
 
 @mixin bs-list-inline-item_not_last-child // Treat '_' as CSS ':'. Equivalent property is ':not(:last-child)' 
-  margin-right: 0.5rem
+	margin-right: 0.5rem
 
 
 @mixin bs-list-ol_ul  // To be used with <ol> and <ul> tags.
