@@ -1,0 +1,235 @@
+// Data variables
+$red-teal: #950C0C
+$muted-text: #6C757D
+
+// Mixin variables
+
+// List of Mixins
+// --------------
+// * Lead
+// * Display
+// * Headings
+//   * Customizing Headings
+// * Inline Elements
+// * Text Alignments
+// * Blockquotes
+// * Lists
+// * Shapes
+//   * Images
+//   * Figures
+// --------------
+
+////////////////////////
+//        LEAD        //
+////////////////////////
+
+@mixin bs-text-lead        // To be used as a class inside any text type tag including but not exclusively <p>, <h1>, <div>, <small> tags
+	font-size: 1.25rem
+	font-weight: 300
+
+///////////////////////
+//      DISPLAY      //
+///////////////////////
+
+@mixin bs-text-display-1   // To be used as a class inside any text type tag including but not exclusively <p>, <h1>, <div>, <small> tags
+	@include bs-text-lead  // Already includes bs-text-lead. No need to re-include bs-text-lead!
+	font-size: 6rem
+	font-weight: 300
+	line-height: 1.2
+
+@mixin bs-text-display-2   // To be used as a class inside any text type tag including but not exclusively <p>, <h1>, <div>, <small> tags
+	@include bs-text-lead  // Already includes bs-text-lead. No need to re-include bs-text-lead!
+	font-size: 5.5rem
+	font-weight: 300
+	line-height: 1.2
+
+@mixin bs-text-display-3   // To be used as a class inside any text type tag including but not exclusively <p>, <h1>, <div>, <small> tags
+	@include bs-text-lead  // Already includes bs-text-lead. No need to re-include bs-text-lead!
+	font-size: 4.5rem
+	font-weight: 300
+	line-height: 1.2
+
+@mixin bs-text-display-4   // To be used as a class inside any text type tag including but not exclusively <p>, <h1>, <div>, <small> tags
+	@include bs-text-lead  // Already includes bs-text-lead. No need to re-include bs-text-lead!
+	font-size: 3.5rem
+	font-weight: 300
+	line-height: 1.2
+
+
+//////////////////////////
+//       HEADINGS       //
+//////////////////////////
+
+@mixin bs-text-allheaders  // To be used as a class inside any text type tag including but not exclusively <p>, <h1>, <div>, <small> tags
+	margin-bottom: 0.5rem
+	font-weight: 500
+	line-height: 1.2
+
+@mixin bs-text-h1          // To be used as a class inside any text type tag including but not exclusively <p>, <h1>, <div>, <small> tags
+	@include bs-text-allheaders  // Already includes bs-text-allheaders. No need to re-include bs-text-allheaders!
+	font-size: 2.5rem
+
+@mixin bs-text-h2          // To be used as a class inside any text type tag including but not exclusively <p>, <h1>, <div>, <small> tags
+	@include bs-text-allheaders  // Already includes bs-text-allheaders. No need to re-include bs-text-allheaders!
+	font-size: 2rem
+
+@mixin bs-text-h3          // To be used as a class inside any text type tag including but not exclusively <p>, <h1>, <div>, <small> tags
+	@include bs-text-allheaders  // Already includes bs-text-allheaders. No need to re-include bs-text-allheaders!
+	font-size: 1.75rem
+
+@mixin bs-text-h4          // To be used as a class inside any text type tag including but not exclusively <p>, <h1>, <div>, <small> tags
+	@include bs-text-allheaders  // Already includes bs-text-allheaders. No need to re-include bs-text-allheaders!
+	font-size: 1.5rem
+
+@mixin bs-text-h5          // To be used as a class inside any text type tag including but not exclusively <p>, <h1>, <div>, <small> tags
+	@include bs-text-allheaders  // Already includes bs-text-allheaders. No need to re-include bs-text-allheaders!
+	font-size: 1.25rem
+
+@mixin bs-text-h6          // To be used as a class inside any text type tag including but not exclusively <p>, <h1>, <div>, <small> tags
+	@include bs-text-allheaders  // Already includes bs-text-allheaders. No need to re-include bs-text-allheaders!
+	font-size: 1rem
+
+//   CUSTOMIZING HEADINGS   //
+
+@mixin bs-text-small          // To be used as a class inside any text type tag including but not exclusively <p>, <h1>, <div>, <small> tags
+	font-size: 80%
+	font-weight: 400
+
+@mixin bs-text-muted          // To be used as a class inside any text type tag including but not exclusively <p>, <h1>, <div>, <small> tags
+	color: $muted-text !important
+
+
+///////////////////////////
+//    INLINE ELEMENTS    //
+///////////////////////////
+
+@mixin bs-text-mark  // To be used with <mark> tag.
+	padding: 0.2em
+	background-color: #fcf8e3
+
+@mixin bs-text-bold  // To be used with <b> or <strong> or other text type tags.
+	font-weight: bolder
+
+@mixin bs-abbr  // To be used with <abbr> tag. May need to include bs-after_after on the ::after to show tooltip when hovering cursor.
+	text-decoration: underline
+	-webkit-text-decoration: underline dotted
+	text-decoration: underline dotted
+	cursor: help
+	border-bottom: 0
+	-webkit-text-decoration-skip-ink: none
+	text-decoration-skip-ink: none
+
+@mixin bs-abbr_after // Treat '_' as CSS '::'
+	content: " (" attr(title) ")"
+
+///////////////////////////
+//    TEXT ALIGNMENTS    //
+///////////////////////////
+ 
+@mixin bs-text-left          // To be used as a class inside any text type tag including but not exclusively <p>, <h1>, <div>, <small> tags
+	text-align: left !important
+
+@mixin bs-text-center          // To be used as a class inside any text type tag including but not exclusively <p>, <h1>, <div>, <small> tags
+	text-align: center !important
+
+@mixin bs-text-right          // To be used as a class inside any text type tag including but not exclusively <p>, <h1>, <div>, <small> tags
+	text-align: right !important
+
+
+///////////////////////////
+//      BLOCKQUOTES      //
+///////////////////////////
+
+@mixin bs-blockquote  // To be used as a class inside <blockquote> tag.
+	border: 1px solid #adb5bd
+	page-break-inside: avoid
+	margin: 0 0 1rem
+	margin-bottom: 1rem
+	font-size: 1.25rem
+
+@mixin bs-blockquote-footer  // To be used as a class inside <footer> tag that is inside a <blockquote> tag.
+	display: block 			 // May need to include bs-blockquote-footer_before on the ::before to show dash before the blockquote footer.
+	font-size: 80%
+	color: $muted-text
+
+@mixin bs-blockquote-footer_before // Treat '_' as CSS '::'
+	content: "\2014\00A0"
+
+
+///////////////////////
+//       LISTS       //
+///////////////////////
+
+@mixin bs-list-unstyled  // To be used as a class inside any parent list tag. Removes the children list style (not automatically inherited!)
+	padding-left: 0
+	list-style: none
+
+@mixin bs-list-inline  // To be used as a class inside any parent list tag. 
+	@include bs-list-unstyled
+
+@mixin bs-list-inline-item  // To be used as a class inside any child list tag that is using the mixin 'bs-list-inline'. Creates inline list.
+	display: inline-block   // May need to include bs-list-inline-item_not_last-child to add spacing for each list element.
+	
+
+@mixin bs-list-inline-item_not_last-child // Treat '_' as CSS ':'. Equivalent property is ':not(:last-child)' 
+	margin-right: 0.5rem
+
+
+@mixin bs-list-ol_ul  // To be used with <ol> and <ul> tags.
+	margin-bottom: 0
+
+@mixin bs-list-ol_ul_dl // To be used with <ol>, <ul>, or <dl> tags.
+	@include bs-ol_ul
+	margin-top: 0
+	margin-bottom: 1rem
+
+@mixin bs-list-dt  // To be used with <dt> tag.
+	font-weight: 700
+
+@mixin bs-list-dd  // To be used with <dd> tag.
+	margin-bottom: .5rem
+	margin-left: 0
+
+
+//////////////////////
+//      SHAPES      //
+//////////////////////
+
+@mixin bs-shape-rounded   // To be used with any shape, including <img>. Slightly adds border radius.
+	border-radius: 0.25rem !important
+
+//      IMAGES      //
+
+@mixin bs-img             // To be used with <img> tag.
+	page-break-inside: avoid
+	vertical-align: middle
+	border-style: none
+
+@mixin bs-img-fluid       // To be used as a class inside <img> tag. Makes image responsive by setting width according to parent's max width w/o stretching.
+	max-width: 100%
+	height: auto
+
+@mixin bs-img-thumbnail   // To be used as a class inside <img> tag. Slightly rounds an image and forces it keep its ratio.
+	padding: 0.25rem
+	background-color: #fff
+	border: 1px solid #dee2e6
+	border-radius: 0.25rem
+	max-width: 100%
+	height: auto
+
+//    FIGURES    //
+
+@mixin bs-figure          // To be used with <figure> tag.
+	display: inline-block
+
+@mixin bs-img-figure-img  // To be used as a class inside <img> tag that is the child of <figure> tag. Makes image look better with figcaption.
+	margin-bottom: 0.5rem
+	line-height: 1
+
+@mixin bs-figcaption      // To be used with <figcaption> tag that is the child of <figure> tag. Makes figcaption care about its own space.
+	display: block
+
+@mixin bs-figcaption-figcaption  // To be used as a class inside <figcaption> tag. Makes figcaption look greyer and smaller
+	@include bs-text-muted
+	font-size: 90%
+	

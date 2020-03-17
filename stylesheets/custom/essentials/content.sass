@@ -1,6 +1,9 @@
-@use "variables"
-// Variables
+@use "presets"
+// Variables & Mixins
 $grey-bg: #444444
+
+@mixin font-sans_serif
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif
 
 // Configurations
 html, body
@@ -40,7 +43,7 @@ html, body
 	width: inherit
 
 .flex-text
-	@include variables.bs-text-display-1
+	@include presets.bs-text-display-1
 	color: white !important
 	text-shadow: 0.08em 0.08em 0.05em black
 

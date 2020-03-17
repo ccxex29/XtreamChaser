@@ -1,78 +1,32 @@
-header {
-  background-color: #950C0C;
-  color: white;
-  height: 8vh;
-  width: inherit;
-  position: absolute;
-  overflow: visible;
-}
-header h1 {
-  display: flex;
-  align-items: center !important;
-}
-
-@media screen and (min-width: 401px) {
-  .header-mobile {
-    display: none;
-  }
-}
-@media screen and (max-width: 400px) {
-  .header-desktop {
-    display: none;
-  }
-}
 html, body {
+  margin: 0;
   width: 100%;
   height: 100%;
-  margin: 0;
 }
 
-.container-lv0 {
-  position: absolute;
-}
-
-.container-lv-1 {
-  position: fixed;
-}
-
-.container-lv1 {
+.incase-stuck_div {
   position: relative;
+  margin: 0;
+  top: 40%;
+  overflow: hidden;
 }
 
-.container-lv-2 {
-  position: sticky;
+.incase-stuck {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2.5rem;
+  text-align: center !important;
 }
 
-.page-full {
-  background-color: #444444 !important;
-  width: inherit;
-  height: inherit;
-}
-
-.flex-container {
-  display: -moz-box;
-  display: flex;
-}
-
-.flex-vert-center {
-  align-items: center !important;
-}
-
-.flex-horiz-center {
-  justify-content: center !important;
-}
-
-.flex-page {
-  display: inherit;
-  width: inherit;
-}
-
-.flex-text {
-  font-size: 6rem;
+.incase-stuck-dialog {
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
-  color: white !important;
-  text-shadow: 0.08em 0.08em 0.05em black;
+  font-size: 1.5rem;
+  text-align: center !important;
 }
 
 /*# sourceMappingURL=index.css.map */
