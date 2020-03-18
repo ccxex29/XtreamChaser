@@ -1,33 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
 .header-top {
   position: fixed;
-  background-color: #950C0C;
+  background-color: #1F1F1F;
   height: 72px;
   width: 100%;
-  color: white;
+  box-shadow: 0 4px 16px #1F1F1F;
 }
 
-.logo-wrapper > .logo-xchaser {
+.header-wrapper {
+  width: 100%;
+  height: inherit;
+  color: white;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  justify-content: space-between !important;
+  position: relative;
+  display: flex;
+  margin: 0;
+}
+.header-wrapper #rightHeader {
+  margin: 8px 26px 8px 0;
+}
+.header-wrapper #leftHeader {
+  margin: -24px 0 0 26px;
+}
+
+.playnow-header {
+  height: 50px;
+  width: 144px;
+  max-width: 144px;
+  mix-width: 144px;
+  overflow: visible;
+  background-color: #1F1F1F;
+  color: #EAEA3B;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.playnow-header .playnow-header-text {
+  margin: auto;
+  padding-top: 7px;
+  font-family: "Bebas Neue";
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2rem;
+}
+.playnow-header:hover {
+  color: #2F2F2F;
+  background-color: #EAEA3B;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+#rightHeader i.material-icons.btn-play-left {
+  position: absolute;
+  top: 20px;
+  color: #2F2F2F;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+#rightHeader i.material-icons.btn-play-right {
+  position: absolute;
+  top: 20px;
+  margin-left: 120px;
+  color: #2F2F2F;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.logo-wrapper .logo-xchaser {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
   font-size: 2.5rem;
-  -webkit-transition: color 0.15s ease-out;
-  -moz-transition: color 0.15s ease-out;
-  -ms-transition: color 0.15s ease-out;
-  -o-transition: color 0.15s ease-out;
-  transition: color 0.15s ease-out;
+  color: #EAEA3B;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -ms-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  font-family: "Concert One", "Roboto", "Helvetica", "Arial", sans-serif;
 }
-.logo-wrapper > .logo-margin {
+.logo-wrapper .logo-xchaser:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #ECEC5B;
+  text-shadow: 0 0.5px 10px #ECEC5B;
+}
+.logo-wrapper .logo-margin {
   display: inline-block;
-  margin: 10px 0 10px 80px;
-}
-.logo-wrapper :hover {
-  -webkit-transition: color 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out;
-  -ms-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-  color: red;
 }
 
 @media screen and (min-width: 401px) {
@@ -40,6 +132,38 @@
     display: none;
   }
 }
+.flex-container {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+}
+
+.flex-vert-center {
+  align-items: center !important;
+}
+
+.flex-horiz-center {
+  justify-content: center !important;
+}
+
+.flex-vert-between {
+  align-items: space-between !important;
+}
+
+.flex-horiz-between {
+  justify-content: space-between !important;
+}
+
+.flex-vert {
+  flex-direction: column;
+}
+
+.flex-horiz {
+  flex-direction: row;
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -62,25 +186,6 @@ html, body {
   position: sticky;
 }
 
-.page-full {
-  background-color: #444444 !important;
-  width: inherit;
-  height: inherit;
-}
-
-.flex-container {
-  display: -moz-box;
-  display: flex;
-}
-
-.flex-vert-center {
-  align-items: center !important;
-}
-
-.flex-horiz-center {
-  justify-content: center !important;
-}
-
 .flex-page {
   display: inherit;
   width: inherit;
@@ -89,11 +194,79 @@ html, body {
 .flex-text {
   font-size: 1.25rem;
   font-weight: 300;
-  font-size: 6rem;
+  font-size: 4.5rem;
   font-weight: 300;
   line-height: 1.2;
   color: white !important;
-  text-shadow: 0.08em 0.08em 0.05em black;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+.flex-text:hover {
+  font-size: 5rem;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+.flex-text:hover ~ .underconstruction {
+  font-size: 13rem !important;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.page-full {
+  background-color: #444444;
+  width: inherit;
+  height: inherit;
+}
+
+.underconstruction {
+  font-size: 12rem !important;
+  margin-bottom: 48px;
+  color: white;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+.underconstruction:hover {
+  font-size: 13rem !important;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+.underconstruction:hover ~ .flex-text {
+  font-size: 5rem;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=home.css.map */

@@ -82,7 +82,7 @@ files.
 - [ ] Create the \.psd web template for the homepage
 - [ ] Design the \.psd and \.jpg website logo and obtain images for character images, stat icons, banner, and others
 ### Second Stage
-- [ ] Build up the skeleton (class, mixin, variable, function presets in JS and Sass)
+- [x] Build up the skeleton (class, mixin, variable, function presets in JS and Sass)
 - [ ] Build up the header (menu contents, outline feature), footer (other links and website name)
 ### Third Stage
 - [ ] Build up the contents (incl. images) on each page (home, gallery, characters, lore, pre-registration)

@@ -1,8 +1,47 @@
+@use "templates"
 // Data variables
 $red-teal: #950C0C
+$black-darkest: black
+$black-darker: #1F1F1F
+$black-dark: #2F2F2F
+$yellow-dark: #EAEA3B
+$yellow-light: #ECEC5B
+
+$primary-color: $black-darker
+$accent-color: $yellow-dark
+$accent-color2: $yellow-light
+$font-sans_serif: 'Roboto', 'Helvetica', 'Arial', sans-serif
+
 $muted-text: #6C757D
+$grey-bg: #444444
+
 
 // Mixin variables
+
+@mixin font-sans_serif
+	font-family: $font-sans_serif
+
+@mixin flex-container
+	@include templates.css3-prefix(display, flex)
+
+@mixin flex-vert-center
+	align-items: center !important
+	
+@mixin flex-horiz-center
+	justify-content: center !important
+
+@mixin flex-vert-between
+	align-items: space-between !important
+
+@mixin flex-horiz-between
+	justify-content: space-between !important
+
+@mixin flex-vert
+	flex-direction: column
+
+@mixin flex-horiz
+	flex-direction: row
+
 
 // List of Mixins
 // --------------
