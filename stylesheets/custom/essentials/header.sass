@@ -49,23 +49,23 @@ $greyishWhite: #D2D2D2
 	max-width: 144px
 	mix-width: 144px
 	overflow: hidden
-	background-color: presets.$black-dark
 	background-image: linear-gradient(180deg, presets.$black-dark, presets.$black-darker, presets.$black-dark)
-	
+	color: presets.$accent-color2
 	border-radius: 3px
 	cursor: pointer
 	@include presets.flex-container
 	@include presets.flex-horiz-center
 	@include presets.flex-vert-center
-	@include templates.css3-prefix(transition, all .3s ease-in-out)
+	@include templates.css3-prefix(transition, color .3s ease-in)
 	.playnow-header-text
 		font-family: 'Bebas Neue'
 		margin: auto
 		padding-top: 7px
 		@include presets.bs-text-h2
 	&:hover
-		background-image: linear-gradient(180deg, presets.$yellow-dark, presets.$black-darker, presets.$yellow-dark)
-		@include templates.css3-prefix(transition, all .3s ease-in-out)
+		background-image: linear-gradient(180deg, presets.$yellow-dark 1%, presets.$black-darker 40%, presets.$black-darker 60%, presets.$yellow-dark 99%)
+		color: white
+		@include templates.css3-prefix(transition, color 0s)
 		
 
 

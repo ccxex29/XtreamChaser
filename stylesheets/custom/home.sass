@@ -11,13 +11,15 @@
 	width: inherit
 
 .flex-text
-	@include presets.bs-text-display-1
+	@include presets.bs-text-display-3
 	color: white !important
 	cursor: default
+	@include templates.css3-prefix(user-select, none)
+	-webkit-touch-callout: none
 	@include presets.font-sans_serif
 	@include templates.css3-prefix(transition, font-size .3s ease-in-out)
 	&:hover
-		font-size: 6.5rem
+		font-size: 5rem
 		@include templates.css3-prefix(transition, font-size .3s ease-in-out)
 	&:hover ~ .underconstruction
 		font-size: 13rem !important
@@ -32,11 +34,13 @@
 	font-size: 12rem !important
 	margin-bottom: 48px
 	color: white
+	cursor: default
+	@include templates.css3-prefix(user-select, none)
 	@include templates.css3-prefix(transition, font-size .3s ease-in-out)
 	&:hover
 		font-size: 13rem !important
 		@include templates.css3-prefix(transition, font-size .3s ease-in-out)
 	&:hover ~ .flex-text
-		font-size: 6.5rem
+		font-size: 5rem
 		@include templates.css3-prefix(transition, font-size .3s ease-in-out)
 
