@@ -1,9 +1,11 @@
 // Inheritances
 @use "presets"
 @use "templates"
+@use "fonts"
 
 // Variables
 $mobile-width: 400px
+$greyishWhite: #D2D2D2
 
 // Configurations
 // h1
@@ -21,24 +23,68 @@ $mobile-width: 400px
 
 .header-top
 	position: fixed
-	background-color: presets.$red-teal
+	background-color: presets.$primary-color
 	height: 72px
 	width: 100%
-	color: white
-
-.hamburger-menu
+	box-shadow: 0 4px 16px presets.$primary-color
 	
 
+.header-wrapper
+	width: 100%
+	height: inherit
+	color: white
+	@include presets.flex-container
+	@include presets.flex-horiz-between
+	position: relative
+	display: flex
+	margin: 0
+	#rightHeader
+		margin: 8px 26px 8px 0
+	#leftHeader
+		margin: -24px 0 0 26px
+
+.playnow-header
+	height: 50px
+	width: 144px
+	max-width: 144px
+	mix-width: 144px
+	overflow: hidden
+	background-color: presets.$black-dark
+	background-image: linear-gradient(180deg, presets.$black-dark, presets.$black-darker, presets.$black-dark)
+	
+	border-radius: 3px
+	cursor: pointer
+	@include presets.flex-container
+	@include presets.flex-horiz-center
+	@include presets.flex-vert-center
+	@include templates.css3-prefix(transition, all .3s ease-in-out)
+	.playnow-header-text
+		font-family: 'Bebas Neue'
+		margin: auto
+		padding-top: 7px
+		@include presets.bs-text-h2
+	&:hover
+		background-image: linear-gradient(180deg, presets.$yellow-dark, presets.$black-darker, presets.$yellow-dark)
+		@include templates.css3-prefix(transition, all .3s ease-in-out)
+		
+
+
 .logo-wrapper 
-	> .logo-xchaser
+	.logo-xchaser
 		@include presets.bs-text-h1
-		@include templates.css3-prefix(transition, color .15s ease-out)
-	> .logo-margin
+		color: presets.$accent-color
+		cursor: pointer
+		@include templates.css3-prefix(transition, all .15s ease-out)
+		font-family: 'Concert One', presets.$font-sans_serif
+		&:hover
+			@include templates.css3-prefix(transition, all .3s ease-in-out)
+			color: presets.$accent-color2
+			text-shadow: 0 .5px 10px presets.$accent-color2
+	.logo-margin
 		display: inline-block
-		margin: 10px 0 10px 80px
-	:hover
-		@include templates.css3-prefix(transition, color .3s ease-in-out)
-		color: red
+		
+	
+	
 
 // .header-desktop
 	

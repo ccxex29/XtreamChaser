@@ -1,9 +1,9 @@
+// Inheritances
 @use "presets"
+@use "templates"
+@use "sets"
 // Variables & Mixins
-$grey-bg: #444444
 
-@mixin font-sans_serif
-	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif
 
 // Configurations
 html, body
@@ -23,28 +23,9 @@ html, body
 .container-lv-2
 	position: sticky
 
-.page-full
-	background-color: $grey-bg !important
-	width: inherit
-	height: inherit
 
-.flex-container
-	display: -moz-box
-	display: flex
 
-.flex-vert-center
-	align-items: center !important
-	
-.flex-horiz-center
-	justify-content: center !important
 
-.flex-page	
-	display: inherit
-	width: inherit
 
-.flex-text
-	@include presets.bs-text-display-1
-	color: white !important
-	text-shadow: 0.08em 0.08em 0.05em black
 
 
