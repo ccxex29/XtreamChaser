@@ -34,9 +34,9 @@
   width: 144px;
   max-width: 144px;
   mix-width: 144px;
-  overflow: hidden;
-  background-image: linear-gradient(180deg, #2F2F2F, #1F1F1F, #2F2F2F);
-  color: #ECEC5B;
+  overflow: visible;
+  background-color: #1F1F1F;
+  color: #EAEA3B;
   border-radius: 3px;
   cursor: pointer;
   -webkit-display: flex;
@@ -46,29 +46,53 @@
   display: flex;
   justify-content: center !important;
   align-items: center !important;
-  -webkit-transition: color 0.3s ease-in;
-  -moz-transition: color 0.3s ease-in;
-  -ms-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
-  transition: color 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 .playnow-header .playnow-header-text {
-  font-family: "Bebas Neue";
   margin: auto;
   padding-top: 7px;
+  font-family: "Bebas Neue";
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
   font-size: 2rem;
 }
 .playnow-header:hover {
-  background-image: linear-gradient(180deg, #EAEA3B 1%, #1F1F1F 40%, #1F1F1F 60%, #EAEA3B 99%);
-  color: white;
-  -webkit-transition: color 0s;
-  -moz-transition: color 0s;
-  -ms-transition: color 0s;
-  -o-transition: color 0s;
-  transition: color 0s;
+  color: #2F2F2F;
+  background-color: #EAEA3B;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+#rightHeader i.material-icons.btn-play-left {
+  position: absolute;
+  top: 20px;
+  color: #2F2F2F;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+#rightHeader i.material-icons.btn-play-right {
+  position: absolute;
+  top: 20px;
+  margin-left: 120px;
+  color: #2F2F2F;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .logo-wrapper .logo-xchaser {
@@ -221,6 +245,7 @@ html, body {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  -webkit-touch-callout: none;
   -webkit-transition: font-size 0.3s ease-in-out;
   -moz-transition: font-size 0.3s ease-in-out;
   -ms-transition: font-size 0.3s ease-in-out;
