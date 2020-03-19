@@ -42,6 +42,9 @@ $grey-bg: #444444
 @mixin flex-horiz
 	flex-direction: row
 
+@mixin no-select
+	@include templates.css3-prefix(user-select, none)
+	-webkit-touch-callout: none
 
 // List of Mixins
 // --------------

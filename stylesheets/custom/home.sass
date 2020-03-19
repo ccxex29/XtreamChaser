@@ -14,8 +14,7 @@
 	@include presets.bs-text-display-3
 	color: white !important
 	cursor: default
-	@include templates.css3-prefix(user-select, none)
-	-webkit-touch-callout: none
+	@include presets.no-select
 	@include presets.font-sans_serif
 	@include templates.css3-prefix(transition, font-size .3s ease-in-out)
 	&:hover
@@ -35,8 +34,7 @@
 	margin-bottom: 48px
 	color: white
 	cursor: default
-	@include templates.css3-prefix(user-select, none)
-	-webkit-touch-callout: none
+	@include presets.no-select
 	@include templates.css3-prefix(transition, font-size .3s ease-in-out)
 	&:hover
 		font-size: 13rem !important

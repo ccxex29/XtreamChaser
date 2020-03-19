@@ -32,22 +32,30 @@ $greyishWhite: #D2D2D2
 .header-wrapper
 	width: 100%
 	height: inherit
-	color: white
 	@include presets.flex-container
 	@include presets.flex-horiz-between
 	position: relative
 	display: flex
 	margin: 0
 	#rightHeader
+		i.material-icons.btn-play-left, i.material-icons.btn-play-right
+			position: absolute
+			top: 27px
+			color: presets.$black-dark
+			@include presets.no-select
+		i.material-icons.btn-play-right
+			margin-left: 120px
 		margin: 8px 26px 8px 0
 	#leftHeader
 		margin: -24px 0 0 26px
+		@include presets.flex-container
 
 .playnow-header
 	height: 50px
 	width: 144px
 	max-width: 144px
-	mix-width: 144px
+	max-width: 144px
+	margin-top: 7px
 	overflow: visible
 	background-color: presets.$primary-color
 	color: presets.$accent-color
@@ -66,25 +74,34 @@ $greyishWhite: #D2D2D2
 		color: presets.$black-dark
 		background-color: presets.$accent-color
 		@include templates.css3-prefix(transition, all .3s ease-in)
-		
-#rightHeader 
-	i.material-icons.btn-play-left
-		position: absolute
-		top: 20px
-		color: presets.$black-dark
-		@include templates.css3-prefix(user-select, none)
-		-webkit-touch-callout: none
-	i.material-icons.btn-play-right
-		position: absolute
-		top: 20px
-		margin-left: 120px
-		color: presets.$black-dark
-		@include templates.css3-prefix(user-select, none)
-		-webkit-touch-callout: none
 
+
+.hamburger-menu
+	height: 28px
+	width: 32px
+	top: 26px
+	left: 0
+	margin-left: -10px
+	position: absolute
+	cursor: pointer
+	@include templates.css3-prefix(transition, margin-left .2s ease-in)
+	.hamburger-wrapper
+		@include presets.flex-container
+		@include presets.flex-vert
+		@include presets.flex-vert-between
+		.hmenu-1, .hmenu-2, .hmenu-3
+			width: 32px
+			height: 4px
+			margin-bottom: 5px
+			border-radius: 3px
+			background-color: presets.$accent-color
+	&:hover
+		margin-left: -5px
+		@include templates.css3-prefix(transition, margin-left .2s ease-out)
 
 
 .logo-wrapper 
+	margin-left: 16px
 	.logo-xchaser
 		@include presets.bs-text-h1
 		color: presets.$accent-color
