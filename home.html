@@ -6,21 +6,22 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/custom/home.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script type="text/javascript" src="scripts/libraries/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="scripts/custom/index.js"></script>
+	<script type="text/javascript" src="scripts/custom/essentials/header.js"></script>
+	<script type="text/javascript" src="scripts/custom/essentials/navigation.js"></script>
 </head>
 <body>
 	<div class="container-lv0 page-full flex-container">
 		<header class="header-top">
 			<div class="header-wrapper">
 				<div id="leftHeader" class="leftHeader">
-					<div class="hamburger-menu" aria-label="Navigation Menu">
+					<div class="hamburger-menu" aria-label="Navigation Menu" >
 						<div class="hamburger-wrapper">
 							<span class="hmenu-1"></span>
 							<span class="hmenu-2"></span>
 							<span class="hmenu-3"></span>
 						</div>
 					</div>
-					<div class="logo-wrapper" aria-label="XtreamChaser Logo">
+					<div class="logo-wrapper" aria-label="XtreamChaser Logo" alt="XtreamChaser Home">
 						<a href="home.html">
 							<h1 class="logo-xchaser logo-margin">XtreamChaser</h1>
 						</a>
@@ -37,9 +38,39 @@
 				</div>
 			</div>
 		</header>
-
+		
+		<!-- Navigation Menu Showup -->
+		
+		<div class="slidingmenu">
+			<a href="home.html" class="slidingmenu-content" aria-label="Home">
+				<div class="slidingmenu-content-text">
+					<span>Home</span>
+				</div>
+			</a>
+			<a href="index.html" class="slidingmenu-content" aria-label="Gallery">
+				<div class="slidingmenu-content-text">
+					<span>Gallery</span>
+				</div>
+			</a>
+			<a href="index.html" class="slidingmenu-content" aria-label="Characters">
+				<div class="slidingmenu-content-text">
+					<span>Characters</span>
+				</div>
+			</a>
+			<a href="index.html" class="slidingmenu-content" aria-label="Lore">
+				<div class="slidingmenu-content-text">
+					<span>Lore</span>
+				</div>
+			</a>
+			<a href="index.html" class="slidingmenu-content" aria-label="Pre-Registration">
+				<div class="slidingmenu-content-text">
+					<span>Pre-Registration</span>
+				</div>
+			</a>
+		</div>
 
 		<div class=" flex-page flex-horiz-center flex-vert-center flex-vert">
+
 			<i class="material-icons underconstruction">sports_tennis</i>
 			<div class="flex-text">
 				The page is being worked on

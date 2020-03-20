@@ -2,3 +2,48 @@
 @use "presets"
 @use "templates"
 @use "sets"
+
+.slidingmenu
+	overflow: visible
+	position: absolute
+	@include presets.flex-container
+	@include presets.flex-vert
+	top: 87px
+	left: 0
+	margin-left: -20px
+	max-width: 100vw
+	max-height: 100vh
+	.slidingmenu-content
+		width: 240px
+		height: 56px
+		max-height: 56px
+		min-height: 48px
+		max-width: 240px
+		min-width: 144px
+		margin-bottom: 16px !important
+		margin-left: -350px
+		padding: 0 40px 0 70px
+		border-radius: 0 0 45px 0
+		background-color: presets.$primary-color
+		color: presets.$accent-color
+		box-shadow: 0 4px 4px presets.$primary-color
+		font-size: 24px
+		text-transform: uppercase
+		text-decoration: none
+		@include presets.bs-text-allheaders
+		@include presets.bs-text-right
+		@include presets.font-sans_serif
+		@include presets.flex-container
+		@include presets.flex-vert-center
+		@include presets.flex-horiz-start
+		@include templates.css3-prefix(transition, all .05s)
+		.slidingmenu-content-text
+			display: inline-block
+		&:hover
+			background-color: presets.$black-dark
+			@include templates.css3-prefix(transition, background-color .15s)
+	.slidingmenu-content-active
+		margin-left: 0
+		@include templates.css3-prefix(transition, all .1s)
+
+
