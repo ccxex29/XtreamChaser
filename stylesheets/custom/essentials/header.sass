@@ -37,18 +37,33 @@ $greyishWhite: #D2D2D2
 	position: relative
 	display: flex
 	margin: 0
+	.centerHeader
+		position: absolute
+		left: 50vw
+		right: 50vw
+		margin-top: 12px
+		height: 40px
+		width: 40px
+		@include presets.no-select
+		.icon-header-curr
+			color: presets.$accent-color
+			height: 40px
+			width: 40px
+			font-size: 2.5rem
+
 	#rightHeader
 		margin: 8px 26px 8px 0
-		i.material-icons.btn-play-left, i.material-icons.btn-play-right
+		span.material-icons.btn-play-left, span.material-icons.btn-play-right
 			position: absolute
 			top: 20px
 			color: presets.$black-dark
 			@include presets.no-select
-		i.material-icons.btn-play-right
+		span.material-icons.btn-play-right
 			margin-left: 120px
 	#leftHeader
 		margin: -24px 0 0 26px
 		@include presets.flex-container
+
 
 .playnow-header
 	height: 50px
@@ -82,6 +97,7 @@ $greyishWhite: #D2D2D2
 	top: 26px
 	left: 0
 	margin-left: -10px
+	padding-right: 10px
 	position: absolute
 	cursor: pointer
 	@include templates.css3-prefix(transition, margin-left .2s ease-in)

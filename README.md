@@ -106,6 +106,7 @@ files.
 - [SassLang](https://sass-lang.com/documentation)
 - [jQuery](https://api.jquery.com/)
 - [Modernizr](https://modernizr.com/docs)
+- [Material Design](https://material.io/)
 ### Website Resources
 (Currently No Resource)
 

@@ -36,12 +36,15 @@ $(window).click(function (event) {
 	if(!$(event.target).is('.slidingmenu') && 
 		!$(event.target).is('div.header-wrapper') &&
 		!$(event.target).is('div.playnow-header-text') &&
-		!$(event.target).is('i.material-icons.btn-play-left') &&
-		!$(event.target).is('i.material-icons.btn-play-right') &&
+		!$(event.target).is('span.material-icons.btn-play-left') &&
+		!$(event.target).is('span.material-icons.btn-play-right') &&
 		!$(event.target).is('span.hmenu-1') && 
 		!$(event.target).is('span.hmenu-2') && 
 		!$(event.target).is('span.hmenu-3') && 
 		!$(event.target).is('div.hamburger-wrapper') && 
+		!$(event.target).is('div.hamburger-menu') && 
+		!$(event.target).is('div.leftHeader') && 
+		!$(event.target).is('div.rightHeader') && 
 		$('.slidingmenu').hasClass('slidden')) {
 		function triggerNav(){
 			if ($('.hamburger-menu').hasClass('hamburger-menu-active')) {
@@ -54,4 +57,5 @@ $(window).click(function (event) {
 		}
 		triggerNav();
 	}
+	console.log(event.target);
 });

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Concert+One&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
 .header-top {
   position: fixed;
   background-color: #1F1F1F;
@@ -21,10 +22,30 @@
   display: flex;
   margin: 0;
 }
+.header-wrapper .centerHeader {
+  position: absolute;
+  left: 50vw;
+  right: 50vw;
+  margin-top: 12px;
+  height: 40px;
+  width: 40px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+.header-wrapper .centerHeader .icon-header-curr {
+  color: #EAEA3B;
+  height: 40px;
+  width: 40px;
+  font-size: 2.5rem;
+}
 .header-wrapper #rightHeader {
   margin: 8px 26px 8px 0;
 }
-.header-wrapper #rightHeader i.material-icons.btn-play-left, .header-wrapper #rightHeader i.material-icons.btn-play-right {
+.header-wrapper #rightHeader span.material-icons.btn-play-left, .header-wrapper #rightHeader span.material-icons.btn-play-right {
   position: absolute;
   top: 20px;
   color: #2F2F2F;
@@ -35,7 +56,7 @@
   user-select: none;
   -webkit-touch-callout: none;
 }
-.header-wrapper #rightHeader i.material-icons.btn-play-right {
+.header-wrapper #rightHeader span.material-icons.btn-play-right {
   margin-left: 120px;
 }
 .header-wrapper #leftHeader {
@@ -96,6 +117,7 @@
   top: 26px;
   left: 0;
   margin-left: -10px;
+  padding-right: 10px;
   position: absolute;
   cursor: pointer;
   -webkit-transition: margin-left 0.2s ease-in;
@@ -232,6 +254,89 @@ html, body {
   position: sticky;
 }
 
+.flex-page {
+  display: inherit;
+  width: inherit;
+}
+
+.flex-text {
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: white !important;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+.flex-text:hover {
+  font-size: 5rem;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+.flex-text:hover ~ .underconstruction {
+  font-size: 13rem !important;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.page-full {
+  background-color: #444444;
+  width: inherit;
+  height: inherit;
+}
+
+.underconstruction {
+  font-size: 12rem !important;
+  margin-bottom: 48px;
+  color: white;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+.underconstruction:hover {
+  font-size: 13rem !important;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+.underconstruction:hover ~ .flex-text {
+  font-size: 5rem;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+
 .slidingmenu {
   overflow: visible;
   position: absolute;
@@ -248,15 +353,15 @@ html, body {
   max-height: 100vh;
 }
 .slidingmenu .slidingmenu-content {
-  width: 240px;
+  width: 264px;
   height: 56px;
   max-height: 56px;
   min-height: 48px;
-  max-width: 240px;
+  max-width: 264px;
   min-width: 144px;
   margin-bottom: 16px !important;
   margin-left: -350px;
-  padding: 0 40px 0 70px;
+  padding: 0 50px 0 50px;
   border-radius: 0 0 45px 0;
   background-color: #1F1F1F;
   color: #EAEA3B;
@@ -282,7 +387,15 @@ html, body {
   transition: all 0.1s ease-in;
 }
 .slidingmenu .slidingmenu-content .slidingmenu-content-text {
-  display: inline-block;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  flex-direction: row;
+}
+.slidingmenu .slidingmenu-content .slidingmenu-content-text > .icons-sliding-menu {
+  margin: 2px 14px 0 0;
 }
 .slidingmenu .slidingmenu-content:hover {
   background-color: #2F2F2F;
