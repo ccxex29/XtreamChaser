@@ -26,7 +26,7 @@
 }
 .header-wrapper #rightHeader i.material-icons.btn-play-left, .header-wrapper #rightHeader i.material-icons.btn-play-right {
   position: absolute;
-  top: 27px;
+  top: 20px;
   color: #2F2F2F;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -52,7 +52,7 @@
   width: 144px;
   max-width: 144px;
   max-width: 144px;
-  margin-top: 7px;
+  margin-top: 0px;
   overflow: visible;
   background-color: #1F1F1F;
   color: #EAEA3B;
@@ -267,7 +267,6 @@ html, body {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
-  text-align: right !important;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   -webkit-display: flex;
   -moz-display: flex;
@@ -276,11 +275,11 @@ html, body {
   display: flex;
   align-items: center !important;
   justify-content: flex-start !important;
-  -webkit-transition: all 0.05s;
-  -moz-transition: all 0.05s;
-  -ms-transition: all 0.05s;
-  -o-transition: all 0.05s;
-  transition: all 0.05s;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -ms-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
 .slidingmenu .slidingmenu-content .slidingmenu-content-text {
   display: inline-block;
@@ -295,11 +294,11 @@ html, body {
 }
 .slidingmenu .slidingmenu-content-active {
   margin-left: 0;
-  -webkit-transition: all 0.1s;
-  -moz-transition: all 0.1s;
-  -ms-transition: all 0.1s;
-  -o-transition: all 0.1s;
-  transition: all 0.1s;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  -ms-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s;
 }
 
 /*# sourceMappingURL=characters.css.map */

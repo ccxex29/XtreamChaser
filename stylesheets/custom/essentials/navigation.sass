@@ -31,12 +31,11 @@
 		text-transform: uppercase
 		text-decoration: none
 		@include presets.bs-text-allheaders
-		@include presets.bs-text-right
 		@include presets.font-sans_serif
 		@include presets.flex-container
 		@include presets.flex-vert-center
 		@include presets.flex-horiz-start
-		@include templates.css3-prefix(transition, all .05s)
+		@include templates.css3-prefix(transition, all .1s ease-in)
 		.slidingmenu-content-text
 			display: inline-block
 		&:hover
@@ -44,6 +43,6 @@
 			@include templates.css3-prefix(transition, background-color .15s)
 	.slidingmenu-content-active
 		margin-left: 0
-		@include templates.css3-prefix(transition, all .1s)
+		@include templates.css3-prefix(transition, all .15s)
 
 

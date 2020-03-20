@@ -1,5 +1,4 @@
 function navMenu() {
-	
 	var slidingmenu = [
 		'Home',
 		'Gallery',
@@ -14,10 +13,10 @@ function navMenu() {
 			function (){
 				$('.slidingmenu .slidingmenu-content[aria-label='+slidingmenu[i]+']').addClass('slidingmenu-content-active');
 				i++;
-				if (i == slidingmenu.length)
+				if (i === slidingmenu.length)
 					clearInterval(inv);
 			}
-		, 100);
+		, 50);
 	}
 	else {
 		$('.slidingmenu').removeClass('slidden');
@@ -29,7 +28,30 @@ function navMenu() {
 				if (i < 0) 
 					clearInterval(inv);
 			}
-		, 100);
+		, 50);
 	}
 }
 
+$(window).click(function (event) {
+	if(!$(event.target).is('.slidingmenu') && 
+		!$(event.target).is('div.header-wrapper') &&
+		!$(event.target).is('div.playnow-header-text') &&
+		!$(event.target).is('i.material-icons.btn-play-left') &&
+		!$(event.target).is('i.material-icons.btn-play-right') &&
+		!$(event.target).is('span.hmenu-1') && 
+		!$(event.target).is('span.hmenu-2') && 
+		!$(event.target).is('span.hmenu-3') && 
+		!$(event.target).is('div.hamburger-wrapper') && 
+		$('.slidingmenu').hasClass('slidden')) {
+		function triggerNav(){
+			if ($('.hamburger-menu').hasClass('hamburger-menu-active')) {
+				$('.hamburger-menu').removeClass('hamburger-menu-active');
+			}
+			else {
+				$('.hamburger-menu').addClass('hamburger-menu-active');
+			}
+			navMenu();
+		}
+		triggerNav();
+	}
+});
