@@ -21,21 +21,20 @@ $greyishWhite: #D2D2D2
 // h6
 // 	@include variables.bs-text-h6
 
-.header-top
-	position: fixed
+header.header-top
+	position: relative
 	background-color: presets.$primary-color
 	height: 72px
+	max-height: 72px
 	width: 100%
 	box-shadow: 0 4px 16px presets.$primary-color
 	
 
 .header-wrapper
-	width: 100%
-	height: inherit
 	@include presets.flex-container
 	@include presets.flex-horiz-between
+	@include presets.flex-vert-center
 	position: relative
-	display: flex
 	margin: 0
 	.centerHeader
 		position: absolute
@@ -44,95 +43,121 @@ $greyishWhite: #D2D2D2
 		margin-top: 12px
 		height: 40px
 		width: 40px
+		display: none
 		@include presets.no-select
 		.icon-header-curr
 			color: presets.$accent-color
 			height: 40px
 			width: 40px
 			font-size: 2.5rem
+	.logo-wrapper 
+		margin-left: 20px
+		margin-top: -3px
+		.div-logo-xchaser
+			.logo-xchaser
+				color: presets.$accent-color
+				cursor: pointer
+				@include templates.css3-prefix(transition, all .15s ease-out)
+				@include presets.font-sans_serif
+				&:hover
+					@include templates.css3-prefix(transition, all .3s ease-in-out)
+					color: presets.$accent-color2
+					text-shadow: 0 .5px 20px presets.$accent-color2
+	.hamburger-wrapper
+		height: 22px
+		width: 32px
+		@include presets.flex-container
+		@include presets.flex-vert-center
+	.hamburger-menu
+		height: inherit
+		width: inherit
+		top: 25px
+		left: 0
+		margin-left: -10px
+		padding-right: 10px
+		position: absolute
+		cursor: pointer
+		@include templates.css3-prefix(transition, margin-left .2s ease-in)
+		.hamburger-wrapper
+			@include presets.flex-container
+			@include presets.flex-vert
+			@include presets.flex-vert-center
+			@include presets.flex-horiz-between
+			.hmenu-1, .hmenu-2, .hmenu-3
+				width: 32px
+				height: 4px
+				// margin-bottom: 5px
+				border-radius: 3px
+				background-color: presets.$accent-color
+		&:hover
+			margin-left: -5px
+			@include templates.css3-prefix(transition, margin-left .2s ease-out)
+	.hamburger-menu-active
+			margin-left: -12px !important
+			@include templates.css3-prefix(transition, margin-left .2s ease-out)
+	
+
+	.playnow-header
+		height: 44px
+		width: 144px
+		max-width: 144px
+		max-width: 144px
+		background-color: presets.$primary-color
+		border-radius: 3px
+		cursor: pointer
+		@include presets.flex-container
+		@include presets.flex-horiz-center
+		@include presets.flex-vert-center
+		@include templates.css3-prefix(transition, all .3s ease-in)
+		.play-arrow
+			color: presets.$primary-color
+		.playnow-header-text
+			margin-top: 12px
+			margin-bottom: unset
+			height: 100%
+			text-transform: capitalize
+			color: presets.$accent-color
+			@include presets.flex-container
+			@include presets.flex-vert-center
+			font-family: 'Bebas Neue'
+			@include presets.bs-text-h2
+			@include templates.css3-prefix(transition, all .3s ease-in)
+		&:hover
+			color: presets.$black-dark
+			background-color: presets.$accent-color
+			@include templates.css3-prefix(transition, all .3s ease-in)	
+		&:hover 
+			> .playnow-header-text, .play-arrow
+				color: presets.$black-dark
+				@include templates.css3-prefix(transition, all .3s ease-in)
 
 	#rightHeader
-		margin: 8px 26px 8px 0
-		span.material-icons.btn-play-left, span.material-icons.btn-play-right
-			position: absolute
-			top: 20px
-			color: presets.$black-dark
-			@include presets.no-select
-		span.material-icons.btn-play-right
-			margin-left: 120px
+		// margin: 8px 26px 8px 0
+		margin-right: 26px
+		@include presets.flex-container
+		@include presets.flex-horiz
+		@include presets.flex-horiz-end
+		@include presets.flex-vert-center
+		// span.material-icons.btn-play-left, span.material-icons.btn-play-right
+		// 	position: absolute
+		// 	top: 20px
+		// 	color: presets.$black-dark
+		// 	@include presets.no-select
+		// span.material-icons.btn-play-right
+		// 	margin-left: 120px
 	#leftHeader
-		margin: -24px 0 0 26px
+		// margin: -24px 0 0 26px
+		margin-left: 26px
 		@include presets.flex-container
+		@include presets.flex-horiz-start
+		@include presets.flex-vert-center
 
 
-.playnow-header
-	height: 50px
-	width: 144px
-	max-width: 144px
-	max-width: 144px
-	margin-top: 0px
-	overflow: visible
-	background-color: presets.$primary-color
-	color: presets.$accent-color
-	border-radius: 3px
-	cursor: pointer
-	@include presets.flex-container
-	@include presets.flex-horiz-center
-	@include presets.flex-vert-center
-	@include templates.css3-prefix(transition, all .3s ease-in)
-	.playnow-header-text
-		margin: auto
-		padding-top: 7px
-		font-family: 'Bebas Neue'
-		@include presets.bs-text-h2
-	&:hover
-		color: presets.$black-dark
-		background-color: presets.$accent-color
-		@include templates.css3-prefix(transition, all .3s ease-in)
 
 
-.hamburger-menu
-	height: 28px
-	width: 32px
-	top: 26px
-	left: 0
-	margin-left: -10px
-	padding-right: 10px
-	position: absolute
-	cursor: pointer
-	@include templates.css3-prefix(transition, margin-left .2s ease-in)
-	.hamburger-wrapper
-		@include presets.flex-container
-		@include presets.flex-vert
-		@include presets.flex-vert-between
-		.hmenu-1, .hmenu-2, .hmenu-3
-			width: 32px
-			height: 4px
-			margin-bottom: 5px
-			border-radius: 3px
-			background-color: presets.$accent-color
-	&:hover
-		margin-left: -5px
-		@include templates.css3-prefix(transition, margin-left .2s ease-out)
-.hamburger-menu-active
-		margin-left: -12px !important
-		@include templates.css3-prefix(transition, margin-left .2s ease-out)
 
-.logo-wrapper 
-	margin-left: 16px
-	.logo-xchaser
-		@include presets.bs-text-h1
-		color: presets.$accent-color
-		cursor: pointer
-		@include templates.css3-prefix(transition, all .15s ease-out)
-		font-family: 'Concert One', presets.$font-sans_serif
-		&:hover
-			@include templates.css3-prefix(transition, all .3s ease-in-out)
-			color: presets.$accent-color2
-			text-shadow: 0 .5px 10px presets.$accent-color2
-	.logo-margin
-		display: inline-block
-		
+
+
 	
 	
 

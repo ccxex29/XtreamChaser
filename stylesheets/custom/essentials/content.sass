@@ -11,6 +11,9 @@ html, body
 	height: 100%
 	margin: 0
 
+a
+	text-decoration: none
+
 .container-lv0
 	position: absolute
 
@@ -29,27 +32,30 @@ html, body
 
 .flex-text
 	@include presets.bs-text-display-3
-	color: white !important
+	text-align: center
+	color: presets.$white-muted
 	cursor: default
 	@include presets.no-select
 	@include presets.font-sans_serif
 	@include templates.css3-prefix(transition, font-size .3s ease-in-out)
 	&:hover
-		font-size: 5rem
+		font-size: 5em
 		@include templates.css3-prefix(transition, font-size .3s ease-in-out)
 	&:hover ~ .underconstruction
-		font-size: 13rem !important
+		font-size: 13em !important
 		@include templates.css3-prefix(transition, font-size .3s ease-in-out)
 
 .page-full
-	background-color: presets.$grey-bg
+	background-color: presets.$primary-bg
 	width: inherit
 	height: inherit
+	@include presets.flex-container
+	@include presets.flex-vert
 
 .underconstruction 
 	font-size: 12rem !important
 	margin-bottom: 48px
-	color: white
+	color: presets.$white-muted
 	cursor: default
 	@include presets.no-select
 	@include templates.css3-prefix(transition, font-size .3s ease-in-out)
@@ -60,7 +66,16 @@ html, body
 		font-size: 5rem
 		@include templates.css3-prefix(transition, font-size .3s ease-in-out)
 
-
+.content-page
+	position: relative
+	margin: 72px 72px 72px 72px
+	height: 100%
+	.maintenance-mode
+		@include presets.flex-container
+		@include presets.flex-vert
+		@include presets.flex-vert-center
+		@include presets.flex-horiz-center
+		height: 100%
 
 
 
