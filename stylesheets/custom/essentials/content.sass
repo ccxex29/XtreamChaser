@@ -25,6 +25,9 @@ a
 
 .container-lv-2
 	position: sticky
+
+.content-disable
+	display: none
 	
 .flex-page	
 	display: inherit
@@ -32,7 +35,7 @@ a
 
 .flex-text
 	@include presets.bs-text-display-3
-	text-align: center
+	@include presets.bs-text-center
 	color: presets.$white-muted
 	cursor: default
 	@include presets.no-select
@@ -77,6 +80,10 @@ a
 		@include presets.flex-horiz-center
 		height: 100%
 
+.box-test
+	min-height: 300px
+	width: 600px
+	background-color: presets.$white-muted
 
 
 

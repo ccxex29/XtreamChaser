@@ -10,34 +10,44 @@
 	<script type="text/javascript" src="scripts/custom/essentials/navigation.js"></script>
 </head>
 <body>
-	<div class="container-lv0 page-full flex-container">
+	<div class="container-lv0 page-full">
 		<header class="header-top">
 			<div class="header-wrapper">
 				<div id="leftHeader" class="leftHeader">
-					<div class="hamburger-menu" aria-label="Navigation Menu" >
-						<div class="hamburger-wrapper">
-							<span class="hmenu-1"></span>
-							<span class="hmenu-2"></span>
-							<span class="hmenu-3"></span>
+					<div class="hamburger-menu-wrapper">
+						<div class="hamburger-menu" aria-label="Navigation Menu" >
+							<div class="hamburger-wrapper">
+								<span class="hmenu-1"></span>
+								<span class="hmenu-2"></span>
+								<span class="hmenu-3"></span>
+							</div>
 						</div>
 					</div>
 					<div class="logo-wrapper" aria-label="XtreamChaser Logo" alt="XtreamChaser Home">
 						<a href="home.html">
-							<h1 class="logo-xchaser logo-margin">XtreamChaser</h1>
+							<div class="div-logo-xchaser">
+								<h1 class="logo-xchaser">XtreamChaser</h1>
+							</div>
 						</a>
 					</div>
 				</div>
 				<div class="centerHeader">
-					<span class="material-icons icon-header-curr">face</span>
+					<span class="material-icons icon-header-curr">home</span>
 				</div>
 				<div id="rightHeader" class="rightHeader">
-					<span class="material-icons btn-play-left">arrow_right</span>
 					<div class="playnow-header" aria-label="Play Now">
+						<div class="play-arrow">
+							<span class="material-icons btn-play-left">arrow_right</span>
+						</div>
 						<div class="playnow-header-text" onclick="location.href='home.html'">
-							Play Now
+							<p>
+								Buy Now
+							</p>
+						</div>
+						<div class="play-arrow">
+							<span class="material-icons btn-play-right">arrow_left</span>
 						</div>
 					</div>
-					<span class="material-icons btn-play-right">arrow_left</span>
 				</div>
 			</div>
 		</header>
@@ -77,11 +87,12 @@
 			</a>
 		</div>
 
-		<div class=" flex-page flex-horiz-center flex-vert-center flex-vert">
-
-			<i class="material-icons underconstruction">sports_tennis</i>
-			<div class="flex-text">
-				The page is being worked on
+		<div class="content-page">
+			<div class="maintenance-mode">
+				<i class="material-icons underconstruction">sports_tennis</i>
+				<div class="flex-text">
+					The page is being worked on
+				</div>
 			</div>
 		</div>
 	</div>

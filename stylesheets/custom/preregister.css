@@ -21,27 +21,6 @@ header.header-top {
   position: relative;
   margin: 0;
 }
-.header-wrapper .centerHeader {
-  position: absolute;
-  left: 50vw;
-  right: 50vw;
-  margin-top: 12px;
-  height: 40px;
-  width: 40px;
-  display: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-}
-.header-wrapper .centerHeader .icon-header-curr {
-  color: #FFAD01;
-  height: 40px;
-  width: 40px;
-  font-size: 2.5rem;
-}
 .header-wrapper .logo-wrapper {
   margin-left: 20px;
   margin-top: -3px;
@@ -80,7 +59,7 @@ header.header-top {
   width: inherit;
   top: 25px;
   left: 0;
-  margin-left: -10px;
+  margin-left: -13px;
   padding-right: 10px;
   position: absolute;
   cursor: pointer;
@@ -115,7 +94,7 @@ header.header-top {
   transition: margin-left 0.2s ease-out;
 }
 .header-wrapper .hamburger-menu-active {
-  margin-left: -12px !important;
+  margin-left: -15px !important;
   -webkit-transition: margin-left 0.2s ease-out;
   -moz-transition: margin-left 0.2s ease-out;
   -ms-transition: margin-left 0.2s ease-out;
@@ -276,6 +255,10 @@ a {
   position: sticky;
 }
 
+.content-disable {
+  display: none;
+}
+
 .flex-page {
   display: inherit;
   width: inherit;
@@ -287,7 +270,7 @@ a {
   font-size: 4.5rem;
   font-weight: 300;
   line-height: 1.2;
-  text-align: center;
+  text-align: center !important;
   color: #D0D0D0;
   cursor: default;
   -webkit-user-select: none;
@@ -381,6 +364,12 @@ a {
   align-items: center !important;
   justify-content: center !important;
   height: 100%;
+}
+
+.box-test {
+  min-height: 300px;
+  width: 600px;
+  background-color: #D0D0D0;
 }
 
 .slidingmenu {
