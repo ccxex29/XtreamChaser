@@ -7,28 +7,41 @@
 @use "essentials/sets"
 
 $imageSizeWidth: 600px
+$imageSizeWidthAlt1: 400px
+$imageSizeWidthAlt2: 280px
+$imageSizeWidthAlt3: 180px
 $imageSizeHeight: 300px
+$imageSizeHeightAlt1: 200px
+$imageSizeHeightAlt2: 140px
+$imageSizeHeightAlt3: 90px
+$cardSizeHeight: 800px
 
 .gallery-page
 	overflow-y: auto
+	overflow-x: hidden
 	padding: 72px
 	height: 100%
 	@include presets.flex-container
 	@include presets.flex-horiz
 	@include presets.flex-horiz-center
+	.gallery-page-x-left
+		margin-right: 64px
 	.gallery-page-x
 		@include presets.flex-container
 		@include presets.flex-vert
 		@include presets.flex-vert-center
-		@include templates.css3-prefix(flex, 1)
+		// @include templates.css3-prefix(flex, 1)
 		> div
 			margin-bottom: 32px
 			width: $imageSizeWidth
 			max-width: $imageSizeWidth
+			height: $cardSizeHeight
+			@include presets.font-sans_serif
 			> .image-card
 				margin-bottom: 8px
 				width: $imageSizeWidth
 				max-width: $imageSizeWidth
+				min-width: $imageSizeWidth
 				height: $imageSizeHeight
 				max-height: $imageSizeHeight
 				min-height: $imageSizeHeight
@@ -37,8 +50,7 @@ $imageSizeHeight: 300px
 					width: $imageSizeWidth
 					display: inline-block
 					&.bridge-photo
-						margin: -40px 0 0 0
-					&.man-evening
+						margin: -10% 0 0 0
 			h3
 				@include presets.bs-text-h3
 				color: presets.$white-muted
@@ -52,3 +64,52 @@ $imageSizeHeight: 300px
 				@include presets.bs-text-small 
 			.muted
 				@include presets.bs-text-muted
+
+@media screen and (max-width: 1367px)
+	.gallery-page
+		.gallery-page-x-left
+		.gallery-page-x
+			> div
+				width: $imageSizeWidthAlt1
+				max-width: $imageSizeWidthAlt1
+				> .image-card
+					width: $imageSizeWidthAlt1
+					max-width: $imageSizeWidthAlt1
+					min-width: $imageSizeWidthAlt1
+					height: $imageSizeHeightAlt1
+					max-height: $imageSizeHeightAlt1
+					min-height: $imageSizeHeightAlt1
+					> img
+						width: $imageSizeWidthAlt1
+@media screen and (max-width: 980px)
+	.gallery-page
+		.gallery-page-x-left
+		.gallery-page-x
+			> div
+				width: $imageSizeWidthAlt2
+				max-width: $imageSizeWidthAlt2
+				> .image-card
+					width: $imageSizeWidthAlt2
+					max-width: $imageSizeWidthAlt2
+					min-width: $imageSizeWidthAlt2
+					height: $imageSizeHeightAlt2
+					max-height: $imageSizeHeightAlt2
+					min-height: $imageSizeHeightAlt2
+					> img
+						width: $imageSizeWidthAlt2
+@media screen and (max-width: 680px)
+	.gallery-page
+		.gallery-page-x-left
+		.gallery-page-x
+			> div
+				width: $imageSizeWidthAlt3
+				max-width: $imageSizeWidthAlt3
+				> .image-card
+					width: $imageSizeWidthAlt3
+					max-width: $imageSizeWidthAlt3
+					min-width: $imageSizeWidthAlt3
+					height: $imageSizeHeightAlt3
+					max-height: $imageSizeHeightAlt3
+					min-height: $imageSizeHeightAlt3
+					> img
+						width: $imageSizeWidthAlt3
