@@ -21,13 +21,13 @@ $greyishWhite: #D2D2D2
 // h6
 // 	@include variables.bs-text-h6
 
-$headerWidth: 10vh
 
 header.header-top
 	position: relative
 	background-color: presets.$primary-color
-	height: $headerWidth
-	max-height: $headerWidth
+	height: 10%
+	max-height: 10%
+	min-height: 64px
 	overflow: visible
 	width: 100%
 	box-shadow: 0 4px 16px presets.$primary-color
@@ -80,7 +80,6 @@ header.header-top
 	.hamburger-menu
 		height: inherit
 		width: inherit
-		// top: 25px
 		left: 0
 		margin-left: -13px
 		padding-right: 30px
@@ -102,7 +101,7 @@ header.header-top
 			margin-left: -5px
 			@include templates.css3-prefix(transition, margin-left .2s ease-out)
 	.hamburger-menu-active
-			margin-left: -15px !important
+			margin-left: -18px !important
 			@include templates.css3-prefix(transition, margin-left .2s ease-out)
 	
 
@@ -147,28 +146,12 @@ header.header-top
 		@include presets.flex-horiz
 		@include presets.flex-horiz-end
 		@include presets.flex-vert-center
-		// span.material-icons.btn-play-left, span.material-icons.btn-play-right
-		// 	position: absolute
-		// 	top: 20px
-		// 	color: presets.$black-dark
-		// 	@include presets.no-select
-		// span.material-icons.btn-play-right
-		// 	margin-left: 120px
 	#leftHeader
 		// margin: -24px 0 0 26px
 		margin-left: 26px
 		@include presets.flex-container
 		@include presets.flex-horiz-start
 		@include presets.flex-vert-center
-
-
-
-
-
-
-
-	
-	
 
 // .header-desktop
 	

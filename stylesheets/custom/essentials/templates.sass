@@ -1,6 +1,7 @@
 
 //    Vendor Prefixes    //
 @mixin css3-prefix($prop, $value) 
+	-khtml-#{$prop}: #{$value}
 	-webkit-#{$prop}: #{$value}
 	-moz-#{$prop}: #{$value}
 	-ms-#{$prop}: #{$value}

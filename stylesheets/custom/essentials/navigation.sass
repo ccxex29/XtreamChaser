@@ -9,21 +9,22 @@
 	@include presets.flex-container
 	@include presets.flex-vert
 	// top: 87px
-	top: 10%
+	// @include templates.css3-prefix(top, calc(10px + 10vh))
+	top: 10vh
 	left: 0
 	margin-left: -20px
 	max-width: 100vw
 	max-height: 100vh
 	.slidingmenu-content
-		width: 264px
+		width: 274px
 		height: 56px
 		max-height: 56px
 		min-height: 48px
-		max-width: 264px
+		max-width: 274px
 		min-width: 144px
 		margin-bottom: 16px !important
 		margin-left: -350px
-		padding: 0 50px 0 50px
+		padding: 0 50px 0 40px
 		border-radius: 0 0 45px 0
 		background-color: presets.$primary-color
 		color: presets.$accent-color
@@ -42,7 +43,7 @@
 			@include presets.flex-container
 			@include presets.flex-horiz
 			> .icons-sliding-menu
-				margin: 2px 14px 0 0
+				margin: 2px 24px 0 0
 		&:hover
 			background-color: presets.$accent-color
 			color: presets.$secondary-color
@@ -53,4 +54,7 @@
 		margin-left: 0
 		@include templates.css3-prefix(transition, margin-left .15s)
 
+@media screen and (max-height: 640px)
+	.slidingmenu
+		top: 80px
 

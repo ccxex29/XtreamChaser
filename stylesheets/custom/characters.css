@@ -1,17 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Concert+One&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC:700&display=swap");
 header.header-top {
   position: relative;
   background-color: #0C0803;
-  height: 10vh;
-  max-height: 10vh;
+  height: 10%;
+  max-height: 10%;
+  min-height: 64px;
   overflow: visible;
   width: 100%;
   box-shadow: 0 4px 16px #0C0803;
 }
 
 .header-wrapper {
+  -khtml-display: flex;
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -29,6 +32,7 @@ header.header-top {
 .header-wrapper .logo-wrapper .div-logo-xchaser .logo-xchaser {
   color: #FFAD01;
   cursor: pointer;
+  -khtml-transition: all 0.15s ease-out;
   -webkit-transition: all 0.15s ease-out;
   -moz-transition: all 0.15s ease-out;
   -ms-transition: all 0.15s ease-out;
@@ -37,6 +41,7 @@ header.header-top {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .header-wrapper .logo-wrapper .div-logo-xchaser .logo-xchaser:hover {
+  -khtml-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -48,6 +53,7 @@ header.header-top {
 .header-wrapper .hamburger-menu-wrapper {
   height: 22px;
   width: 32px;
+  -khtml-display: flex;
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -58,6 +64,7 @@ header.header-top {
 .header-wrapper .hamburger-wrapper {
   height: 22px;
   width: 32px;
+  -khtml-display: flex;
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -73,6 +80,7 @@ header.header-top {
   padding-right: 30px;
   position: absolute;
   cursor: pointer;
+  -khtml-transition: margin-left 0.2s ease-in;
   -webkit-transition: margin-left 0.2s ease-in;
   -moz-transition: margin-left 0.2s ease-in;
   -ms-transition: margin-left 0.2s ease-in;
@@ -80,6 +88,7 @@ header.header-top {
   transition: margin-left 0.2s ease-in;
 }
 .header-wrapper .hamburger-menu .hamburger-wrapper {
+  -khtml-display: flex;
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -97,6 +106,7 @@ header.header-top {
 }
 .header-wrapper .hamburger-menu:hover {
   margin-left: -5px;
+  -khtml-transition: margin-left 0.2s ease-out;
   -webkit-transition: margin-left 0.2s ease-out;
   -moz-transition: margin-left 0.2s ease-out;
   -ms-transition: margin-left 0.2s ease-out;
@@ -104,7 +114,8 @@ header.header-top {
   transition: margin-left 0.2s ease-out;
 }
 .header-wrapper .hamburger-menu-active {
-  margin-left: -15px !important;
+  margin-left: -18px !important;
+  -khtml-transition: margin-left 0.2s ease-out;
   -webkit-transition: margin-left 0.2s ease-out;
   -moz-transition: margin-left 0.2s ease-out;
   -ms-transition: margin-left 0.2s ease-out;
@@ -119,6 +130,7 @@ header.header-top {
   background-color: #0C0803;
   border-radius: 3px;
   cursor: pointer;
+  -khtml-display: flex;
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -126,6 +138,7 @@ header.header-top {
   display: flex;
   justify-content: center !important;
   align-items: center !important;
+  -khtml-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -ms-transition: all 0.3s ease-in;
@@ -141,6 +154,7 @@ header.header-top {
   height: 100%;
   text-transform: capitalize;
   color: #FFAD01;
+  -khtml-display: flex;
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -152,6 +166,7 @@ header.header-top {
   font-weight: 500;
   line-height: 1.2;
   font-size: 2rem;
+  -khtml-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -ms-transition: all 0.3s ease-in;
@@ -161,6 +176,7 @@ header.header-top {
 .header-wrapper .playnow-header:hover {
   color: #2F2F2F;
   background-color: #FFAD01;
+  -khtml-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -ms-transition: all 0.3s ease-in;
@@ -169,6 +185,7 @@ header.header-top {
 }
 .header-wrapper .playnow-header:hover > .playnow-header-text, .header-wrapper .playnow-header:hover .play-arrow {
   color: #2F2F2F;
+  -khtml-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -ms-transition: all 0.3s ease-in;
@@ -177,6 +194,7 @@ header.header-top {
 }
 .header-wrapper #rightHeader {
   margin-right: 26px;
+  -khtml-display: flex;
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -188,6 +206,7 @@ header.header-top {
 }
 .header-wrapper #leftHeader {
   margin-left: 26px;
+  -khtml-display: flex;
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -216,6 +235,7 @@ header.header-top {
   }
 }
 .flex-container {
+  -khtml-display: flex;
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -277,6 +297,26 @@ a {
   display: none;
 }
 
+.content-children-disable * {
+  display: none;
+}
+.content-children-disable:hover {
+  display: none;
+}
+.content-children-disable:active {
+  display: none;
+}
+.content-children-disable:link {
+  display: none;
+}
+
+.scrollable-page {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 72px;
+  height: 100%;
+}
+
 .flex-page {
   display: inherit;
   width: inherit;
@@ -289,8 +329,10 @@ a {
   font-weight: 300;
   line-height: 1.2;
   text-align: center !important;
+  font-size: 8vmin !important;
   color: #D0D0D0;
   cursor: default;
+  -khtml-user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -298,6 +340,7 @@ a {
   user-select: none;
   -webkit-touch-callout: none;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  -khtml-transition: font-size 0.3s ease-in-out;
   -webkit-transition: font-size 0.3s ease-in-out;
   -moz-transition: font-size 0.3s ease-in-out;
   -ms-transition: font-size 0.3s ease-in-out;
@@ -305,7 +348,8 @@ a {
   transition: font-size 0.3s ease-in-out;
 }
 .flex-text:hover {
-  font-size: 5em;
+  font-size: 8.5vmin !important;
+  -khtml-transition: font-size 0.3s ease-in-out;
   -webkit-transition: font-size 0.3s ease-in-out;
   -moz-transition: font-size 0.3s ease-in-out;
   -ms-transition: font-size 0.3s ease-in-out;
@@ -313,7 +357,8 @@ a {
   transition: font-size 0.3s ease-in-out;
 }
 .flex-text:hover ~ .underconstruction {
-  font-size: 13em !important;
+  font-size: 28vmin !important;
+  -khtml-transition: font-size 0.3s ease-in-out;
   -webkit-transition: font-size 0.3s ease-in-out;
   -moz-transition: font-size 0.3s ease-in-out;
   -ms-transition: font-size 0.3s ease-in-out;
@@ -322,9 +367,10 @@ a {
 }
 
 .page-full {
-  background-color: #2F2F2F;
+  background-color: #1F1F1F;
   width: inherit;
   height: inherit;
+  -khtml-display: flex;
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -334,16 +380,18 @@ a {
 }
 
 .underconstruction {
-  font-size: 12rem !important;
+  font-size: 26vmin !important;
   margin-bottom: 48px;
   color: #D0D0D0;
   cursor: default;
+  -khtml-user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
+  -khtml-transition: font-size 0.3s ease-in-out;
   -webkit-transition: font-size 0.3s ease-in-out;
   -moz-transition: font-size 0.3s ease-in-out;
   -ms-transition: font-size 0.3s ease-in-out;
@@ -351,7 +399,8 @@ a {
   transition: font-size 0.3s ease-in-out;
 }
 .underconstruction:hover {
-  font-size: 13rem !important;
+  font-size: 28vmin !important;
+  -khtml-transition: font-size 0.3s ease-in-out;
   -webkit-transition: font-size 0.3s ease-in-out;
   -moz-transition: font-size 0.3s ease-in-out;
   -ms-transition: font-size 0.3s ease-in-out;
@@ -359,7 +408,8 @@ a {
   transition: font-size 0.3s ease-in-out;
 }
 .underconstruction:hover ~ .flex-text {
-  font-size: 5rem;
+  font-size: 8.5vmin !important;
+  -khtml-transition: font-size 0.3s ease-in-out;
   -webkit-transition: font-size 0.3s ease-in-out;
   -moz-transition: font-size 0.3s ease-in-out;
   -ms-transition: font-size 0.3s ease-in-out;
@@ -369,10 +419,11 @@ a {
 
 .content-page {
   position: relative;
-  margin: 72px 72px 72px 72px;
+  margin: 72px;
   height: 100%;
 }
 .content-page .maintenance-mode {
+  -khtml-display: flex;
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -393,28 +444,29 @@ a {
 .slidingmenu {
   overflow: visible;
   position: absolute;
+  -khtml-display: flex;
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
   -o-display: flex;
   display: flex;
   flex-direction: column;
-  top: 10%;
+  top: 10vh;
   left: 0;
   margin-left: -20px;
   max-width: 100vw;
   max-height: 100vh;
 }
 .slidingmenu .slidingmenu-content {
-  width: 264px;
+  width: 274px;
   height: 56px;
   max-height: 56px;
   min-height: 48px;
-  max-width: 264px;
+  max-width: 274px;
   min-width: 144px;
   margin-bottom: 16px !important;
   margin-left: -350px;
-  padding: 0 50px 0 50px;
+  padding: 0 50px 0 40px;
   border-radius: 0 0 45px 0;
   background-color: #0C0803;
   color: #FFAD01;
@@ -427,6 +479,7 @@ a {
   font-weight: 500;
   line-height: 1.2;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  -khtml-display: flex;
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -434,6 +487,7 @@ a {
   display: flex;
   align-items: center !important;
   justify-content: flex-start !important;
+  -khtml-transition: margin-left 0.1s ease-in;
   -webkit-transition: margin-left 0.1s ease-in;
   -moz-transition: margin-left 0.1s ease-in;
   -ms-transition: margin-left 0.1s ease-in;
@@ -441,6 +495,7 @@ a {
   transition: margin-left 0.1s ease-in;
 }
 .slidingmenu .slidingmenu-content .slidingmenu-content-text {
+  -khtml-display: flex;
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -449,13 +504,14 @@ a {
   flex-direction: row;
 }
 .slidingmenu .slidingmenu-content .slidingmenu-content-text > .icons-sliding-menu {
-  margin: 2px 14px 0 0;
+  margin: 2px 24px 0 0;
 }
 .slidingmenu .slidingmenu-content:hover {
   background-color: #FFAD01;
   color: #1F1F1F;
   box-shadow: 0 1px 1px #FDA90F;
   background-image: linear-gradient(110deg, #1F1F1F 10.5%, #FDA90F 10.5%);
+  -khtml-transition: margin-left 0.15s;
   -webkit-transition: margin-left 0.15s;
   -moz-transition: margin-left 0.15s;
   -ms-transition: margin-left 0.15s;
@@ -464,11 +520,21 @@ a {
 }
 .slidingmenu .slidingmenu-content-active {
   margin-left: 0;
+  -khtml-transition: margin-left 0.15s;
   -webkit-transition: margin-left 0.15s;
   -moz-transition: margin-left 0.15s;
   -ms-transition: margin-left 0.15s;
   -o-transition: margin-left 0.15s;
   transition: margin-left 0.15s;
+}
+
+@media screen and (max-height: 640px) {
+  .slidingmenu {
+    top: 80px;
+  }
+}
+.characters-page {
+  color: white;
 }
 
 /*# sourceMappingURL=characters.css.map */

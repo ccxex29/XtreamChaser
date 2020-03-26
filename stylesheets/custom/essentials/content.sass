@@ -14,6 +14,7 @@ html, body
 a
 	text-decoration: none
 
+
 .container-lv0
 	position: absolute
 
@@ -28,7 +29,20 @@ a
 
 .content-disable
 	display: none
-	
+
+.content-children-disable
+	*
+		display: none 
+	&:hover
+		display: none
+	&:active
+		display: none
+	&:link
+		display: none
+
+.scrollable-page
+	@include presets.scrollable-page
+
 .flex-page	
 	display: inherit
 	width: inherit
@@ -36,16 +50,17 @@ a
 .flex-text
 	@include presets.bs-text-display-3
 	@include presets.bs-text-center
+	font-size: 8vmin !important
 	color: presets.$white-muted
 	cursor: default
 	@include presets.no-select
 	@include presets.font-sans_serif
 	@include templates.css3-prefix(transition, font-size .3s ease-in-out)
 	&:hover
-		font-size: 5em
+		font-size: 8.5vmin !important
 		@include templates.css3-prefix(transition, font-size .3s ease-in-out)
 	&:hover ~ .underconstruction
-		font-size: 13em !important
+		font-size: 28vmin !important
 		@include templates.css3-prefix(transition, font-size .3s ease-in-out)
 
 .page-full
@@ -56,22 +71,22 @@ a
 	@include presets.flex-vert
 
 .underconstruction 
-	font-size: 12rem !important
+	font-size: 26vmin !important
 	margin-bottom: 48px
 	color: presets.$white-muted
 	cursor: default
 	@include presets.no-select
 	@include templates.css3-prefix(transition, font-size .3s ease-in-out)
 	&:hover
-		font-size: 13rem !important
+		font-size: 28vmin !important
 		@include templates.css3-prefix(transition, font-size .3s ease-in-out)
 	&:hover ~ .flex-text
-		font-size: 5rem
+		font-size: 8.5vmin !important
 		@include templates.css3-prefix(transition, font-size .3s ease-in-out)
 
 .content-page
 	position: relative
-	margin: 72px 72px 72px 72px
+	margin: 72px
 	height: 100%
 	.maintenance-mode
 		@include presets.flex-container
