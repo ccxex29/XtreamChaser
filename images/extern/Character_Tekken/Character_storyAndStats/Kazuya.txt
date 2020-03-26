@@ -1,0 +1,12 @@
+IT'S TIME FOR YOU TO MEET YOUR END!
+
+Kazuya was raised as the heir to the Mishima Zaibatsu, but 
+rebelled against his father Heihachi. After awakening the 
+power of the devil within him, he's finally able to control it.
+
+Stat :
+
+HP  : 82 / 100
+DEF : 20 / 100
+ATK : 53 / 100
+AGI : 21 / 100
