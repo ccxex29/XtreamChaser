@@ -2,15 +2,7 @@ It was no secret that G Corporation was locked in a power struggle with
 the Mishima Zaibatsu. However, within G Corp itself, another battle was 
 raging: the battle to create the ultimate next-gen humanoid weapon.
 
-On one side was the development team behind the Jack series led by Jane; 
-on the other was the research team responsible for Gigas, a bio-enhanced 
-super human. With his massive size and uncanny mobility, Gigas was hailed 
-for his versatility in combat, and some saw him as more than capable of 
-dislodging the Jack series from its position as G Corp's premier weapon.
 
-Both teams entered their weapons into the King of Iron Fist Tournament to
- decide once and for all which was the best.
- 
  Stat :
 
 HP  : 90 / 100
