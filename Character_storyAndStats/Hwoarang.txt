@@ -1,0 +1,15 @@
+COME AT ME! I'LL TAKE YOU DOWN
+
+Hwoarang sees one man as his rival: Jin Kazama. Jin, CEO of the Mishima Zaibatsu, 
+declared war against the world, and in the ensuing turmoil vanished suddenly, 
+without a trace. Suspecting there is more to Jin's disappearance than meets 
+the eye, Hwoarang vowed to track him down.
+
+
+
+Stat :
+
+HP  : 63 / 100
+DEF : 48 / 100
+ATK : 30 / 100
+AGI : 70 / 100

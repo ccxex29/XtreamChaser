@@ -1,8 +1,8 @@
 https://www.flaticon.com/authors/freepik:
-heart
-sword
-running shoes
-target
+HP
+ATK
+AGI
+Defense
 
 
 https://material.io:

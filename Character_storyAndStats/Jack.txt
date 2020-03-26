@@ -1,0 +1,11 @@
+It was no secret that G Corporation was locked in a power struggle with 
+the Mishima Zaibatsu. However, within G Corp itself, another battle was 
+raging: the battle to create the ultimate next-gen humanoid weapon.
+
+
+ Stat :
+
+HP  : 90 / 100
+DEF : 60 / 100
+ATK : 18 / 100
+AGI : 13 / 100

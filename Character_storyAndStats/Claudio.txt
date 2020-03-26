@@ -1,0 +1,14 @@
+HIS IS NO PLACE FOR AMATEURS.
+
+The Sirius Marksmen, a secret society of exorcists, has exerted a profound influence on 
+European history for hundreds of years. The most powerful exorcist of the current generation 
+is Claudio, who was visiting the Mishima Zaibatsu as their groups join forces to subdue a certain evil.
+
+
+
+Stat :
+
+HP  : 53 / 100
+DEF : 22 / 100
+ATK : 62 / 100
+AGI : 70 / 100

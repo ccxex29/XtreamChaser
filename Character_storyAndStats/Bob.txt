@@ -1,0 +1,9 @@
+Once a fighter who had won the hearts of fans with his excellent 
+sensibility and handsome good looks, he decided to transform himself 
+completely by gaining weight.
+Stat :
+
+HP  : 90 / 100
+DEF : 30 / 100
+ATK : 50 / 100
+AGI : 20 / 100
