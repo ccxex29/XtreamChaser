@@ -21,11 +21,14 @@ $greyishWhite: #D2D2D2
 // h6
 // 	@include variables.bs-text-h6
 
+
 header.header-top
 	position: relative
 	background-color: presets.$primary-color
-	height: 72px
-	max-height: 72px
+	height: 10%
+	max-height: 10%
+	min-height: 64px
+	overflow: visible
 	width: 100%
 	box-shadow: 0 4px 16px presets.$primary-color
 	
@@ -36,6 +39,7 @@ header.header-top
 	@include presets.flex-vert-center
 	position: relative
 	margin: 0
+	height: 100%
 	// .centerHeader
 	// 	position: absolute
 	// 	left: 50vw
@@ -51,8 +55,8 @@ header.header-top
 	// 		width: 40px
 	// 		font-size: 2.5rem
 	.logo-wrapper 
-		margin-left: 20px
-		margin-top: -3px
+		margin-left: 5px
+		// margin-top: -3px
 		.div-logo-xchaser
 			.logo-xchaser
 				color: presets.$accent-color
@@ -63,6 +67,11 @@ header.header-top
 					@include templates.css3-prefix(transition, all .3s ease-in-out)
 					color: presets.$accent-color2
 					text-shadow: 0 .5px 20px presets.$accent-color2
+	.hamburger-menu-wrapper
+		height: 22px
+		width: 32px
+		@include presets.flex-container
+		@include presets.flex-vert-center
 	.hamburger-wrapper
 		height: 22px
 		width: 32px
@@ -71,10 +80,9 @@ header.header-top
 	.hamburger-menu
 		height: inherit
 		width: inherit
-		top: 25px
 		left: 0
 		margin-left: -13px
-		padding-right: 10px
+		padding-right: 30px
 		position: absolute
 		cursor: pointer
 		@include templates.css3-prefix(transition, margin-left .2s ease-in)
@@ -93,7 +101,7 @@ header.header-top
 			margin-left: -5px
 			@include templates.css3-prefix(transition, margin-left .2s ease-out)
 	.hamburger-menu-active
-			margin-left: -15px !important
+			margin-left: -18px !important
 			@include templates.css3-prefix(transition, margin-left .2s ease-out)
 	
 
@@ -138,28 +146,12 @@ header.header-top
 		@include presets.flex-horiz
 		@include presets.flex-horiz-end
 		@include presets.flex-vert-center
-		// span.material-icons.btn-play-left, span.material-icons.btn-play-right
-		// 	position: absolute
-		// 	top: 20px
-		// 	color: presets.$black-dark
-		// 	@include presets.no-select
-		// span.material-icons.btn-play-right
-		// 	margin-left: 120px
 	#leftHeader
 		// margin: -24px 0 0 26px
 		margin-left: 26px
 		@include presets.flex-container
 		@include presets.flex-horiz-start
 		@include presets.flex-vert-center
-
-
-
-
-
-
-
-	
-	
 
 // .header-desktop
 	
@@ -173,3 +165,8 @@ header.header-top
 @media screen and (max-width: $mobile-width)
 	.header-desktop
 		display: none
+@media screen and (max-width: 480px)
+	.playnow-header
+		display: none
+		*
+			display: none

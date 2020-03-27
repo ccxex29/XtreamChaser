@@ -17,7 +17,7 @@ $secondary-color: $black-darker
 $tertiary-color: $black-dark
 $accent-color: $orange-mortalkombat
 $accent-color2: $orange-mortalkombat2
-$primary-bg: $black-dark
+$primary-bg: $black-darker
 $secondary-bg: $grey-bg
 $font-sans_serif: 'Roboto', 'Helvetica', 'Arial', sans-serif
 
@@ -29,6 +29,9 @@ $muted-text: #6C757D
 
 @mixin font-sans_serif
 	font-family: $font-sans_serif
+
+@mixin font-serif
+	font-family: 'Playfair Display SC', 'Times New Roman', 'Liberation Serif'
 
 @mixin flex-container
 	@include templates.css3-prefix(display, flex)
@@ -62,6 +65,12 @@ $muted-text: #6C757D
 
 @mixin flex-horiz
 	flex-direction: row
+
+@mixin scrollable-page
+	overflow-y: auto
+	overflow-x: hidden
+	padding: 72px
+	height: 100%
 
 @mixin no-select
 	@include templates.css3-prefix(user-select, none)

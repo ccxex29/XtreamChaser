@@ -7,48 +7,139 @@
 @use "essentials/sets"
 
 $imageSizeWidth: 600px
+$imageSizeWidthAlt1: 400px
+$imageSizeWidthAlt2: 280px
+$imageSizeWidthAlt3: 180px
 $imageSizeHeight: 300px
+$imageSizeHeightAlt1: 200px
+$imageSizeHeightAlt2: 140px
+$imageSizeHeightAlt3: 90px
+$cardSizeHeight: $imageSizeHeight + 200px
+$cardSizeHeightAlt1: $imageSizeHeight + 100px
+$cardSizeHeightAlt2: $imageSizeHeight + 80px
+$cardSizeHeightAlt3: $imageSizeHeight + 40px
+
+$bg-topSize: 648px
+
+.bg-topsection
+	position: static
+	overflow: visible
+	padding: 0 0 $bg-topSize 0 !important
+	// height: 500px 
+	margin-bottom: calc(-#{$bg-topSize} + 72px)
+	margin-top: -72px
+	width: 100vw
+	background-image: linear-gradient(to bottom, rgba(0,0,0, 0) 30%, rgb(31, 31, 31) 100%), url('../../images/extern/backgrounds/building-desktop.jpg')
+
 
 .gallery-page
-	overflow-y: auto
-	padding: 72px
-	height: 100%
 	@include presets.flex-container
-	@include presets.flex-horiz
-	@include presets.flex-horiz-center
-	.gallery-page-x
+	@include presets.flex-vert
+	@include presets.flex-vert-center
+	h1
+		@include presets.bs-text-h1
+		@include presets.font-serif
+		font-size: 8vmin !important
+		font-weight: 700 !important
+		letter-spacing: 0.05em
+		text-transform: uppercase
+		color: presets.$accent-color
+		padding-bottom: 16px
+		padding-top: 6vh
+	div
+		padding-bottom: 72px
+		span
+			&.horiz-line
+				width: 120px
+				height: 3px
+				background-color: presets.$accent-color
+				border-radius: 4px
+				display: inline-block
+	.gallery-page-content
 		@include presets.flex-container
-		@include presets.flex-vert
-		@include presets.flex-vert-center
-		@include templates.css3-prefix(flex, 1)
-		> div
-			margin-bottom: 32px
-			width: $imageSizeWidth
-			max-width: $imageSizeWidth
-			> .image-card
-				margin-bottom: 8px
+		@include presets.flex-horiz
+		@include presets.flex-horiz-center
+		.gallery-page-x-left
+			margin-right: 64px
+		.gallery-page-x
+			@include presets.flex-container
+			@include presets.flex-vert
+			@include presets.flex-vert-center
+			// @include templates.css3-prefix(flex, 1)
+			
+			> div
+				@include presets.font-sans_serif
+				margin-bottom: 1vh
 				width: $imageSizeWidth
 				max-width: $imageSizeWidth
-				height: $imageSizeHeight
-				max-height: $imageSizeHeight
-				min-height: $imageSizeHeight
-				overflow: hidden
-				> img
+				height: $cardSizeHeight
+				@media screen and (max-width: 1420px)
+					width: $imageSizeWidthAlt1
+					max-width: $imageSizeWidthAlt1
+					height: $cardSizeHeightAlt1
+				@media screen and (max-width: 1020px)
+					width: $imageSizeWidthAlt2
+					max-width: $imageSizeWidthAlt2
+					height: $cardSizeHeightAlt2
+				@media screen and (max-width: 770px)
+					width: $imageSizeWidthAlt3
+					max-width: $imageSizeWidthAlt3
+				> .image-card
+					margin-bottom: 8px
 					width: $imageSizeWidth
-					display: inline-block
-					&.bridge-photo
-						margin: -40px 0 0 0
-					&.man-evening
-			h3
-				@include presets.bs-text-h3
-				color: presets.$white-muted
-				margin-bottom: 8px
-			p
-				margin-bottom: 64px
-				color: presets.$white-muted
-				@include presets.bs-text-display-4
-				font-size: 1.2rem !important
-			small
-				@include presets.bs-text-small 
-			.muted
-				@include presets.bs-text-muted
+					max-width: $imageSizeWidth
+					min-width: $imageSizeWidth
+					height: $imageSizeHeight
+					max-height: $imageSizeHeight
+					min-height: $imageSizeHeight
+					overflow: hidden
+					@media screen and (max-width: 1420px)
+						width: $imageSizeWidthAlt1
+						max-width: $imageSizeWidthAlt1
+						min-width: $imageSizeWidthAlt1
+						height: $imageSizeHeightAlt1
+						max-height: $imageSizeHeightAlt1
+						min-height: $imageSizeHeightAlt1
+					@media screen and (max-width: 1020px)
+						width: $imageSizeWidthAlt2
+						max-width: $imageSizeWidthAlt2
+						min-width: $imageSizeWidthAlt2
+						height: $imageSizeHeightAlt2
+						max-height: $imageSizeHeightAlt2
+						min-height: $imageSizeHeightAlt2
+					@media screen and (max-width: 770px)
+						width: $imageSizeWidthAlt3
+						max-width: $imageSizeWidthAlt3
+						min-width: $imageSizeWidthAlt3
+						height: $imageSizeHeightAlt3
+						max-height: $imageSizeHeightAlt3
+						min-height: $imageSizeHeightAlt3
+					> img
+						width: $imageSizeWidth
+						height: auto
+						display: inline-block
+						@media screen and (max-width: 1420px)
+							width: $imageSizeWidthAlt1
+						@media screen and (max-width: 1020px)
+							width: $imageSizeWidthAlt2
+						@media screen and (max-width: 770px)
+							width: $imageSizeWidthAlt3
+						&.bridge-photo
+							margin: 0 0 0 0
+				h3
+					@include presets.bs-text-h3
+					color: presets.$white-muted
+					margin-bottom: 8px
+				p
+					margin-bottom: 64px
+					color: presets.$white-muted
+					@include presets.bs-text-display-4
+					font-size: 1.2rem !important
+				small
+					@include presets.bs-text-small 
+				.muted
+					@include presets.bs-text-muted
+				&:hover
+					h3, p
+						color: presets.$accent-color
+	
