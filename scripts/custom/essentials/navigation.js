@@ -35,7 +35,7 @@ function navMenu() {
 	}
 }
 
-$(window).click(function (event) {
+$(window).click(function (event) { //dunno why...
 	if(!$(event.target).is('.slidingmenu') && 
 		!$(event.target).is('div.header-wrapper') &&
 		!$(event.target).is('div.playnow-header-text') &&
@@ -60,5 +60,5 @@ $(window).click(function (event) {
 		}
 		triggerNav();
 	}
-	console.log(event.target);
+	// console.log(event.target);
 });

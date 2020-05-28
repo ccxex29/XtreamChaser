@@ -193,7 +193,7 @@ header.header-top {
   transition: all 0.3s ease-in;
 }
 .header-wrapper .playnow-header:hover {
-  color: #2F2F2F;
+  color: #0C0803;
   background-color: #FFAD01;
   -khtml-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
@@ -203,7 +203,7 @@ header.header-top {
   transition: all 0.3s ease-in;
 }
 .header-wrapper .playnow-header:hover > .playnow-header-text, .header-wrapper .playnow-header:hover .play-arrow {
-  color: #2F2F2F;
+  color: #0C0803;
   -khtml-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
@@ -632,6 +632,14 @@ a {
   align-items: center !important;
   height: 60vh;
   width: 100%;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 1000px) {
+  .characters-page .characters-page-content .character-focus {
+    flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
 }
 .characters-page .characters-page-content .character-focus .character-model {
   max-height: 60vh;
@@ -641,13 +649,20 @@ a {
 .characters-page .characters-page-content .character-focus .character-model img {
   height: 60vh;
   width: auto;
+  display: none;
 }
 .characters-page .characters-page-content .character-focus .character-model img#Bob-FB {
   margin-left: 0px;
 }
+@media screen and (max-width: 1000px) {
+  .characters-page .characters-page-content .character-focus .character-model img#Bob-FB {
+    margin-left: -100px;
+  }
+}
 .characters-page .characters-page-content .character-focus .character-details {
   height: inherit;
   width: 70%;
+  margin-top: 64px;
 }
 .characters-page .characters-page-content .character-focus .character-details .character-stats {
   -khtml-display: flex;
@@ -657,9 +672,15 @@ a {
   -o-display: flex;
   display: flex;
   flex-direction: row;
+  justify-content: space-between !important;
 }
 .characters-page .characters-page-content .character-focus .character-details .character-stats .character-stats-col1, .characters-page .characters-page-content .character-focus .character-details .character-stats .character-stats-col2 {
   flex: 1;
+}
+@media screen and (max-width: 1000px) {
+  .characters-page .characters-page-content .character-focus .character-details .character-stats .character-stats-col1, .characters-page .characters-page-content .character-focus .character-details .character-stats .character-stats-col2 {
+    flex: none;
+  }
 }
 .characters-page .characters-page-content .character-focus .character-details .character-stats .character-stats-col1 .stat, .characters-page .characters-page-content .character-focus .character-details .character-stats .character-stats-col2 .stat {
   width: 36px;
@@ -681,11 +702,26 @@ a {
   font-size: 1.5rem;
   display: inline;
   margin: auto 32px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .characters-page .characters-page-content .character-focus .character-details .character-stats .character-stats-col1 .stat svg, .characters-page .characters-page-content .character-focus .character-details .character-stats .character-stats-col2 .stat svg {
   width: 36px;
   height: 36px;
   fill: #D0D0D0;
+}
+@media screen and (max-width: 1000px) {
+  .characters-page .characters-page-content .character-focus .character-details .character-stats .character-stats-col2 {
+    margin-right: 16%;
+  }
+}
+.characters-page .characters-page-content .character-focus .character-details .character-line {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1.25rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  color: #D0D0D0;
+  margin-top: 24px;
 }
 .characters-page .characters-page-content .character-focus .character-details .character-story {
   font-size: 1.25rem;
@@ -693,8 +729,10 @@ a {
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 14pt;
-  margin-top: 32px;
+  line-height: 1.6;
   color: #D0D0D0;
 }
 .characters-page .characters-page-content .character-focus .choose-hero-prompt {
@@ -710,6 +748,7 @@ a {
 .characters-page .characters-page-content .character-selection-wrapper {
   height: 280px;
   width: 100%;
+  margin-top: 32px;
   -khtml-display: flex;
   -webkit-display: flex;
   -moz-display: flex;
@@ -743,18 +782,27 @@ a {
   justify-content: center !important;
   position: relative;
   height: 108px;
-  max-height: 108px;
+}
+@media screen and (max-width: 1000px) {
+  .characters-page .characters-page-content .character-selection-wrapper .character-selection .characters-line1, .characters-page .characters-page-content .character-selection-wrapper .character-selection .characters-line2 {
+    height: 72px;
+  }
 }
 .characters-page .characters-page-content .character-selection-wrapper .character-selection .characters-line1 .selchar-img-wrapper, .characters-page .characters-page-content .character-selection-wrapper .character-selection .characters-line2 .selchar-img-wrapper {
   width: 90px;
-  max-width: 90px;
   height: 108px;
-  max-height: 108px;
   margin-left: 16px;
   margin-right: 16px;
   border: 1px solid #FFAD01;
   cursor: pointer;
   position: relative;
+}
+@media screen and (max-width: 1000px) {
+  .characters-page .characters-page-content .character-selection-wrapper .character-selection .characters-line1 .selchar-img-wrapper, .characters-page .characters-page-content .character-selection-wrapper .character-selection .characters-line2 .selchar-img-wrapper {
+    height: 72px;
+    width: 60px;
+    margin: 0 8px;
+  }
 }
 .characters-page .characters-page-content .character-selection-wrapper .character-selection .characters-line1 .selchar-img-wrapper img, .characters-page .characters-page-content .character-selection-wrapper .character-selection .characters-line2 .selchar-img-wrapper img {
   width: 90px;
@@ -763,6 +811,12 @@ a {
   max-height: 108px;
   z-index: 0;
   position: absolute;
+}
+@media screen and (max-width: 1000px) {
+  .characters-page .characters-page-content .character-selection-wrapper .character-selection .characters-line1 .selchar-img-wrapper img, .characters-page .characters-page-content .character-selection-wrapper .character-selection .characters-line2 .selchar-img-wrapper img {
+    height: 72px;
+    width: 60px;
+  }
 }
 .characters-page .characters-page-content .character-selection-wrapper .character-selection .characters-line1 .selchar-img-wrapper .selchar-name, .characters-page .characters-page-content .character-selection-wrapper .character-selection .characters-line2 .selchar-img-wrapper .selchar-name {
   width: 90px;
@@ -779,6 +833,12 @@ a {
   background-color: rgba(255, 173, 1, 0.8);
   color: #0C0803;
 }
+@media screen and (max-width: 1000px) {
+  .characters-page .characters-page-content .character-selection-wrapper .character-selection .characters-line1 .selchar-img-wrapper .selchar-name, .characters-page .characters-page-content .character-selection-wrapper .character-selection .characters-line2 .selchar-img-wrapper .selchar-name {
+    width: 60px;
+    font-size: 9pt;
+  }
+}
 .characters-page .characters-page-content .character-selection-wrapper .character-selection .characters-line1 .selchar-img-wrapper .selchar-name .selchar-name-text, .characters-page .characters-page-content .character-selection-wrapper .character-selection .characters-line2 .selchar-img-wrapper .selchar-name .selchar-name-text {
   margin: 0;
 }
@@ -790,6 +850,11 @@ a {
 }
 .characters-page .characters-page-content .character-selection-wrapper .character-selection .characters-line1 {
   margin-bottom: 32px;
+}
+@media screen and (max-width: 1000px) {
+  .characters-page .characters-page-content .character-selection-wrapper .character-selection .characters-line1 {
+    margin-bottom: 16px;
+  }
 }
 
 /*# sourceMappingURL=characters.css.map */

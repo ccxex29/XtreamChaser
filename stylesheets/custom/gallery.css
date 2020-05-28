@@ -193,7 +193,7 @@ header.header-top {
   transition: all 0.3s ease-in;
 }
 .header-wrapper .playnow-header:hover {
-  color: #2F2F2F;
+  color: #0C0803;
   background-color: #FFAD01;
   -khtml-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
@@ -203,7 +203,7 @@ header.header-top {
   transition: all 0.3s ease-in;
 }
 .header-wrapper .playnow-header:hover > .playnow-header-text, .header-wrapper .playnow-header:hover .play-arrow {
-  color: #2F2F2F;
+  color: #0C0803;
   -khtml-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;

@@ -2,7 +2,13 @@
 
 
 ### Project Outline
-
+[About XtreamChaser](#about-xtreamchaser)
+[Requirements Summar](#requirements-summary)
+[Project Hierarchy](#project-hierarchy)
+[Project Milestones](#project-milestones)
+[Other Documentations](#other-documentations)
+[Relevant Links](#relevant-links)
+[Project Team](#project-team)
 
 
 ## About XtreamChaser
@@ -43,7 +49,7 @@ with several requirements.
   - Use only **external CSS**. Inline CSS will not be scored.
   - Use **CSS box positioning**, instead of **table** for the **layout**.
   - Choose only **one language**, either **Indonesian** or **English**. 
-  - Must be compatible with **Mozilla Firefox 22 and above** (latest stable version is 74).
+  - Must be compatible with **Mozilla Firefox 22 and above** (latest stable version is 76).
   - Make it **available for desktop, tablet, and mobile phone**.
   - **Organize** the files
   - Include **references** (e.g. from website or book).

@@ -42,6 +42,11 @@
 			@include presets.flex-vert-center
 			height: 60vh
 			width: 100%
+			margin-bottom: 24px
+			@media screen and (max-width: 1000px)
+				@include presets.flex-vert
+				margin-top: 200px
+				margin-bottom: 200px
 			.character-model
 				max-height: 60vh
 				height: 60vh
@@ -49,16 +54,23 @@
 				img
 					height: 60vh
 					width: auto
+					display: none
 					&#Bob-FB
 						margin-left: 0px
+						@media screen and (max-width: 1000px)
+							margin-left: -100px
 			.character-details
 				height: inherit
 				width: 70%
+				margin-top: 64px
 				.character-stats
 					@include presets.flex-container
 					@include presets.flex-horiz
+					@include presets.flex-horiz-between
 					.character-stats-col1, .character-stats-col2
 						flex: 1
+						@media screen and (max-width: 1000px)
+							flex: none
 						.stat
 							$maxStatDimension: 36px
 							width: $maxStatDimension
@@ -74,17 +86,26 @@
 										@include presets.bs-text-h4
 										display: inline
 										margin: auto 32px
-
+										@include presets.font-sans_serif
 							svg
 								width: $maxStatDimension
 								height: $maxStatDimension
 								fill: presets.$white-muted
+					.character-stats-col2
+						@media screen and (max-width: 1000px)
+							margin-right: 16%
+				.character-line
+					@include presets.bs-text-h5
+					@include presets.font-sans_serif
+					color: presets.$white-muted
+					margin-top: 24px
 				.character-story
 					@include presets.bs-text-display-4
+					@include presets.font-sans_serif
+					font-weight: 400
 					font-size: 14pt
-					margin-top: 32px
+					line-height: 1.6
 					color: presets.$white-muted
-
 			.choose-hero-prompt
 				@include presets.bs-text-h6
 				color: presets.$white-muted
@@ -94,12 +115,15 @@
 		.character-selection-wrapper
 			height: 280px
 			width: 100%
+			margin-top: 32px
 			@include presets.flex-container
 			@include presets.flex-horiz-center
 			@include presets.flex-vert-center
 			.character-selection
 				$selcharWidth: 90px
 				$selcharHeight: 108px
+				$selcharWidthSmall: $selcharWidth/1.5
+				$selcharHeightSmall: $selcharHeight/1.5
 				padding-bottom: 64px
 				padding-top: 32px
 				@include presets.flex-container
@@ -112,17 +136,23 @@
 					@include presets.flex-horiz-center
 					position: relative
 					height: $selcharHeight
-					max-height: $selcharHeight
+					// max-height: $selcharHeight
+					@media screen and (max-width: 1000px)
+						height: $selcharHeightSmall
 					.selchar-img-wrapper
 						width: $selcharWidth
-						max-width: $selcharWidth
+						// max-width: $selcharWidth
 						height: $selcharHeight
-						max-height: $selcharHeight
+						// max-height: $selcharHeight
 						margin-left: 16px
 						margin-right: 16px
 						border: 1px solid presets.$accent-color
 						cursor: pointer
 						position: relative
+						@media screen and (max-width: 1000px)
+							height: $selcharHeightSmall
+							width: $selcharWidthSmall
+							margin: 0 8px
 						img
 							width: $selcharWidth
 							max-width: $selcharWidth
@@ -130,6 +160,9 @@
 							max-height: $selcharHeight
 							z-index: 0
 							position: absolute
+							@media screen and (max-width: 1000px)
+								height: $selcharHeightSmall
+								width: $selcharWidthSmall
 						.selchar-name
 							width: $selcharWidth
 							display: none
@@ -144,6 +177,9 @@
 							padding-top: 2pt
 							background-color: rgba(presets.$accent-color, .8)
 							color: presets.$primary-color
+							@media screen and (max-width: 1000px)
+								width: $selcharWidthSmall
+								font-size: 9pt
 							.selchar-name-text
 								margin: 0
 						&:hover, &.selchar-img-selected
@@ -152,6 +188,8 @@
 								display: inline-block
 				.characters-line1
 					margin-bottom: 32px
+					@media screen and (max-width: 1000px)
+						margin-bottom: 16px
 
 
 								
