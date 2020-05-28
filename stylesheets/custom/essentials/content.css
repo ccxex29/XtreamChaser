@@ -1,0 +1,240 @@
+.flex-container {
+  -khtml-display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+}
+
+.flex-vert-center {
+  align-items: center !important;
+}
+
+.flex-horiz-center {
+  justify-content: center !important;
+}
+
+.flex-vert-between {
+  align-items: space-between !important;
+}
+
+.flex-horiz-between {
+  justify-content: space-between !important;
+}
+
+.flex-vert {
+  flex-direction: column;
+}
+
+.flex-horiz {
+  flex-direction: row;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-lv0 {
+  position: absolute;
+}
+
+.container-lv-1 {
+  position: fixed;
+}
+
+.container-lv1 {
+  position: relative;
+}
+
+.container-lv-2 {
+  position: sticky;
+}
+
+.content-disable {
+  display: none;
+}
+
+.content-children-disable * {
+  display: none;
+}
+.content-children-disable:hover {
+  display: none;
+}
+.content-children-disable:active {
+  display: none;
+}
+.content-children-disable:link {
+  display: none;
+}
+
+.scrollable-page {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 72px;
+  height: 100%;
+}
+.scrollable-page h1.pagename {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2.5rem;
+  font-family: "Playfair Display SC", "Times New Roman", "Liberation Serif";
+  font-size: 8vmin !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFAD01;
+  padding-bottom: 16px;
+  padding-top: 6vh;
+}
+
+.bg-topsection {
+  position: static;
+  overflow: visible;
+  padding: 0 0 600px 0 !important;
+  margin-bottom: calc(-600px + 72px);
+  margin-top: -72px;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.flex-page {
+  display: inherit;
+  width: inherit;
+}
+
+.flex-text {
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center !important;
+  font-size: 8vmin !important;
+  color: #D0D0D0;
+  cursor: default;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  -khtml-transition: font-size 0.3s ease-in-out;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+.flex-text:hover {
+  font-size: 8.5vmin !important;
+  -khtml-transition: font-size 0.3s ease-in-out;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+.flex-text:hover ~ .underconstruction {
+  font-size: 28vmin !important;
+  -khtml-transition: font-size 0.3s ease-in-out;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.page-full {
+  background-color: #1F1F1F;
+  width: inherit;
+  height: inherit;
+  -khtml-display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.underconstruction {
+  font-size: 26vmin !important;
+  margin-bottom: 48px;
+  color: #D0D0D0;
+  cursor: default;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-transition: font-size 0.3s ease-in-out;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+.underconstruction:hover {
+  font-size: 28vmin !important;
+  -khtml-transition: font-size 0.3s ease-in-out;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+.underconstruction:hover ~ .flex-text {
+  font-size: 8.5vmin !important;
+  -khtml-transition: font-size 0.3s ease-in-out;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  -ms-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.content-page {
+  position: relative;
+  margin: 72px;
+  height: 100%;
+}
+.content-page .maintenance-mode {
+  -khtml-display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+}
+
+.box-test {
+  min-height: 300px;
+  width: 600px;
+  background-color: #D0D0D0;
+}
+
+/*# sourceMappingURL=content.css.map */

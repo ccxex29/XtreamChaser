@@ -3,7 +3,7 @@
 @use "templates"
 @use "sets"
 // Variables & Mixins
-
+$bg-topSize: 600px
 
 // Configurations
 html, body
@@ -42,6 +42,28 @@ a
 
 .scrollable-page
 	@include presets.scrollable-page
+	h1
+		&.pagename
+			@include presets.bs-text-h1
+			@include presets.font-serif
+			font-size: 8vmin !important
+			font-weight: 700 !important
+			letter-spacing: 0.05em
+			text-transform: uppercase
+			color: presets.$accent-color
+			padding-bottom: 16px
+			padding-top: 6vh
+
+.bg-topsection
+	position: static
+	overflow: visible
+	padding: 0 0 $bg-topSize 0 !important
+	margin-bottom: calc(-#{$bg-topSize} + 72px)
+	margin-top: -72px
+	width: 100vw
+	background-repeat: no-repeat
+	background-size: 100% auto
+	@include presets.no-select
 
 .flex-page	
 	display: inherit

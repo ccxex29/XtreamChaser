@@ -117,6 +117,9 @@ header.header-top
 		@include presets.flex-horiz-center
 		@include presets.flex-vert-center
 		@include templates.css3-prefix(transition, all .3s ease-in)
+		@media screen and (max-width: 480px)
+			display: none
+				display: none
 		.play-arrow
 			color: presets.$primary-color
 		.playnow-header-text
@@ -153,20 +156,6 @@ header.header-top
 		@include presets.flex-horiz-start
 		@include presets.flex-vert-center
 
-// .header-desktop
-	
-
-// .header-mobile
 
 
-@media screen and (min-width: $mobile-width+1)
-	.header-mobile
-		display: none
-@media screen and (max-width: $mobile-width)
-	.header-desktop
-		display: none
-@media screen and (max-width: 480px)
-	.playnow-header
-		display: none
-		*
-			display: none
+			

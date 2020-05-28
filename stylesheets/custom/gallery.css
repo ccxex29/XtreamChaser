@@ -2,6 +2,19 @@
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Michroma&display=swap");
+@font-face {
+  font-family: "Eurostile";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Eurostile"), url("../../fonts/eurostile.woff") format("woff");
+}
+@font-face {
+  font-family: "Eurostile Normal";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Eurostile Normal"), url("../../fonts/Eurostile Normal.woff") format("woff");
+}
 header.header-top {
   position: relative;
   background-color: #0C0803;
@@ -145,6 +158,12 @@ header.header-top {
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
+@media screen and (max-width: 480px) {
+  .header-wrapper .playnow-header {
+    display: none;
+    display-display: none;
+  }
+}
 .header-wrapper .playnow-header .play-arrow {
   color: #0C0803;
 }
@@ -216,24 +235,6 @@ header.header-top {
   align-items: center !important;
 }
 
-@media screen and (min-width: 401px) {
-  .header-mobile {
-    display: none;
-  }
-}
-@media screen and (max-width: 400px) {
-  .header-desktop {
-    display: none;
-  }
-}
-@media screen and (max-width: 480px) {
-  .playnow-header {
-    display: none;
-  }
-  .playnow-header * {
-    display: none;
-  }
-}
 .flex-container {
   -khtml-display: flex;
   -webkit-display: flex;
@@ -315,6 +316,38 @@ a {
   overflow-x: hidden;
   padding: 72px;
   height: 100%;
+}
+.scrollable-page h1.pagename {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2.5rem;
+  font-family: "Playfair Display SC", "Times New Roman", "Liberation Serif";
+  font-size: 8vmin !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFAD01;
+  padding-bottom: 16px;
+  padding-top: 6vh;
+}
+
+.bg-topsection {
+  position: static;
+  overflow: visible;
+  padding: 0 0 600px 0 !important;
+  margin-bottom: calc(-600px + 72px);
+  margin-top: -72px;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .flex-page {
@@ -534,13 +567,12 @@ a {
   }
 }
 .bg-topsection {
-  position: static;
-  overflow: visible;
-  padding: 0 0 648px 0 !important;
-  margin-bottom: calc(-648px + 72px);
-  margin-top: -72px;
-  width: 100vw;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, #1f1f1f 100%), url("../../images/extern/backgrounds/building-desktop.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, #1f1f1f 80%), url("../../images/extern/backgrounds/building-desktop.jpg");
+}
+@media screen and (max-width: 1120px) {
+  .bg-topsection {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, #1f1f1f 50%), url("../../images/extern/backgrounds/building-desktop.jpg");
+  }
 }
 
 .gallery-page {
@@ -553,24 +585,10 @@ a {
   flex-direction: column;
   align-items: center !important;
 }
-.gallery-page h1 {
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-  font-size: 2.5rem;
-  font-family: "Playfair Display SC", "Times New Roman", "Liberation Serif";
-  font-size: 8vmin !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #FFAD01;
-  padding-bottom: 16px;
-  padding-top: 6vh;
-}
-.gallery-page div {
+.gallery-page.sep-pagename {
   padding-bottom: 72px;
 }
-.gallery-page div span.horiz-line {
+.gallery-page.sep-pagename > span.horiz-line {
   width: 120px;
   height: 3px;
   background-color: #FFAD01;

@@ -1,4 +1,5 @@
 function navMenu() {
+	var inv;
 	var slidingmenu = [
 		'Home',
 		'Gallery',
@@ -6,10 +7,12 @@ function navMenu() {
 		'Lore',
 		'Pre-Registration'
 	];
+	if (inv)
+		clearInterval(inv);
 	if(!$('.slidingmenu').hasClass('slidden')){
 		$('.slidingmenu').addClass('slidden');
 		var i = 0
-		var inv = setInterval(
+		inv = setInterval(
 			function (){
 				$('.slidingmenu .slidingmenu-content[aria-label='+slidingmenu[i]+']').addClass('slidingmenu-content-active');
 				i++;
@@ -21,7 +24,7 @@ function navMenu() {
 	else {
 		$('.slidingmenu').removeClass('slidden');
 		var i = (slidingmenu.length)-1
-		var inv = setInterval(
+		inv = setInterval(
 			function (){
 				$('.slidingmenu .slidingmenu-content[aria-label='+slidingmenu[i]+']').removeClass('slidingmenu-content-active');
 				i--;

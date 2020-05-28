@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Michroma&display=swap");
+@font-face {
+  font-family: "Eurostile";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Eurostile"), url("../../fonts/eurostile.woff") format("woff");
+}
+@font-face {
+  font-family: "Eurostile Normal";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Eurostile Normal"), url("../../fonts/Eurostile Normal.woff") format("woff");
+}
+header.header-top {
+  position: relative;
+  background-color: #0C0803;
+  height: 10%;
+  max-height: 10%;
+  min-height: 64px;
+  overflow: visible;
+  width: 100%;
+  box-shadow: 0 4px 16px #0C0803;
+}
+
+.header-wrapper {
+  -khtml-display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center !important;
+  position: relative;
+  margin: 0;
+  height: 100%;
+}
+.header-wrapper .logo-wrapper {
+  margin-left: 5px;
+}
+.header-wrapper .logo-wrapper .div-logo-xchaser .logo-xchaser {
+  color: #FFAD01;
+  cursor: pointer;
+  -khtml-transition: all 0.15s ease-out;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -ms-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.header-wrapper .logo-wrapper .div-logo-xchaser .logo-xchaser:hover {
+  -khtml-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #FDA90F;
+  text-shadow: 0 0.5px 20px #FDA90F;
+}
+.header-wrapper .hamburger-menu-wrapper {
+  height: 22px;
+  width: 32px;
+  -khtml-display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  align-items: center !important;
+}
+.header-wrapper .hamburger-wrapper {
+  height: 22px;
+  width: 32px;
+  -khtml-display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  align-items: center !important;
+}
+.header-wrapper .hamburger-menu {
+  height: inherit;
+  width: inherit;
+  left: 0;
+  margin-left: -13px;
+  padding-right: 30px;
+  position: absolute;
+  cursor: pointer;
+  -khtml-transition: margin-left 0.2s ease-in;
+  -webkit-transition: margin-left 0.2s ease-in;
+  -moz-transition: margin-left 0.2s ease-in;
+  -ms-transition: margin-left 0.2s ease-in;
+  -o-transition: margin-left 0.2s ease-in;
+  transition: margin-left 0.2s ease-in;
+}
+.header-wrapper .hamburger-menu .hamburger-wrapper {
+  -khtml-display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+.header-wrapper .hamburger-menu .hamburger-wrapper .hmenu-1, .header-wrapper .hamburger-menu .hamburger-wrapper .hmenu-2, .header-wrapper .hamburger-menu .hamburger-wrapper .hmenu-3 {
+  width: 32px;
+  height: 4px;
+  border-radius: 3px;
+  background-color: #FFAD01;
+}
+.header-wrapper .hamburger-menu:hover {
+  margin-left: -5px;
+  -khtml-transition: margin-left 0.2s ease-out;
+  -webkit-transition: margin-left 0.2s ease-out;
+  -moz-transition: margin-left 0.2s ease-out;
+  -ms-transition: margin-left 0.2s ease-out;
+  -o-transition: margin-left 0.2s ease-out;
+  transition: margin-left 0.2s ease-out;
+}
+.header-wrapper .hamburger-menu-active {
+  margin-left: -18px !important;
+  -khtml-transition: margin-left 0.2s ease-out;
+  -webkit-transition: margin-left 0.2s ease-out;
+  -moz-transition: margin-left 0.2s ease-out;
+  -ms-transition: margin-left 0.2s ease-out;
+  -o-transition: margin-left 0.2s ease-out;
+  transition: margin-left 0.2s ease-out;
+}
+.header-wrapper .playnow-header {
+  height: 44px;
+  width: 144px;
+  max-width: 144px;
+  max-width: 144px;
+  background-color: #0C0803;
+  border-radius: 3px;
+  cursor: pointer;
+  -khtml-display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  -khtml-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+@media screen and (max-width: 480px) {
+  .header-wrapper .playnow-header {
+    display: none;
+    display-display: none;
+  }
+}
+.header-wrapper .playnow-header .play-arrow {
+  color: #0C0803;
+}
+.header-wrapper .playnow-header .playnow-header-text {
+  margin-top: 12px;
+  margin-bottom: unset;
+  height: 100%;
+  text-transform: capitalize;
+  color: #FFAD01;
+  -khtml-display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  align-items: center !important;
+  font-family: "Bebas Neue";
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2rem;
+  -khtml-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.header-wrapper .playnow-header:hover {
+  color: #2F2F2F;
+  background-color: #FFAD01;
+  -khtml-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.header-wrapper .playnow-header:hover > .playnow-header-text, .header-wrapper .playnow-header:hover .play-arrow {
+  color: #2F2F2F;
+  -khtml-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.header-wrapper #rightHeader {
+  margin-right: 26px;
+  -khtml-display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end !important;
+  align-items: center !important;
+}
+.header-wrapper #leftHeader {
+  margin-left: 26px;
+  -khtml-display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  justify-content: flex-start !important;
+  align-items: center !important;
+}
+
+/*# sourceMappingURL=header.css.map */
