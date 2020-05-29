@@ -30,6 +30,7 @@ header.header-top
 	min-height: 64px
 	overflow: visible
 	width: 100%
+	z-index: 2
 	box-shadow: 0 4px 16px presets.$primary-color
 	
 
@@ -61,12 +62,19 @@ header.header-top
 			.logo-xchaser
 				color: presets.$accent-color
 				cursor: pointer
+				font-weight: normal
 				@include templates.css3-prefix(transition, all .15s ease-out)
 				@include presets.font-sans_serif
 				&:hover
 					@include templates.css3-prefix(transition, all .3s ease-in-out)
 					color: presets.$accent-color2
-					text-shadow: 0 .5px 20px presets.$accent-color2
+					// text-shadow: 0 .5px 20px presets.$accent-color2
+				img
+					height: 50px
+					width: 72px
+					vertical-align: middle
+					margin-right: -6px
+					margin-left: -6px
 	.hamburger-menu-wrapper
 		height: 22px
 		width: 32px

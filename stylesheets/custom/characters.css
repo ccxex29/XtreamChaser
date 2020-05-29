@@ -144,6 +144,7 @@ header.header-top {
   min-height: 64px;
   overflow: visible;
   width: 100%;
+  z-index: 2;
   box-shadow: 0 4px 16px #0C0803;
 }
 
@@ -166,6 +167,7 @@ header.header-top {
 .header-wrapper .logo-wrapper .div-logo-xchaser .logo-xchaser {
   color: #FFAD01;
   cursor: pointer;
+  font-weight: normal;
   -khtml-transition: all 0.15s ease-out;
   -webkit-transition: all 0.15s ease-out;
   -moz-transition: all 0.15s ease-out;
@@ -182,7 +184,13 @@ header.header-top {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #FDA90F;
-  text-shadow: 0 0.5px 20px #FDA90F;
+}
+.header-wrapper .logo-wrapper .div-logo-xchaser .logo-xchaser img {
+  height: 50px;
+  width: 72px;
+  vertical-align: middle;
+  margin-right: -6px;
+  margin-left: -6px;
 }
 .header-wrapper .hamburger-menu-wrapper {
   height: 22px;
@@ -437,6 +445,11 @@ header.header-top {
 .footer-area .footer-wrapper .footer-content.footer-left .footer-logo:hover {
   color: white;
 }
+.footer-area .footer-wrapper .footer-content.footer-left .footer-logo img {
+  height: 50px;
+  width: auto;
+  margin-left: -20px;
+}
 .footer-area .footer-wrapper .footer-content.footer-left .fa {
   font-size: 19px;
   text-align: center;
@@ -451,7 +464,7 @@ header.header-top {
   text-align: right;
 }
 .footer-area .footer-wrapper .footer-content.footer-right div {
-  margin-top: 8px;
+  margin-top: 33px;
   margin-bottom: 30px;
 }
 .footer-area .footer-wrapper .footer-content.footer-right div span {
@@ -469,6 +482,7 @@ header.header-top {
 }
 .footer-area .footer-wrapper .footer-content .socmed-icons {
   font-family: "FontAwesome Brands";
+  margin-top: 0px;
 }
 
 html, body {

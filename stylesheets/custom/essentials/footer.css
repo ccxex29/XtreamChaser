@@ -71,6 +71,11 @@
 .footer-area .footer-wrapper .footer-content.footer-left .footer-logo:hover {
   color: white;
 }
+.footer-area .footer-wrapper .footer-content.footer-left .footer-logo img {
+  height: 50px;
+  width: auto;
+  margin-left: -20px;
+}
 .footer-area .footer-wrapper .footer-content.footer-left .fa {
   font-size: 19px;
   text-align: center;
@@ -85,7 +90,7 @@
   text-align: right;
 }
 .footer-area .footer-wrapper .footer-content.footer-right div {
-  margin-top: 8px;
+  margin-top: 33px;
   margin-bottom: 30px;
 }
 .footer-area .footer-wrapper .footer-content.footer-right div span {
@@ -103,6 +108,7 @@
 }
 .footer-area .footer-wrapper .footer-content .socmed-icons {
   font-family: "FontAwesome Brands";
+  margin-top: 0px;
 }
 
 /*# sourceMappingURL=footer.css.map */

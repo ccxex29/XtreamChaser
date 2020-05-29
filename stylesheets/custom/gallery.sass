@@ -14,10 +14,14 @@ $imageSizeHeight: 300px
 $imageSizeHeightAlt1: 200px
 $imageSizeHeightAlt2: 140px
 $imageSizeHeightAlt3: 90px
-$cardSizeHeight: $imageSizeHeight + 200px
-$cardSizeHeightAlt1: $imageSizeHeight + 100px
-$cardSizeHeightAlt2: $imageSizeHeight + 80px
-$cardSizeHeightAlt3: $imageSizeHeight + 40px
+// $cardSizeHeight: $imageSizeHeight + 200px
+// $cardSizeHeightAlt1: $imageSizeHeight + 100px
+// $cardSizeHeightAlt2: $imageSizeHeight + 80px
+// $cardSizeHeightAlt3: $imageSizeHeight + 40px
+$cardSizeHeight: $imageSizeHeight 
+$cardSizeHeightAlt1: $imageSizeHeight 
+$cardSizeHeightAlt2: $imageSizeHeight 
+$cardSizeHeightAlt3: $imageSizeHeight 
 
 $bg-topSize: 640px
 
@@ -112,7 +116,8 @@ $bg-topSize: 640px
 						&.bridge-photo
 							margin: 0 0 0 0
 				h3
-					@include presets.bs-text-h3
+					@include presets.bs-text-h5
+					@include presets.bs-text-center
 					color: presets.$white-muted
 					margin-bottom: 8px
 				p

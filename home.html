@@ -5,11 +5,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>XtreamChaser</title>
+	<link rel="shortcut icon" href="images/self/favicons/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="stylesheets/custom/home.css">
 	<link rel="stylesheet" href="stylesheets/libraries/font-awesome-src.css">
 	<link rel="stylesheet" href="stylesheets/libraries/font-awesome.css">
 	<script type="text/javascript" src="scripts/libraries/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="scripts/custom/essentials/header.js"></script>
+	<script type="text/javascript" src="scripts/custom/essentials/footer.js"></script>
 	<script type="text/javascript" src="scripts/custom/essentials/navigation.js"></script>
 	<script type="text/javascript" src="scripts/custom/home.js"></script>
 </head>
@@ -30,7 +32,10 @@
 					<div class="logo-wrapper" aria-label="XtreamChaser Logo" alt="XtreamChaser Home">
 						<a href="home.html">
 							<div class="div-logo-xchaser">
-								<h1 class="logo-xchaser">XtreamChaser</h1>
+								<h1 class="logo-xchaser">
+									<img src="images/self/favicons/apple-touch-icon.png">
+									XtreamChaser
+								</h1>
 							</div>
 						</a>
 					</div>
@@ -132,17 +137,47 @@
 				</div>
 				<div class="home-container-b">
 					<div class="home-leftimage home-container-b-content"> <!-- flex row -->
-						
+						<div class="home-content-image-container">
+							<!-- <div class="img-home"></div> -->
+							<img src="images/extern/home-intro/character.jpg">
+							<div class="gradient"></div>
+						</div>
+						<div class="home-content-text-container">
+							<h4>Different character. Different Personality</h4>
+							<p>
+								Enjoy the story of each character that reflects character's skills and statistics. Each character is with their own pros and cons that will always affect gameplay among players.
+							</p>
+						</div>
 					</div>
 				</div>
 				<div class="home-container-c">
-					<div class="home-rightimage home-container-b-content"> <!-- flex row-reversed -->
-						
+					<div class="home-rightimage home-container-c-content"> <!-- flex row-reversed -->
+						<div class="home-content-image-container">
+							<!-- <div class="img-home"></div> -->
+							<img src="images/extern/home-intro/skill.jpg">
+							<div class="gradient"></div>
+						</div>
+						<div class="home-content-text-container">
+							<h4>Master Your Favorite Character's Skills</h4>
+							<p>
+								Characters have their own ability and special moves or secret techniques. Whatever you might call it. Surprise your opponent from amazing moves and split second decision strategies.
+							</p>
+						</div>
 					</div>
 				</div>
 				<div class="home-container-d">
-					<div class="home-leftimage home-container-b-content">
-						
+					<div class="home-leftimage home-container-d-content"> <!-- flex row-reversed -->
+						<div class="home-content-image-container">
+							<!-- <div class="img-home"></div> -->
+							<img src="images/extern/home-intro/finish.jpg">
+							<div class="gradient"></div>
+						</div>
+						<div class="home-content-text-container">
+							<h4>Glorious Finishes</h4>
+							<p>
+								Take your opponent's life with pride by showing your knowledge of cool finishing moves. Each character has numerous finishing blows that can be the color of your play style.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -150,7 +185,9 @@
 				<div class="footer-sep"></div>
 				<div class="footer-wrapper">
 					<div class="footer-content footer-left">
-						<div class="footer-logo">XtreamChaser&trade;</div>
+						<div class="footer-logo">
+							<img src="images/self/xclogo-muted.png" onmouseover="changexclogofooter(this);" onmouseleave="restorexclogofooter(this);">
+						</div>
 						<div class="socmed-icons">
 							<a href="javascript:alert('Not implemented!');" onclick="console.log('Clicked ' + this.className);" class="fa fa-facebook"></a>
 							<a href="javascript:alert('Not implemented!');" onclick="console.log('Clicked ' + this.className);" class="fa fa-instagram"></a>

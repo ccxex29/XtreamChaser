@@ -85,19 +85,19 @@ files.
 ## Project Milestones
 ### First Stage
 - [x] Create a repo and hierarchy for website files
-- [ ] Create the \.psd web template for the homepage
-- [ ] Design the \.psd and \.jpg website logo and obtain images for character images, stat icons, banner, and others
+- [x] Create the \.psd web template for the homepage
+- [x] Design the \.psd and \.jpg website logo and obtain images for character images, stat icons, banner, and others
 ### Second Stage
 - [x] Build up the skeleton (class, mixin, variable, function presets in JS and Sass)
 - [x] Build up the header (menu contents, outline feature), footer (other links and website name)
 ### Third Stage
-- [ ] Build up the contents (incl. images) on each page (home, gallery, characters, lore, pre-registration)
+- [x] Build up the contents (incl. images) on each page (home, gallery, characters, lore, pre-registration)
 - [x] Build up the specific styling and scripts for each element without animation
 - [x] Add additional CSS3 and Javascript animations
 ### Final Stage
 - [x] Fix bugs and work on optional plans
-- [ ] Work on the \.DOC documentation
-- [ ] Code cleanup
+- [x] Work on the \.DOC documentation
+- [x] Code cleanup
 
 
 ## Other Documentations
@@ -106,7 +106,7 @@ files.
 
 ## Relevant Links
 ### Website Deployment
-- `master` branch : [Github Pages](https://ccxex29.github.io/XtreamChaser/)
+- `master` branch : [Github Pages](https://xchaser.femmund.com/)
 ### References
 - [Bootstrap](https://getbootstrap.com/docs/)
 - [SassLang](https://sass-lang.com/documentation/)
@@ -115,6 +115,7 @@ files.
 - [Material Design](https://material.io/)
 - [Font Awesome](https://fontawesome.com/)
 - [Google Fonts](https://fonts.google.com/)
+- [Favicon.io](https://favicon.io/favicon-converter/)
 ### Website Resources
 #### Third Party Fonts
 - [Google Fonts](https://fonts.google.com/)
@@ -134,6 +135,8 @@ files.
 - [Revenge Comes Back Around in Tekken7's Opening (hardcoregamer.com)](https://hardcoregamer.com/2017/05/23/revenge-comes-back-around-in-tekken-7s-opening/258446/)
 - [Tekken 7 Tier List (tierlytics.com)](https://www.tierlytics.com/tier-lists/tekken-7)
 - [Tekken 7 Character Art (eventhubs.com)](https://www.eventhubs.com/imagegallery/2017/jun/03/tekken-7-character-art)
+- [New Tekken 7 Characters Confirmed (cbsistatic.com)](https://www.gamespot.com/articles/new-tekken-7-characters-confirmed-see-them-in-acti/1100-6441873/)
+- [The 15 Greatest Tekken Characters (cdkeys.com)](https://blog.cdkeys.com/15-greatest-tekken-characters/)
 #### Icons
 - [Stars](https://material.io)
 - [Character Stats](https://www.flaticon.com/authors/freepik)

@@ -144,6 +144,7 @@ header.header-top {
   min-height: 64px;
   overflow: visible;
   width: 100%;
+  z-index: 2;
   box-shadow: 0 4px 16px #0C0803;
 }
 
@@ -166,6 +167,7 @@ header.header-top {
 .header-wrapper .logo-wrapper .div-logo-xchaser .logo-xchaser {
   color: #FFAD01;
   cursor: pointer;
+  font-weight: normal;
   -khtml-transition: all 0.15s ease-out;
   -webkit-transition: all 0.15s ease-out;
   -moz-transition: all 0.15s ease-out;
@@ -182,7 +184,13 @@ header.header-top {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #FDA90F;
-  text-shadow: 0 0.5px 20px #FDA90F;
+}
+.header-wrapper .logo-wrapper .div-logo-xchaser .logo-xchaser img {
+  height: 50px;
+  width: 72px;
+  vertical-align: middle;
+  margin-right: -6px;
+  margin-left: -6px;
 }
 .header-wrapper .hamburger-menu-wrapper {
   height: 22px;

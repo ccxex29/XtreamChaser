@@ -144,6 +144,7 @@ header.header-top {
   min-height: 64px;
   overflow: visible;
   width: 100%;
+  z-index: 2;
   box-shadow: 0 4px 16px #0C0803;
 }
 
@@ -166,6 +167,7 @@ header.header-top {
 .header-wrapper .logo-wrapper .div-logo-xchaser .logo-xchaser {
   color: #FFAD01;
   cursor: pointer;
+  font-weight: normal;
   -khtml-transition: all 0.15s ease-out;
   -webkit-transition: all 0.15s ease-out;
   -moz-transition: all 0.15s ease-out;
@@ -182,7 +184,13 @@ header.header-top {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #FDA90F;
-  text-shadow: 0 0.5px 20px #FDA90F;
+}
+.header-wrapper .logo-wrapper .div-logo-xchaser .logo-xchaser img {
+  height: 50px;
+  width: 72px;
+  vertical-align: middle;
+  margin-right: -6px;
+  margin-left: -6px;
 }
 .header-wrapper .hamburger-menu-wrapper {
   height: 22px;
@@ -437,6 +445,11 @@ header.header-top {
 .footer-area .footer-wrapper .footer-content.footer-left .footer-logo:hover {
   color: white;
 }
+.footer-area .footer-wrapper .footer-content.footer-left .footer-logo img {
+  height: 50px;
+  width: auto;
+  margin-left: -20px;
+}
 .footer-area .footer-wrapper .footer-content.footer-left .fa {
   font-size: 19px;
   text-align: center;
@@ -451,7 +464,7 @@ header.header-top {
   text-align: right;
 }
 .footer-area .footer-wrapper .footer-content.footer-right div {
-  margin-top: 8px;
+  margin-top: 33px;
   margin-bottom: 30px;
 }
 .footer-area .footer-wrapper .footer-content.footer-right div span {
@@ -469,6 +482,7 @@ header.header-top {
 }
 .footer-area .footer-wrapper .footer-content .socmed-icons {
   font-family: "FontAwesome Brands";
+  margin-top: 0px;
 }
 
 html, body {
@@ -897,16 +911,155 @@ a {
   line-height: 1.6;
   margin-bottom: 16px;
 }
+.home-page .home-content .home-leftimage {
+  -khtml-display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  justify-content: space-between !important;
+  flex-direction: row;
+}
+.home-page .home-content .home-rightimage {
+  -khtml-display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  justify-content: space-between !important;
+  flex-direction: row-reverse;
+}
 .home-page .home-content .home-container-b {
   height: 300px;
   background-color: #FFAD01;
 }
+.home-page .home-content .home-container-b .home-container-b-content {
+  height: inherit;
+  width: inherit;
+}
+.home-page .home-content .home-container-b .home-container-b-content .home-content-image-container {
+  height: inherit;
+  width: inherit;
+  overflow: hidden;
+}
+.home-page .home-content .home-container-b .home-container-b-content .home-content-image-container img {
+  overflow: hidden;
+  height: 300px;
+  margin-left: -80px;
+}
+.home-page .home-content .home-container-b .home-container-b-content .home-content-image-container .gradient {
+  position: relative;
+  height: 300px;
+  margin-top: -305px;
+  margin-right: 0px;
+  background-image: linear-gradient(to left, #FFAD01 1%, transparent 60%);
+}
+.home-page .home-content .home-container-b .home-container-b-content .home-content-text-container {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  height: inherit;
+  width: 50%;
+  text-align: right;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+.home-page .home-content .home-container-b .home-container-b-content .home-content-text-container h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+.home-page .home-content .home-container-b .home-container-b-content .home-content-text-container p {
+  line-height: 1.5em;
+}
 .home-page .home-content .home-container-c {
   height: 300px;
+  background-color: #0C0803;
+}
+.home-page .home-content .home-container-c .home-container-c-content {
+  height: inherit;
+  width: inherit;
+}
+.home-page .home-content .home-container-c .home-container-c-content .home-content-image-container {
+  height: inherit;
+  width: inherit;
+  overflow: hidden;
+}
+.home-page .home-content .home-container-c .home-container-c-content .home-content-image-container img {
+  overflow: hidden;
+  height: 300px;
+  margin-left: 120px;
+}
+.home-page .home-content .home-container-c .home-container-c-content .home-content-image-container .gradient {
+  position: relative;
+  height: 300px;
+  margin-top: -305px;
+  margin-right: 0px;
+  background-image: linear-gradient(to right, #0C0803 1%, transparent 80%);
+}
+.home-page .home-content .home-container-c .home-container-c-content .home-content-text-container {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  height: inherit;
+  width: 50%;
+  text-align: left;
+  text-transform: uppercase;
+  color: #FFAD01;
+  margin-left: 20px;
+}
+.home-page .home-content .home-container-c .home-container-c-content .home-content-text-container h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+.home-page .home-content .home-container-c .home-container-c-content .home-content-text-container p {
+  line-height: 1.5em;
 }
 .home-page .home-content .home-container-d {
   height: 300px;
   background-color: #FFAD01;
+}
+.home-page .home-content .home-container-d .home-container-d-content {
+  height: inherit;
+  width: inherit;
+}
+.home-page .home-content .home-container-d .home-container-d-content .home-content-image-container {
+  height: inherit;
+  width: inherit;
+  overflow: hidden;
+}
+.home-page .home-content .home-container-d .home-container-d-content .home-content-image-container img {
+  overflow: hidden;
+  height: 300px;
+  margin-left: -80px;
+}
+.home-page .home-content .home-container-d .home-container-d-content .home-content-image-container .gradient {
+  position: relative;
+  height: 300px;
+  margin-top: -305px;
+  margin-right: 0px;
+  background-image: linear-gradient(to left, #FFAD01 1%, transparent 60%);
+}
+.home-page .home-content .home-container-d .home-container-d-content .home-content-text-container {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  height: inherit;
+  width: 50%;
+  text-align: right;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+.home-page .home-content .home-container-d .home-container-d-content .home-content-text-container h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+.home-page .home-content .home-container-d .home-container-d-content .home-content-text-container p {
+  line-height: 1.5em;
 }
 
 .footer-area {
