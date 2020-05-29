@@ -1,7 +1,7 @@
 
 // Hamburger Menu Animation
 $(
-function () {
+() => {
 	$('.hamburger-menu').click(
 		function triggerNav(){
 			if ($(this).hasClass('hamburger-menu-active')) {

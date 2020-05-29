@@ -30,7 +30,9 @@ $bg-topSize: 640px
 	@include presets.flex-container
 	@include presets.flex-vert
 	@include presets.flex-vert-center
-	&.sep-pagename
+	.pagename
+		white-space: nowrap
+	.sep-pagename
 			padding-bottom: 72px
 			> span
 				&.horiz-line
@@ -50,7 +52,6 @@ $bg-topSize: 640px
 			@include presets.flex-vert
 			@include presets.flex-vert-center
 			// @include templates.css3-prefix(flex, 1)
-			
 			> div
 				@include presets.font-sans_serif
 				margin-bottom: 1vh

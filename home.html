@@ -7,9 +7,11 @@
 	<title>XtreamChaser</title>
 	<link rel="stylesheet" type="text/css" href="stylesheets/custom/home.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="scripts/libraries/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="scripts/custom/essentials/header.js"></script>
 	<script type="text/javascript" src="scripts/custom/essentials/navigation.js"></script>
+	<script type="text/javascript" src="scripts/custom/home.js"></script>
 </head>
 <body>
 	<div class="container-lv0 page-full">
@@ -36,12 +38,12 @@
 				<div class="centerHeader">
 					<span class="material-icons icon-header-curr">home</span>
 				</div>
-				<div id="rightHeader" class="rightHeader">
+				<div id="rightHeader" class="rightHeader" onclick="location.href='preregistration.html'">
 					<div class="playnow-header" aria-label="Play Now">
 						<div class="play-arrow">
 							<span class="material-icons btn-play-left">arrow_right</span>
 						</div>
-						<div class="playnow-header-text" onclick="location.href='preregistration.html'">
+						<div class="playnow-header-text">
 							<p>
 								Buy Now
 							</p>
@@ -89,11 +91,80 @@
 			</a>
 		</div>
 
-		<div class="content-page">
+		<div class="content-page content-disable">
 			<div class="maintenance-mode">
 				<i class="material-icons underconstruction">sports_tennis</i>
 				<div class="flex-text">
 					The page is being worked on
+				</div>
+			</div>
+		</div>
+		<div class="home-page scrollable-page">
+			<div class="home-content">
+				<div class="carousel-wrapper">
+					<div class="carousel">
+						<div class="carousel-elements carousel-element-1" onclick="carouselPushRight();" onmouseover="setFilter(0);" onmouseleave="clearFilter(0);">
+							<img src="" id="carousel-element-img0">
+							<div id="carousel-element-img0-filter"></div>
+							<div class="carousel-navigator navleft">Left</div>
+						</div>
+						<div class="carousel-elements carousel-element-2">
+							<img src="" id="carousel-element-img1">
+						</div>
+						<div class="carousel-elements carousel-element-3" onclick="carouselPushLeft();" onmouseover="setFilter(2);" onmouseleave="clearFilter(2);">
+							<img src="" id="carousel-element-img2">
+							<div id="carousel-element-img2-filter"></div>
+							<div class="carousel-navigator navright">Right</div>
+						</div>
+					</div>
+					<!-- <div>Hello World</div> -->
+				</div>
+				<div class="home-container-a">
+					<div class="home-centered-padded">
+						<h3>XtreamChaser</h3>
+						<div>
+							XtreamChaser is a competitive MMO fighting game. The game matches two players to become one-to-one opponent that will also be allowed to pick their own character.
+						</div>
+					</div>
+				</div>
+				<div class="home-container-b">
+					<div class="home-leftimage home-container-b-content"> <!-- flex row -->
+						
+					</div>
+				</div>
+				<div class="home-container-c">
+					<div class="home-rightimage home-container-b-content"> <!-- flex row-reversed -->
+						
+					</div>
+				</div>
+				<div class="home-container-d">
+					<div class="home-leftimage home-container-b-content">
+						
+					</div>
+				</div>
+			</div>
+			<div class="footer-area">
+				<div class="footer-sep"></div>
+				<div class="footer-wrapper">
+					<div class="footer-content footer-left">
+						<div class="footer-logo">XtreamChaser&trade;</div>
+						<div class="socmed-icons">
+							<a href="javascript:alert('Not implemented!');" onclick="console.log('Clicked ' + this.className);" class="fa fa-facebook"></a>
+							<a href="javascript:alert('Not implemented!');" onclick="console.log('Clicked ' + this.className);" class="fa fa-instagram"></a>
+							<a href="javascript:alert('Not implemented!');" onclick="console.log('Clicked ' + this.className);" class="fa fa-twitter"></a>
+							<a href="javascript:alert('Not implemented!');" onclick="console.log('Clicked ' + this.className);" class="fa fa-snapchat"></a>
+							<a href="javascript:alert('Not implemented!');" onclick="console.log('Clicked ' + this.className);" class="fa fa-youtube"></a>
+						</div>
+					</div>
+					<div class="footer-content footer-right">
+						<div>
+							<span onclick="console.log('Clicked ' + this.innerHTML); alert('Not implemented!');">ABOUT</span>
+							<span onclick="console.log('Clicked ' + this.innerHTML); alert('Not implemented!');">PRIVACY</span>
+							<span onclick="console.log('Clicked ' + this.innerHTML); alert('Not implemented!');">CONTACT</span>
+							<span onclick="console.log('Clicked ' + this.innerHTML); alert('Not implemented!');">PRESS</span>
+						</div>
+						<div class="creator-credit">2020 Made by Devin Djappy n' Louis Raymond</div>
+					</div>
 				</div>
 			</div>
 		</div>

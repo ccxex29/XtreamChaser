@@ -6,3 +6,112 @@
 @use "essentials/templates"
 @use "essentials/sets"
 
+.home-page
+	@include presets.flex-container
+	@include presets.flex-vert
+	@include presets.flex-vert-center
+	padding: 0 !important
+	.home-content
+		width: 100%
+		padding-top: 72px
+		.carousel-wrapper
+			width: 100%
+			margin-top: 16px
+			.carousel 
+				@include presets.flex-container
+				@include presets.flex-horiz
+				@include presets.flex-horiz-center
+				width: 100%
+				height: 300px
+				.carousel-navigator
+					@include presets.flex-container
+					@include presets.flex-vert-center
+					@include presets.font-sans_serif
+					@include presets.bs-text-h4
+					vertical-align: middle
+					height: 100%
+					text-transform: uppercase
+					color: white
+					z-index: 2
+					margin-top: -20px
+					// margin-top: -77.5%
+					&.navleft
+						float: right
+						margin-right: 12.5%
+					&.navright
+						float: left
+						margin-left: 12.5%
+				.carousel-elements
+					border-radius: 10px
+					width: 50%
+					height: 300px
+					max-width: 500px
+					overflow: hidden
+					position: relative
+					img
+						position: absolute
+						&[src="./images/extern/carousel-images/tekken1.png"]
+							right: 0px
+						&[src="./images/extern/carousel-images/tekken2.png"]
+							right: -150px
+						&[src="./images/extern/carousel-images/tekken3.png"]
+							right: -150px
+				.carousel-element-1, .carousel-element-3
+					cursor: pointer
+				.carousel-element-1
+					background-color: red
+					margin-left: -25%
+					overflow: hidden
+					// #carousel-element-img0-filter
+					// 	@include templates.css3-prefix(transition, opacity .2s)
+					// 	position: static
+					// 	z-index: -1
+					// 	background-color: rgba(255, 255, 255, 0.5)
+					// 	margin-top: -25%
+					// 	width: 100%
+					// 	height: 150%
+					// 	opacity: 0
+				.carousel-element-2 // Centered element
+					background-color: green
+					height: 300px
+					margin: 0 48px
+				.carousel-element-3
+					background-color: blue
+					margin-right: -25%
+					// #carousel-element-img2-filter
+					// 	@include templates.css3-prefix(transition, opacity .2s)
+					// 	position: static
+					// 	background-color: rgba(255, 255, 255, 0.5)
+					// 	margin-top: -25%
+					// 	width: 50%
+					// 	height: 150%
+					// 	opacity: 0
+		.home-container-a
+			margin: 72px 0
+			.home-centered-padded
+				text-align: center
+				color: white
+				padding: 0 72px
+				h3
+					@include presets.bs-text-h3
+					@include presets.font-sans_serif
+					margin-bottom: 32px
+					text-transform: uppercase
+					font-weight: 600
+				div
+					@include presets.bs-text-lead
+					@include presets.font-sans_serif
+					font-size: 14pt
+					font-weight: 400
+		.home-container-b
+			height: 300px
+			background-color: presets.$accent-color
+		.home-container-c
+			height: 300px
+		.home-container-d
+			height: 300px
+			background-color: presets.$accent-color
+.footer-area
+	margin: 100px 72px !important
+	position: relative
+	width: calc(100% - 144px)

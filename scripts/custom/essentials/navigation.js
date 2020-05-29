@@ -1,6 +1,6 @@
 function navMenu() {
 	var inv;
-	var slidingmenu = [
+	const slidingmenu = [
 		'Home',
 		'Gallery',
 		'Characters',
@@ -12,30 +12,26 @@ function navMenu() {
 	if(!$('.slidingmenu').hasClass('slidden')){
 		$('.slidingmenu').addClass('slidden');
 		var i = 0
-		inv = setInterval(
-			function (){
+		inv = setInterval(() => {
 				$('.slidingmenu .slidingmenu-content[aria-label='+slidingmenu[i]+']').addClass('slidingmenu-content-active');
 				i++;
 				if (i === slidingmenu.length)
 					clearInterval(inv);
-			}
-		, 50);
+			}, 50);
 	}
 	else {
 		$('.slidingmenu').removeClass('slidden');
 		var i = (slidingmenu.length)-1
-		inv = setInterval(
-			function (){
+		inv = setInterval(() => {
 				$('.slidingmenu .slidingmenu-content[aria-label='+slidingmenu[i]+']').removeClass('slidingmenu-content-active');
 				i--;
 				if (i < 0) 
 					clearInterval(inv);
-			}
-		, 50);
+			}, 50);
 	}
 }
 
-$(window).click(function (event) { //dunno why...
+$(window).click((event) => { //dunno why...
 	if(!$(event.target).is('.slidingmenu') && 
 		!$(event.target).is('div.header-wrapper') &&
 		!$(event.target).is('div.playnow-header-text') &&
@@ -60,5 +56,4 @@ $(window).click(function (event) { //dunno why...
 		}
 		triggerNav();
 	}
-	// console.log(event.target);
 });

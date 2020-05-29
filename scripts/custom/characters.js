@@ -66,7 +66,7 @@ const characterDetails = [
 			ATK : 21,
 			AGI : 90
 		},
-		charLine: "DON'T THINK I'LL GO EASY ON YO" ,
+		charLine: "DON'T THINK I'LL GO EASY ON YOU" ,
 		story: "Eddy Gordo went to G Corporation to exact revenge on Kazuya Mishima for murdering his father. After he'd taken out a crowd of guards, a young girl in a strange outfit stood before him, and struck a pose. \"You're not getting past me, old man! Teehee!\"" 
 	},
 	{
@@ -188,7 +188,7 @@ const characterDetails = [
 ];
 
 
-function selectCharacter(i){
+const selectCharacter = (i) => {
 	if (!$(i).hasClass('selchar-img-selected')){
 		$(i).addClass('selchar-img-selected'); // Add selected state to the new char
 		$(lastElem).removeClass('selchar-img-selected'); // Remove selected state of last char
@@ -210,7 +210,7 @@ function selectCharacter(i){
 		document.getElementsByClassName('character-story')[0].innerHTML = characterDetails[charIndex].story;
 		document.getElementById(targetNewCharName).style.display = 'inline';
 	}
-}
+};
 
 const defaultCharSel = () => {
 	const defaultChar = document.getElementsByClassName('selchar-bob');
@@ -224,6 +224,6 @@ const defaultCharSel = () => {
 	document.getElementsByClassName('character-line')[0].innerHTML = characterDetails[0].charLine;
 	document.getElementsByClassName('character-story')[0].innerHTML = characterDetails[0].story;
 	document.getElementById('Bob-FB').style.display = 'inline';
-}
+};
 
 $(document).ready(() => defaultCharSel());

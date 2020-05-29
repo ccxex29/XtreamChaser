@@ -3,7 +3,68 @@
 @use "essentials/content"
 @use "essentials/navigation"
 @use "essentials/presets"
+@use "essentials/templates"
 @use "essentials/sets"
 
 .playnow-header
 	display: none
+
+.bg-topsection
+	background-image: linear-gradient(to bottom, rgba(255,189,1, 0.6) 0%, rgb(31, 31, 31) 30%)
+
+.preregister-page
+	@include presets.flex-container
+	@include presets.flex-vert
+	@include presets.flex-vert-center
+	.pagename
+		white-space: nowrap
+	div
+		&.sep-pagename
+			padding-bottom: 144px
+			> span
+				&.horiz-line
+					width: 120px
+					height: 3px
+					background-color: presets.$accent-color
+					border-radius: 4px
+					display: inline-block
+	.preregister-content
+		.preregister-form-wrapper
+			form
+				button
+					@include presets.flex-container
+					text-align: center
+					margin: 48px auto 0 auto
+
+				input
+					display: inline-block
+					margin-bottom: 16px
+					padding: 10px
+					border: 1px solid lightgrey
+					border-radius: 4px
+					&:not(#tos-consent)
+						width: 100%
+				.inline-cb
+					margin-top: 24px
+					label.tos
+						display: inline
+						color: white
+
+						input[type="checkbox"]
+						span[spantype="underline"]
+							text-decoration: underline
+							cursor: pointer
+						span[spantype="tos-message"]
+							margin-left: 10px
+				button
+					background-color: presets.$accent-color
+					border: 1px solid presets.$accent-color
+					padding: 8px 12px
+					cursor: pointer
+					&:hover
+						background-color: presets.$orange-mortalkombat-light
+					&:active
+						background-color: presets.$orange-mortalkombat-dark
+
+
+
