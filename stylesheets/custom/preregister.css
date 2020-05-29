@@ -287,6 +287,14 @@ header.header-top {
 }
 .header-wrapper .playnow-header .play-arrow {
   color: #0C0803;
+  font-weight: 900;
+  font-family: "FontAwesome Solid";
+}
+.header-wrapper .playnow-header .play-arrow .btn-play-left {
+  margin-right: 10px;
+}
+.header-wrapper .playnow-header .play-arrow .btn-play-right {
+  margin-left: 10px;
 }
 .header-wrapper .playnow-header .playnow-header-text {
   margin-top: 12px;
@@ -419,14 +427,12 @@ header.header-top {
 .footer-area .footer-wrapper .footer-content.footer-left {
   text-align: left;
 }
-.footer-area .footer-wrapper .footer-content.footer-left div {
-  margin-bottom: 16px;
-}
 .footer-area .footer-wrapper .footer-content.footer-left .footer-logo {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
   font-size: 24px;
+  margin-bottom: 24px;
 }
 .footer-area .footer-wrapper .footer-content.footer-left .footer-logo:hover {
   color: white;
@@ -435,7 +441,7 @@ header.header-top {
   font-size: 19px;
   text-align: center;
   text-decoration: none;
-  margin-right: 8px;
+  margin-right: 12px;
   color: #D0D0D0;
 }
 .footer-area .footer-wrapper .footer-content.footer-left .fa:hover {
@@ -446,7 +452,7 @@ header.header-top {
 }
 .footer-area .footer-wrapper .footer-content.footer-right div {
   margin-top: 8px;
-  margin-bottom: 14px;
+  margin-bottom: 30px;
 }
 .footer-area .footer-wrapper .footer-content.footer-right div span {
   margin-left: 4px;
@@ -460,6 +466,9 @@ header.header-top {
 }
 .footer-area .footer-wrapper .footer-content.footer-right .creator-credit:hover {
   color: white;
+}
+.footer-area .footer-wrapper .footer-content .socmed-icons {
+  font-family: "FontAwesome Brands";
 }
 
 html, body {
@@ -732,6 +741,11 @@ a {
 }
 .slidingmenu .slidingmenu-content .slidingmenu-content-text > .icons-sliding-menu {
   margin: 2px 24px 0 0;
+  font-size: 24px;
+  width: 24px;
+  text-align: center;
+  font-family: "FontAwesome Solid";
+  font-weight: 900;
 }
 .slidingmenu .slidingmenu-content:hover {
   background-color: #FFAD01;

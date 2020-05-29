@@ -95,6 +95,11 @@
 }
 .slidingmenu .slidingmenu-content .slidingmenu-content-text > .icons-sliding-menu {
   margin: 2px 24px 0 0;
+  font-size: 24px;
+  width: 24px;
+  text-align: center;
+  font-family: "FontAwesome Solid";
+  font-weight: 900;
 }
 .slidingmenu .slidingmenu-content:hover {
   background-color: #FFAD01;

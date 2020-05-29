@@ -27,17 +27,18 @@
 			&.footer-left
 				text-align: left
 				div
-					margin-bottom: 16px
+					// margin-bottom: 16px
 				.footer-logo
 					@include presets.bs-text-allheaders
 					font-size: 24px
+					margin-bottom: 24px
 					&:hover
 						color: white
 				.fa
 					font-size: 19px
 					text-align: center
 					text-decoration: none
-					margin-right: 8px
+					margin-right: 12px
 					color: presets.$white-muted
 					&:hover
 						color: white
@@ -45,7 +46,7 @@
 				text-align: right
 				div
 					margin-top: 8px
-					margin-bottom: 14px
+					margin-bottom: 14px + 16px
 					span
 						margin-left: 4px
 						cursor: pointer
@@ -55,4 +56,6 @@
 					font-size: 13px
 					&:hover
 						color: white
+			.socmed-icons
+				font-family: 'FontAwesome Brands'
 					

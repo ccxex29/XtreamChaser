@@ -287,6 +287,14 @@ header.header-top {
 }
 .header-wrapper .playnow-header .play-arrow {
   color: #0C0803;
+  font-weight: 900;
+  font-family: "FontAwesome Solid";
+}
+.header-wrapper .playnow-header .play-arrow .btn-play-left {
+  margin-right: 10px;
+}
+.header-wrapper .playnow-header .play-arrow .btn-play-right {
+  margin-left: 10px;
 }
 .header-wrapper .playnow-header .playnow-header-text {
   margin-top: 12px;

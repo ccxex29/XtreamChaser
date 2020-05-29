@@ -2,13 +2,13 @@
 
 
 ### Project Outline
-[About XtreamChaser](#about-xtreamchaser)
-[Requirements Summar](#requirements-summary)
-[Project Hierarchy](#project-hierarchy)
-[Project Milestones](#project-milestones)
-[Other Documentations](#other-documentations)
-[Relevant Links](#relevant-links)
-[Project Team](#project-team)
+- [About XtreamChaser](#about-xtreamchaser)
+- [Requirements Summar](#requirements-summary)
+- [Project Hierarchy](#project-hierarchy)
+- [Project Milestones](#project-milestones)
+- [Other Documentations](#other-documentations)
+- [Relevant Links](#relevant-links)
+- [Project Team](#project-team)
 
 
 ## About XtreamChaser
@@ -89,13 +89,13 @@ files.
 - [ ] Design the \.psd and \.jpg website logo and obtain images for character images, stat icons, banner, and others
 ### Second Stage
 - [x] Build up the skeleton (class, mixin, variable, function presets in JS and Sass)
-- [ ] Build up the header (menu contents, outline feature), footer (other links and website name)
+- [x] Build up the header (menu contents, outline feature), footer (other links and website name)
 ### Third Stage
 - [ ] Build up the contents (incl. images) on each page (home, gallery, characters, lore, pre-registration)
-- [ ] Build up the specific styling and scripts for each element without animation
-- [ ] Add additional CSS3 and Javascript animations
+- [x] Build up the specific styling and scripts for each element without animation
+- [x] Add additional CSS3 and Javascript animations
 ### Final Stage
-- [ ] Fix bugs and work on optional plans
+- [x] Fix bugs and work on optional plans
 - [ ] Work on the \.DOC documentation
 - [ ] Code cleanup
 
@@ -109,13 +109,35 @@ files.
 - `master` branch : [Github Pages](https://ccxex29.github.io/XtreamChaser/)
 ### References
 - [Bootstrap](https://getbootstrap.com/docs/)
-- [SassLang](https://sass-lang.com/documentation)
+- [SassLang](https://sass-lang.com/documentation/)
 - [jQuery](https://api.jquery.com/)
-- [Modernizr](https://modernizr.com/docs)
+- [Modernizr](https://modernizr.com/docs/)
 - [Material Design](https://material.io/)
+- [Font Awesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
 ### Website Resources
-(Currently No Resource)
+#### Third Party Fonts
+- [Google Fonts](https://fonts.google.com/)
+- [Eurostile](https://www.cufonfonts.com/font/eurostile)
+- [FontAwesome](https://fontawesome.com/)
 
+#### Third Party Libraries
+- [JQuery](https://api.jquery.com/)
+
+#### Images
+- [Tekken 7 Wallpaper (getwallpapers.com)](http://getwallpapers.com/wallpaper/full/7/4/f/1036686-tekken-7-wallpapers-1920x1080-samsung-galaxy.jpg)
+- [Tekken 7 Jin Kazama vs Arcade Mode (YouTube)](https://www.youtube.com/watch?v=PjZpkQqc7fI)
+- [Tekken 7 Akuma Wallpaper (myplaystationwallpapers.net)](https://www.myplaystationwallpapers.net/1920x1080/tekken-7-akuma-wallpaper/)
+- [BBC World Service - The Why Factor, Dystopias (BBC)](https://www.bbc.co.uk/programmes/w3csyv0r)
+- [Tekken Kazuya CG Work (videogamesblogger.com)](https://www.videogamesblogger.com/2014/08/21/tekken-7-characters-list.htm/tekken-7-kazuya-cg-artwork)
+- [Tekken Tag Tournament 2 (trucoteca.com)](https://www.trucoteca.com/juegos/tekken-tag-tournament-2)
+- [Revenge Comes Back Around in Tekken7's Opening (hardcoregamer.com)](https://hardcoregamer.com/2017/05/23/revenge-comes-back-around-in-tekken-7s-opening/258446/)
+- [Tekken 7 Tier List (tierlytics.com)](https://www.tierlytics.com/tier-lists/tekken-7)
+- [Tekken 7 Character Art (eventhubs.com)](https://www.eventhubs.com/imagegallery/2017/jun/03/tekken-7-character-art)
+#### Icons
+- [Stars](https://material.io)
+- [Character Stats](https://www.flaticon.com/authors/freepik)
+- [FontAwesome](https://fontawesome.com/)
 
 ## Project Team
 
