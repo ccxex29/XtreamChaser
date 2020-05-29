@@ -430,6 +430,8 @@ header.header-top {
   justify-content: space-between !important;
 }
 .footer-area .footer-wrapper .footer-content {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  letter-spacing: 0.04em;
   color: #D0D0D0;
 }
 .footer-area .footer-wrapper .footer-content.footer-left {
