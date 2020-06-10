@@ -25,7 +25,7 @@ const carouselPushLeft = () => updateImagePresentate('right');
 // Left Arrow
 const carouselPushRight = () => updateImagePresentate('left');
 
-const updateImagePresentate = (gowhere) => {
+const updateImagePresentate = gowhere => {
 	const imageSrcLastElemIdx = imageSrc.length-1;
 	const imagePreLastElemIdx = imagePresentate.length-1;
 	if (gowhere === 'left') {
@@ -58,12 +58,12 @@ const updateImagePresentate = (gowhere) => {
 	}
 };
 
-const setFilter = (num) => {
+const setFilter = num => {
 	document.getElementById('carousel-element-img' + num + '-filter').style.opacity = 1;
 };
 
-const clearFilter = (num) => {
+const clearFilter = num => {
 	document.getElementById('carousel-element-img' + num + '-filter').style.opacity = 0;
-}
+};
 
 $(document).ready(() => updateImagePresentate('here'));

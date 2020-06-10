@@ -3,7 +3,7 @@
 <head>
 	<!-- HTML Meta -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 	<title>XtreamChaser</title>
 	<link rel="shortcut icon" href="images/self/favicons/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="stylesheets/custom/preregister.css">
@@ -111,18 +111,20 @@
 			</div> 
 			<div class="preregister-content">
 				<div class="preregister-form-wrapper">
-					<form id="myForm">
-						<input type="email" name="email" placeholder="Email Address" id="enter-email">
-						<input type="text" name="username" placeholder="Username" id="enter-username">
-						<input type="password" name="pwd" placeholder="Password" id="enter-password">
-						<input type="password" name="pwd-confirm" placeholder="Confirm Password" id="confirm-password">
-						<label> <input type="radio" name="gender" id="gendermale"> Male </label>
-						<label> <input type="radio" name="gender" id="genderfemale"> Female </label>
-						<input type="date" name="birthdate" placeholder="Birth Date" id="enter-birthdate">
-						<label for="country"></label>     
-        
-			 				<select id="selectcountry" name="country" >
-							<option value="" disabled selected>Select your nationality</option>
+					<form id="myForm" name="myForm" onsubmit="">
+						<input type="email" name="email" placeholder="Email Address" id="enter-email" autocomplete="off" spellcheck="false">
+						<input type="text" name="username" placeholder="Username" id="enter-username" autocomplete="off" spellcheck="false">
+						<input type="password" name="pwd" placeholder="Password" id="enter-password" autocomplete="off" spellcheck="false">
+						<input type="password" name="pwd-confirm" placeholder="Confirm Password" id="confirm-password" autocomplete="off" spellcheck="false">
+						<input type="date" name="birthdate" placeholder="Birth Date" id="enter-birthdate">   
+						<select id="gender" name="gender">
+							<option selected disabled hidden value="">Choose Your Gender</option>
+							<option value="binary-male">Male</option>
+							<option value="binary-female">Female</option>
+							<option value="other">Prefer not to say</option>
+						</select>
+		 				<select id="selectcountry" name="country" >
+							<option disabled selected hidden value="">Select your nationality</option>
 							<option value="Afghanistan">Afghanistan</option>
 							<option value="Åland Islands">Åland Islands</option>
 							<option value="Albania">Albania</option>
@@ -373,7 +375,7 @@
 								<input type="checkbox" name="tos-consent" id="tos-consent">
 							<span spantype="tos-message">By clicking this checkbox, you agree to <span spantype="underline">Terms of Services</span> by XtreamChaser</span></label>
 						</div>
-						<button type="button" onclick="validateform()" id="submitbutton">Pre Register Now</button>
+						<button type="button" onclick="validateform(document.getElementById('myForm'));" id="submitbutton">Pre Register Now</button>
 					</form>
 				</div>
 			</div>

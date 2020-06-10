@@ -188,7 +188,7 @@ const characterDetails = [
 ];
 
 
-const selectCharacter = (i) => {
+const selectCharacter = i => {
 	if (!$(i).hasClass('selchar-img-selected')){
 		$(i).addClass('selchar-img-selected'); // Add selected state to the new char
 		$(lastElem).removeClass('selchar-img-selected'); // Remove selected state of last char

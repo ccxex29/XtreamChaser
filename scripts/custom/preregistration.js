@@ -1,109 +1,106 @@
-function validateform(){
-    var name = document.getElementById("enter-username").value;
-    var password = document.getElementById("enter-password").value;
-    var confirmPassword = document.getElementById("confirm-password").value;
-    if(checkPassword(password))  checkPasswordMatch(password, confirmPassword);
-    var birthdate = document.getElementById("enter-birthdate").value;
-    if(name === "")
-    {
-        alert("Username cannot be empty!");
-    }else{
-        if(checkPassword(password))
-        {
-            if(checkPasswordMatch(password, confirmPassword))
-            {
-                if(checkGender() !== false)
-                {
-                    if(checkAge(birthdate))
-                    {
-                        alert("Register Succesfull")
-                        document.getElementById("myForm").reset();
-                    }
-                }
+const validateform = formId => {
+    // Password Checker
+    const checkPassword = password => {
+        /* 1 = Length
+         * 2 = No Lowercase, Uppercase, Number
+         */
+        var lowercase = false;
+        var uppercase = false;
+        var numeric = false;
+
+        if (password.length < 8)
+            return 1;
+        for(pwdChar of password){
+            //check if character is number
+            if(!isNaN(parseInt(pwdChar)))
+                numeric = true;
+            //check if character is uppercase
+            else {
+                if (pwdChar.charCodeAt() >= 97 && pwdChar.charCodeAt() <= 122)
+                    lowercase = true;
+                else if (pwdChar.charCodeAt() >= 65 && pwdChar.charCodeAt() <= 90)
+                    uppercase = true;
             }
+            if (lowercase && uppercase && numeric) 
+                return 0;
         }
-       
+        return 2;
+    };
+    // DoB Checker
+    const checkAge = birthdate => {
+        const dateOfBirth = new Date(birthdate);
+        const today = new Date();
+        today.setFullYear(today.getFullYear() - dateOfBirth.getFullYear());
+        today.setMonth(today.getMonth() - dateOfBirth.getMonth());
+        today.setDate(today.getDate() - dateOfBirth.getDate());
+        if (today.getFullYear() < 17) 
+            return 1;
+        return 0;
+    };
 
+    if (!formId) {
+        alert('Invalid form has been submitted');
+        return;
     }
-    {
+    const email = formId.querySelector('#enter-email');
+    const name = formId.querySelector('#enter-username');
+    const password = formId.querySelector('#enter-password');
+    const confirmPassword = formId.querySelector('#confirm-password');
+    const birthDate = formId.querySelector('#enter-birthdate');
+    const gender = formId.querySelector('#gender');
+    const country = formId.querySelector('#selectcountry');
+    const tos = formId.querySelector('#tos-consent');
+    // Element existencies
+    if (!email || !name || !password || !confirmPassword || !birthDate || !gender || !country || !tos) {
+        alert('Invalid form has been submitted');
+        return;
     }
+    // Email
+    if (!email.value) {
+        alert('Email cannot be empty');
+        return;
+    }
+    // Name
+    if(!name.value) {
+        alert('Username cannot be empty!');
+        return;
+    }
+    // Passwords
+    const pwdTest = checkPassword(password.value);
+    if (pwdTest) {
+        if (pwdTest === 1) 
+            alert('Password must at least have 8 characters');
+        else
+            alert('Password must at least have a lowercase, an uppercase letter, and a number');
+        return;
+    }
+    if (password.value !== confirmPassword.value) {
+        alert('Passwords do not match!');
+        return;
+    }
+    // Check Age
+    if (!birthDate.value) {
+        alert('You must enter your date of birth');
+        return;
+    }
+    if (checkAge(birthDate.value)) {
+        alert('You must be 17 years old or older to register');
+        return;
+    }
+    // Gender
+    if (!gender.value) {
+        alert('You must select a gender');
+        return;
+    }
+    // Country
+    if (!country.value) {
+        alert('You must select a country');
+        return;
+    }
+    if (!tos.checked) {
+        alert('You must check the ToS before submitting');
+        return;
+    }
+    alert('Registration Succesful');
+    formId.reset();
 };
-
-function checkPassword(password){
-    var lowercase = 0;
-    var uppercase = 0;
-    var numeric = 0;
-    for( var i = 0; i < password.length; i++){
-        var charcheck = password.charCodeAt(i);
-        //check if character is number
-        if(charcheck > 47 && charcheck < 58 )
-        {
-            numeric = 1;
-        }
-        //check if character is uppercase
-        if(charcheck > 64 && charcheck < 91){
-            uppercase = 1;
-        }
-        //check if character is lowecase
-        if(charcheck > 96 && charcheck < 123)
-        {
-            lowercase = 1;
-        }
-    }
-    if(password.length < 8 || numeric === 0 || uppercase === 0 || lowercase === 0)
-    {
-        alert("Password must at least have 8 characters, a lowercase and an uppercase letter, and have at least 1 number");
-    }else{
-        return true;
-    }
-    
-}
-
-function checkPasswordMatch(password, confirmPassword){
-    if(password === confirmPassword) return true;
-    alert("Password do not match!")
-}
-
-
-function checkGender(){
-    var gender;
-    if(document.getElementById("gendermale").checked)
-    {
-        return "male";
-    }else if(document.getElementById("genderfemale").checked )
-    {
-        return "female";
-    }else{
-        alert("Choose Gender!");
-        return false;
-    }
-}
-
-function checkAge(birthdate){
-    var yy = birthdate.slice(0,4);
-    var mm = birthdate.slice(5,7);
-    var dd = birthdate.slice(8, 10);
-
-    var today = new Date();
-    var curyear = today.getFullYear();
-    var curmonth = today.getMonth()+1;
-    var curdate = today.getDate(); 
-    console.log(curyear + '-' + curmonth + '-' + curdate)
-    if(curyear - yy >= 17)
-    {
-        if(curmonth - mm >= 0)
-        {
-            if(curmonth === 0)
-            {
-                if(curdate - dd >= 0)
-                {
-                    return true;
-                }else{
-                    alert("You must be at least 17 years old to register");
-                } 
-            }else return true;
-        }else alert("You must be at least 17 years old to register");
-    }else{
-        alert("You must be at least 17 years old to register");
-    }
-}

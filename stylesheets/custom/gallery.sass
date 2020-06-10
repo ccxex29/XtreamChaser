@@ -6,11 +6,11 @@
 @use "essentials/templates"
 @use "essentials/sets"
 
-$imageSizeWidth: 600px
+$imageSizeWidth: 520px
 $imageSizeWidthAlt1: 400px
 $imageSizeWidthAlt2: 280px
 $imageSizeWidthAlt3: 180px
-$imageSizeHeight: 300px
+$imageSizeHeight: 260px
 $imageSizeHeightAlt1: 200px
 $imageSizeHeightAlt2: 140px
 $imageSizeHeightAlt3: 90px
@@ -58,10 +58,12 @@ $bg-topSize: 640px
 			// @include templates.css3-prefix(flex, 1)
 			> div
 				@include presets.font-sans_serif
-				margin-bottom: 1vh
+				margin-bottom: calc(28px + 1.25rem + 28px)
 				width: $imageSizeWidth
 				max-width: $imageSizeWidth
 				height: $cardSizeHeight
+				@media screen and (max-width: 1421px)
+					margin-bottom: 8px
 				@media screen and (max-width: 1420px)
 					width: $imageSizeWidthAlt1
 					max-width: $imageSizeWidthAlt1
@@ -120,6 +122,7 @@ $bg-topSize: 640px
 					@include presets.bs-text-center
 					color: presets.$white-muted
 					margin-bottom: 8px
+					display: inline-block
 				p
 					margin-bottom: 64px
 					color: presets.$white-muted

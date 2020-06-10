@@ -821,7 +821,7 @@ a {
   border-radius: 4px;
   display: inline-block;
 }
-.preregister-page .preregister-content .preregister-form-wrapper form button {
+.preregister-page .preregister-content .preregister-form-wrapper form#myForm button {
   -khtml-display: flex;
   -webkit-display: flex;
   -moz-display: flex;
@@ -831,41 +831,53 @@ a {
   text-align: center;
   margin: 48px auto 0 auto;
 }
-.preregister-page .preregister-content .preregister-form-wrapper form input {
+.preregister-page .preregister-content .preregister-form-wrapper form#myForm input {
   display: inline-block;
   margin-bottom: 16px;
   padding: 10px;
   border: 1px solid lightgrey;
   border-radius: 4px;
 }
-.preregister-page .preregister-content .preregister-form-wrapper form input:not(#tos-consent) {
+.preregister-page .preregister-content .preregister-form-wrapper form#myForm input:not(#tos-consent) {
   width: 100%;
 }
-.preregister-page .preregister-content .preregister-form-wrapper form .inline-cb {
-  margin-top: 24px;
+.preregister-page .preregister-content .preregister-form-wrapper form#myForm select {
+  margin-bottom: 16px;
 }
-.preregister-page .preregister-content .preregister-form-wrapper form .inline-cb label.tos {
+.preregister-page .preregister-content .preregister-form-wrapper form#myForm .inline-cb {
+  margin-top: 24px;
+  text-align: center;
+}
+.preregister-page .preregister-content .preregister-form-wrapper form#myForm .inline-cb label.tos {
   display: inline;
   color: white;
 }
-.preregister-page .preregister-content .preregister-form-wrapper form .inline-cb label.tos span[spantype=underline] {
+.preregister-page .preregister-content .preregister-form-wrapper form#myForm .inline-cb label.tos span[spantype=underline] {
   text-decoration: underline;
   cursor: pointer;
 }
-.preregister-page .preregister-content .preregister-form-wrapper form .inline-cb label.tos span[spantype=tos-message] {
+.preregister-page .preregister-content .preregister-form-wrapper form#myForm .inline-cb label.tos span[spantype=tos-message] {
   margin-left: 10px;
 }
-.preregister-page .preregister-content .preregister-form-wrapper form button {
+.preregister-page .preregister-content .preregister-form-wrapper form#myForm button {
   background-color: #FFAD01;
   border: 1px solid #FFAD01;
   padding: 8px 12px;
   cursor: pointer;
 }
-.preregister-page .preregister-content .preregister-form-wrapper form button:hover {
+.preregister-page .preregister-content .preregister-form-wrapper form#myForm button:hover {
   background-color: #FFD170;
 }
-.preregister-page .preregister-content .preregister-form-wrapper form button:active {
+.preregister-page .preregister-content .preregister-form-wrapper form#myForm button:active {
   background-color: #B57B00;
+}
+.preregister-page .preregister-content .preregister-form-wrapper form#myForm #selectcountry {
+  width: calc(100% + 22px);
+  padding: 3px 10px;
+}
+.preregister-page .preregister-content .preregister-form-wrapper form#myForm #gender {
+  width: calc(100% + 22px);
+  padding: 3px 10px;
 }
 
 /*# sourceMappingURL=preregister.css.map */
