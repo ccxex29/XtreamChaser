@@ -8,13 +8,13 @@
 	position: absolute
 	@include presets.flex-container
 	@include presets.flex-vert
-	// top: 87px
-	// @include templates.css3-prefix(top, calc(10px + 10vh))
-	top: 10vh
+	top: 10%
 	left: 0
 	margin-left: -20px
 	max-width: 100vw
 	max-height: 100vh
+	@media screen and (min-height: 1200px)
+		top: 92px
 	.slidingmenu-content
 		width: 274px
 		height: 56px

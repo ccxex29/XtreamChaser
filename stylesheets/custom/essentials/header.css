@@ -140,7 +140,7 @@ header.header-top {
   position: relative;
   background-color: #0C0803;
   height: 10%;
-  max-height: 10%;
+  max-height: 92px;
   min-height: 64px;
   overflow: visible;
   width: 100%;

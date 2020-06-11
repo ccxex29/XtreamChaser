@@ -41,11 +41,16 @@
   -o-display: flex;
   display: flex;
   flex-direction: column;
-  top: 10vh;
+  top: 10%;
   left: 0;
   margin-left: -20px;
   max-width: 100vw;
   max-height: 100vh;
+}
+@media screen and (min-height: 1200px) {
+  .slidingmenu {
+    top: 92px;
+  }
 }
 .slidingmenu .slidingmenu-content {
   width: 274px;
