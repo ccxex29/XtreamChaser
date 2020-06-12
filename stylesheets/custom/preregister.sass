@@ -35,7 +35,6 @@
 					@include presets.flex-container
 					text-align: center
 					margin: 48px auto 0 auto
-
 				input
 					display: inline-block
 					margin-bottom: 16px
@@ -47,12 +46,12 @@
 				select
 					margin-bottom: 16px
 				.inline-cb
+					@include presets.font-sans_serif
 					margin-top: 24px
 					text-align: center
 					label.tos
 						display: inline
 						color: white
-						input[type="checkbox"]
 						span[spantype="underline"]
 							text-decoration: underline
 							cursor: pointer
@@ -67,11 +66,16 @@
 						background-color: presets.$orange-mortalkombat-light
 					&:active
 						background-color: presets.$orange-mortalkombat-dark
+
+				$selectHeight: 37px
+				$selectPadding: 3px 0px
 				#selectcountry
 					width: calc(100% + 22px)
-					padding: 3px 10px
+					padding: $selectPadding
+					min-height: $selectHeight
 				#gender
 					width: calc(100% + 22px)
-					padding: 3px 10px
+					padding: $selectPadding
+					min-height: $selectHeight
 
 
